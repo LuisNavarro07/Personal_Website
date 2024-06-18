@@ -94,17 +94,6 @@ skills:
         description: ''
         percent: 70
         icon: code-bracket
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Science Fiction
-        description: ''
-        percent: 60
-        icon: person-simple-walk
-	@@ -111,19 +113,14 @@ skills:
-        percent: 100
-        icon: dog
 
 # Languages
 languages:
