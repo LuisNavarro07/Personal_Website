@@ -95,6 +95,7 @@ skills:
         percent: 70
         icon: code-bracket
 
+
 # Languages
 languages:
   - name: English
@@ -111,4 +112,6 @@ awards:
       Ostrom Fellow (Fall 2023 - Spring 2024)
 ---
 
-I am PhD Candidate of Public Affairs at the O'Neill School at Indiana University, Bloomington. My research interests include public finance, state and local tax policy, the municipal bond market, and public economics in general. 
+I am PhD Candidate of Public Affairs at the O'Neill School at Indiana University, Bloomington. 
+
+My research interests include public finance, state and local tax policy, the municipal bond market, and public economics in general. 
