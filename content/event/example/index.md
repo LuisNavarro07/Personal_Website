@@ -1,5 +1,5 @@
 ---
-title:Preferences for Local Public Goods and the Gig Economy
+title: Preferences for Local Public Goods and the Gig Economy
 
 event: Research Series - Ostrom Workshop
 event_url: https://www.youtube.com/watch?v=z_6QVHcFHjo&t=315s
