@@ -25,7 +25,7 @@ profiles:
   - icon: brands/github
     url: "https://github.com/LuisNavarro07"
   - icon: brands/linkedin
-    url: "www.linkedin.com/in/luis-enrique-navarro-2aa029a6"
+    url: "https://www.linkedin.com/in/luis-enrique-navarro-2aa029a6"
   - icon: academicons/orcid
     url: "https://orcid.org/0009-0005-8257-9283"
 interests:
