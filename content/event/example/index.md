@@ -17,6 +17,9 @@ image:
   caption: "Image credit: [**Ostrom Workshop**](https://ostromworkshop.indiana.edu/index.html)"
   focal_point: Right
 
-url_video: "https://www.youtube.com/watch?v=z_6QVHcFHjo&t=327s"
-
+links:
+  - icon: video
+    icon_pack: fas
+    name: Watch Video
+    url: "https://www.youtube.com/watch?v=z_6QVHcFHjo&t=327s"
 ---
