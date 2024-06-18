@@ -2,8 +2,6 @@
 title: Luis Navarro
 
 name_pronunciation: Luis Navarro
-first_name: Luis
-last_name: Navarro
 superuser: true
 highlight_name: true
 
