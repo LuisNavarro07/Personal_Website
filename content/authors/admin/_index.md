@@ -13,11 +13,6 @@ organizations:
   - name: O'Neill School of Public and Environmental Affairs, Indiana University, Bloomington
     url: https://oneill.indiana.edu/doctoral/degrees/public-affairs/index.html
 
-avatar: "avatar.jpeg"
-
-# Add custom CSS class
-avatar_class: "custom-profile-pic"
-
 # Social network links
 profiles:
   - icon: at-symbol
