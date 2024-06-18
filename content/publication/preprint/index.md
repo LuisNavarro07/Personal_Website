@@ -1,5 +1,5 @@
 ---
-title: "An example preprint / working paper"
+title: "Federal Assistance and Municipal Borrowing: Unpacking the effects of the CARES Act on Government Liquidity Management"
 authors:
 - admin
 date: "2019-04-07T00:00:00Z"
@@ -11,20 +11,17 @@ publishDate: "2017-01-01T00:00:00Z"
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ["article"]
+publication_types: ["8"]
 
 # Publication name and optional abbreviated publication name.
 publication: ""
 publication_short: ""
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: Access to cash can affect the ability of local governments to respond to crises. Federal aid to local governments can supply this directly, though the effectiveness on a dollar-per-dollar basis depends on its complementary or substitutability with local borrowing. Through this lens this examines the effects of the Coronavirus Relief Fund (CRF) on the local governments borrowing using a regression discontinuity design that exploits the quasi-experimental setting induced by the fund eligibility criterion imposed by the US Treasury. The findings indicate that recipient governments observed mild reductions in borrowing costs and increased their debt issuance on the primary market, with no significant spillovers to the secondary market. Moreover, this analysis provides some suggestive evidence on the liquidity management undertaken by local governments. It documents an increase in the issuance of short-term debt, at the expense of reductions on the issuance of longer-term bonds. Together, these findings shed some light on the mechanisms through which federal aid to local governments translates into improved borrowing conditions on the bond market. 
 
-# Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
 tags:
-- Large Language Models
-
+- Paper presented at Brookings Municipal Finance Conference
 featured: true
 
 links:
@@ -62,10 +59,4 @@ projects:
 slides: example
 ---
 
-This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
-
-{{% callout note %}}
-Create your slides in Markdown - click the *Slides* button to check out the example.
-{{% /callout %}}
-
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
+Access to cash can affect the ability of local governments to respond to crises. Federal aid to local governments can supply this directly, though the effectiveness on a dollar-per-dollar basis depends on its complementary or substitutability with local borrowing. Through this lens this examines the effects of the Coronavirus Relief Fund (CRF) on the local governments borrowing using a regression discontinuity design that exploits the quasi-experimental setting induced by the fund eligibility criterion imposed by the US Treasury. The findings indicate that recipient governments observed mild reductions in borrowing costs and increased their debt issuance on the primary market, with no significant spillovers to the secondary market. Moreover, this analysis provides some suggestive evidence on the liquidity management undertaken by local governments. It documents an increase in the issuance of short-term debt, at the expense of reductions on the issuance of longer-term bonds. Together, these findings shed some light on the mechanisms through which federal aid to local governments translates into improved borrowing conditions on the bond market. 
