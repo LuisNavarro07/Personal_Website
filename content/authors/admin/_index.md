@@ -1,14 +1,12 @@
 ---
 title: Luis Navarro
-
-name_pronunciation: Luis Navarro
 superuser: true
 highlight_name: true
 
 # Role 
 role: PhD Candidate
 
-bio: My research interest include public finance, public economics, and econometrics. 
+bio: I am PhD Candidate of Public Affairs at the O'Neill School at Indiana University, Bloomington. My research interests include public finance, state and local tax policy, the municipal bond market, and public economics in general. 
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -108,4 +106,4 @@ awards:
     summary: |
       Ostrom Fellow (Fall 2023 - Spring 2024)
 ---
-I am PhD Candidate of Public Affairs at the O'Neill School at Indiana University, Bloomington. My research interests include public finance, state and local tax policy, the municipal bond market, and public economics in general. 
+
