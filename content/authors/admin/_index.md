@@ -49,7 +49,7 @@ work:
     summary: |-
       - Lead instructor of V202: Contemporary Economic Issues for Public Affairs 
       - Fall 2022, Spring 2023, Fall 2024
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      
   - position: Lab Manager - Statistics (Graduate)
     company_name: O'Neill School of Public and Environmental Affairs
     date_start: 2023-08-01
