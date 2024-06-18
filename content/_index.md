@@ -41,7 +41,7 @@ sections:
   - block: collection
     id: papers
     content:
-      title: Published Research
+      title: Featured Research
       filters:
         folders:
           - publication
