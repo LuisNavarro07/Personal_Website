@@ -50,7 +50,7 @@ work:
     company_name: O'Neill School of Public and Environmental Affairs
     date_start: 2022-08-01
     date_end: ''
-    summary: |2-
+    summary: |-
       - Lead instructor of V202: Contemporary Economic Issues for Public Affairs 
       - Fall 2022, Spring 2023, Fall 2024
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -58,7 +58,7 @@ work:
     company_name: O'Neill School of Public and Environmental Affairs
     date_start: 2023-08-01
     date_end: ''
-    summary: |2-
+    summary: |-
       Responsibilities include:
       - Teach introductory R programming for graduate students on the MPA program. 
       - Base R and Tidyverse 
@@ -107,11 +107,9 @@ languages:
 awards:
   - title: Ostrom Fellow
     url: https://ostromworkshop.indiana.edu/index.html
-	@@ -132,7 +129,8 @@ awards:
     summary: |
       Ostrom Fellow (Fall 2023 - Spring 2024)
 ---
-
 I am PhD Candidate of Public Affairs at the O'Neill School at Indiana University, Bloomington. 
 
 My research interests include public finance, state and local tax policy, the municipal bond market, and public economics in general. 
