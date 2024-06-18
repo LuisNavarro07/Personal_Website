@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
-title: ""
-date: 2022-10-24
+title: "Luis Navarro"
+date: 2024-06-18
 type: landing
 
 design:
@@ -24,7 +24,7 @@ sections:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          filename: usa-houses-skyscrapers-morning-new-york-city-5k-vt.jpg
+          filename: background.jpg
           filters:
             brightness: 1.0
           size: cover
@@ -41,7 +41,7 @@ sections:
   - block: collection
     id: papers
     content:
-      title: Featured Publications
+      title: Published Research
       filters:
         folders:
           - publication
@@ -51,7 +51,7 @@ sections:
       columns: 2
   - block: collection
     content:
-      title: Recent Publications
+      title: Working Papers
       text: ""
       filters:
         folders:
@@ -62,7 +62,7 @@ sections:
   - block: collection
     id: talks
     content:
-      title: Recent & Upcoming Talks
+      title: Recent Talks
       filters:
         folders:
           - event
