@@ -1,58 +1,46 @@
 ---
-title: 'Liquidity and Volatility in the Municipal Bond Market: Evidence from the Municipal Liquidity Facility and other early interventions'
-
-# Authors
-# If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
-# and it will be replaced with their full name and linked to their profile.
+title: "Federal Assistance and Municipal Borrowing: Unpacking the effects of the CARES Act on Government Liquidity Management"
 authors:
-  - admin
-
-date: '2024-06-01T00:00:00Z'
-doi: ''
+- admin
+date: "2019-04-07T00:00:00Z"
+doi: ""
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-06-01T00:00:00Z'
+publishDate: "2017-01-01T00:00:00Z"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-# Publication type.
-# Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
-# 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
-# 7 = Thesis; 8 = Patent
 publication_types: ["8"]
 
 # Publication name and optional abbreviated publication name.
-publication: Working Paper
-publication_short: Working Paper
+publication: ""
+publication_short: ""
 
-abstract: At the onset of the pandemic, the federal government stepped in with fiscal and monetary policy actions to assist distressed municipalities. In particular, the Municipal Liquidity Facility (MLF) was established to create a market maker of last resort. In this paper, we examine the extent to which the provision of federal aid to states and the implementation of the MLF was successful in promoting proper market functioning by looking at the plausibly causal effect of these policies on medium-term municipal market volatility. Leveraging a combination of financial instruments outside of the Municipal Bond market, and past observations of state bond yields, we use a synthetic control approach to compute counterfactual volatility series, had the federal government not intervened. Aligning with previous literature, our results suggest that, for A-rated bonds and other instruments of higher credit quality, federal support (both direct fiscal stimulus and liquidity backstops), lead to volatility reductions in the municipal market between 43\% - 70\% of the incremental volatility experienced by state issuers at the peak of the 2020 financial turmoil. We further examine variation on these effects driven by the magnitude of direct fiscal stimulus received by state governments, finding some suggestive evidence on the relevance of the MLF restoring confidence into markets, even when it observed a low take-up rate among states. Our paper highlights the role that government intervention has on financial markets' perception and the process of price formation in the secondary market, as well as the role of the Federal Reserve as a lender of last resort during episodes of distress. 
+abstract: Access to cash can affect the ability of local governments to respond to crises. Federal aid to local governments can supply this directly, though the effectiveness on a dollar-per-dollar basis depends on its complementary or substitutability with local borrowing. Through this lens this examines the effects of the Coronavirus Relief Fund (CRF) on the local governments borrowing using a regression discontinuity design that exploits the quasi-experimental setting induced by the fund eligibility criterion imposed by the US Treasury. The findings indicate that recipient governments observed mild reductions in borrowing costs and increased their debt issuance on the primary market, with no significant spillovers to the secondary market. Moreover, this analysis provides some suggestive evidence on the liquidity management undertaken by local governments. It documents an increase in the issuance of short-term debt, at the expense of reductions on the issuance of longer-term bonds. Together, these findings shed some light on the mechanisms through which federal aid to local governments translates into improved borrowing conditions on the bond market. 
+
 
 tags:
-  - Working Paper 
-
-# Display this page in the Featured widget?
+- Paper presented at Brookings Municipal Finance Conference
 featured: true
 
-# Custom links (uncomment lines below)
-# links:
-# - name: Custom Link
-#   url: http://example.org
-
-url_pdf: ''
-url_slides: ''
+links:
+- name: Custom Link
+  url: http://example.org
+url_pdf: http://arxiv.org/pdf/1512.04133v1
 url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
-# url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
-# url_poster: ''
-# url_project: ''
-# url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
-# url_video: 'https://youtube.com'
+url_dataset: '#'
+url_poster: '#'
+url_project: ''
+url_slides: ''
+url_source: '#'
+url_video: '#'
 
 # Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
+# To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
-  focal_point: ''
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/s9CC2SKySJM)'
+  focal_point: ""
   preview_only: false
 
 # Associated Projects (optional).
@@ -61,14 +49,14 @@ image:
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects:
-  - example
+- internal-project
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
-# slides: example
+slides: example
 ---
 
-At the onset of the pandemic, the federal government stepped in with fiscal and monetary policy actions to assist distressed municipalities. In particular, the Municipal Liquidity Facility (MLF) was established to create a market maker of last resort. In this paper, we examine the extent to which the provision of federal aid to states and the implementation of the MLF was successful in promoting proper market functioning by looking at the plausibly causal effect of these policies on medium-term municipal market volatility. Leveraging a combination of financial instruments outside of the Municipal Bond market, and past observations of state bond yields, we use a synthetic control approach to compute counterfactual volatility series, had the federal government not intervened. Aligning with previous literature, our results suggest that, for A-rated bonds and other instruments of higher credit quality, federal support (both direct fiscal stimulus and liquidity backstops), lead to volatility reductions in the municipal market between 43\% - 70\% of the incremental volatility experienced by state issuers at the peak of the 2020 financial turmoil. We further examine variation on these effects driven by the magnitude of direct fiscal stimulus received by state governments, finding some suggestive evidence on the relevance of the MLF restoring confidence into markets, even when it observed a low take-up rate among states. Our paper highlights the role that government intervention has on financial markets' perception and the process of price formation in the secondary market, as well as the role of the Federal Reserve as a lender of last resort during episodes of distress. 
+Access to cash can affect the ability of local governments to respond to crises. Federal aid to local governments can supply this directly, though the effectiveness on a dollar-per-dollar basis depends on its complementary or substitutability with local borrowing. Through this lens this examines the effects of the Coronavirus Relief Fund (CRF) on the local governments borrowing using a regression discontinuity design that exploits the quasi-experimental setting induced by the fund eligibility criterion imposed by the US Treasury. The findings indicate that recipient governments observed mild reductions in borrowing costs and increased their debt issuance on the primary market, with no significant spillovers to the secondary market. Moreover, this analysis provides some suggestive evidence on the liquidity management undertaken by local governments. It documents an increase in the issuance of short-term debt, at the expense of reductions on the issuance of longer-term bonds. Together, these findings shed some light on the mechanisms through which federal aid to local governments translates into improved borrowing conditions on the bond market. 
