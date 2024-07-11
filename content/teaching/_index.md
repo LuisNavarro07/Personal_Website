@@ -1,9 +1,12 @@
 ---
-title: "Teaching"
-type: "section"
+title: Teaching
+cms_exclude: true
+
+# View.
+view: citation
+
+# Optional header image (relative to `static/media/` folder).
+banner:
+  caption: ''
+  image: ''
 ---
-
-## Courses I Teach
-
-- [SPEA V202](teaching/v202/)
-- [SPEA V506](teaching/v506/)
