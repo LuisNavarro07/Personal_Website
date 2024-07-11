@@ -43,7 +43,7 @@ education:
     date_end: 2016-12-31
 work:
   - position: Associate Instructor - Economics for Public Policy (Undergraduate)
-    company_name: O'Neill School of Public and Environmental Affairs
+    company_name: O'Neill School of Public and Environmental Affairs (Bloomington, IN)
     date_start: 2022-08-01
     date_end: ''
     summary: |-
@@ -51,7 +51,7 @@ work:
       - Fall 2022, Spring 2023, Fall 2024
       
   - position: Lab Manager - Statistics (Graduate)
-    company_name: O'Neill School of Public and Environmental Affairs
+    company_name: O'Neill School of Public and Environmental Affairs (Bloomington, IN)
     date_start: 2023-08-01
     date_end: ''
     summary: |-
@@ -61,17 +61,32 @@ work:
       - Data Manipulation, Visualization, and Statistical Inference. 
   
   - position: Graduate Research Assistant
-    company_name: O'Neill School of Public and Environmental Affairs
+    company_name: O'Neill School of Public and Environmental Affairs (Bloomington, IN)
     company_url: ''
     company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+    date_start: 2020-08-20
+    date_end: ''
     summary: |
       Graduate Research Assistant for the following faculty:
       - Justin Ross
       - Denvil Duncan
       - Craig Johnson
       - Kosali Simon
+
+  - position: Senior Analyst - Investment Banking and Public Finance Division
+    company_name: Altor Finanzas e Infraestructura (Mexico City)
+    date_start: 2017-02-01
+    date_end: 2020-07-01
+    summary: |-
+      - Cost Benefit Analysis (Infrastructure, Transport, Public Private Partnerships)
+      - Debt Structuring and Financial Analysis for Local Governemnts
+      - Federal Fiscal Policy and Macroeconomic Analysis
+
+  - position: Economist - Staff of the Deputy Minister of Finance
+    company_name: Secretaria de Hacienda y Credito Publico (Mexico)
+    date_start: 2016-06-01
+    date_end: 2017-02-01
+
   
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
