@@ -1,5 +1,6 @@
 ---
 title: "Automatic Nutritional Stabilizers and the Role of Charitable Food Assistance during Times of Crisis"
+weight: 2
 authors:
 - Denvil Duncan
 - admin
