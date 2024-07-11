@@ -30,6 +30,7 @@ sections:
           size: cover
           position: center
           parallax: false
+      avatar_class: avatar  # Add this line to link the CSS class
   - block: markdown
     content:
       title: '📚 My Research'
