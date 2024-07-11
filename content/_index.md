@@ -31,6 +31,7 @@ sections:
           position: center
           parallax: false
       avatar_class: avatar  # Add this line to link the CSS class
+        size: big
   - block: markdown
     content:
       title: '📚 My Research'
@@ -52,7 +53,7 @@ sections:
       columns: 2
   - block: collection
     content:
-      title: Working Papers
+      title: Replication Packages
       text: ""
       filters:
         folders:
@@ -60,6 +61,17 @@ sections:
         exclude_featured: false
     design:
       view: citation
+  - block: collection
+    id: teaching
+    content:
+      title: Teaching
+      filters:
+        folders:
+          - teaching
+        featured_only: true
+    design:
+      view: article-grid
+      columns: 2
   - block: collection
     id: talks
     content:
