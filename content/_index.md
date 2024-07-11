@@ -24,7 +24,7 @@ sections:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          filename: usa-houses-skyscrapers-morning-new-york-city-5k-vt.jpg
+          filename: background1.jpg
           filters:
             brightness: 1.0
           size: cover
