@@ -65,6 +65,6 @@ Access to cash can affect the ability of local governments to respond to crises.
 
 <a href="federal_assistance_cares_act.pdf" download class="btn btn-secondary">Download PDF</a>
 
-<a href="federal_assistance_cares_act.pdf" target="_blank" class="btn btn-primary">Preview Slides</a>
+<a href="cares_slides_mfc.pdf" target="_blank" class="btn btn-primary">Preview Slides</a>
 
-<a href="federal_assistance_cares_act.pdf" download class="btn btn-secondary">Download Slides</a>
+<a href="cares_slides_mfc.pdf" download class="btn btn-secondary">Download Slides</a>

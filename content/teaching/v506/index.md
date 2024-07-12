@@ -56,37 +56,28 @@ This lab sessions aim to introduce students to the use of R to perform data mani
 Lab Material: 
 
 1. Introduction to R 
-   - [Lecture Slides](slides/introduction.pdf)
-   - [Rmd File](resources/introduction-resources.pdf)
-   - [Excercise](resources/introduction-resources.pdf)
-   - [Data](resources/introduction-resources.pdf)
+   - [Lecture Slides](Spring2024/Lab1/V506_Spring24_Lab1.html)
+   - [Rmd File](Spring2024/Lab1/V506_Spring24_Lab1.Rmd)
 
 2. Working with Data - Intro to Graphs
-   - [Lecture Slides](slides/introduction.pdf)
-   - [Rmd File](resources/introduction-resources.pdf)
-   - [Excercise](resources/introduction-resources.pdf)
-   - [Data](resources/introduction-resources.pdf)
+   - [Lecture Slides](Spring2024/Lab1/V506_Spring24_Lab2.html)
+   - [Rmd File](Spring2024/Lab1/V506_Spring24_Lab2.Rmd)
+
 
 3. Dplyr, Pipes, and ggplot
-   - [Lecture Slides](slides/introduction.pdf)
-   - [Rmd File](resources/introduction-resources.pdf)
-   - [Excercise](resources/introduction-resources.pdf)
-   - [Data](resources/introduction-resources.pdf)
+   - [Lecture Slides](Spring2024/Lab1/V506_Spring24_Lab3.html)
+   - [Rmd File](Spring2024/Lab1/V506_Spring24_Lab3.Rmd)
+
 
 4. Data Summaries and Functions
-   - [Lecture Slides](slides/introduction.pdf)
-   - [Rmd File](resources/introduction-resources.pdf)
-   - [Excercise](resources/introduction-resources.pdf)
-   - [Data](resources/introduction-resources.pdf)
+   - [Lecture Slides](Spring2024/Lab1/V506_Spring24_Lab4.html)
+   - [Rmd File](Spring2024/Lab1/V506_Spring24_Lab4.Rmd)
+
 
 5. Data Reshape and Random Variables
-   - [Lecture Slides](slides/introduction.pdf)
-   - [Rmd File](resources/introduction-resources.pdf)
-   - [Excercise](resources/introduction-resources.pdf)
-   - [Data](resources/introduction-resources.pdf)
+   - [Lecture Slides](Spring2024/Lab1/V506_Spring24_Lab5.html)
+   - [Rmd File](Spring2024/Lab1/V506_Spring24_Lab5.Rmd)
 
 6. Statistical Inference and Intro to Linear Regression
-   - [Lecture Slides](slides/introduction.pdf)
-   - [Rmd File](resources/introduction-resources.pdf)
-   - [Excercise](resources/introduction-resources.pdf)
-   - [Data](resources/introduction-resources.pdf)
+   - [Lecture Slides](Spring2024/Lab1/V506_Spring24_Lab6.html)
+   - [Rmd File](Spring2024/Lab1/V506_Spring24_Lab6.Rmd)

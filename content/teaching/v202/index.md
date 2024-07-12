@@ -59,49 +59,42 @@ Learning Outcomes
 Upon completion of this course, students will be able to: 
 
 a. Explain the economic rationales for government intervention (and non-intervention) in the economy.
+
 b. Explain the economic rationales for how regulation may be used to correct market failures.
+
 c. Identify features of various government policies and programs.
+
 d. Use economic models to predict the impact of these policies and programs on welfare and behavior.
+
 e. Explain the results of economic models demonstrating the impact of policies and programs on welfare and behavior.
+
 
 Syllabus: 
 
 1. Introduction
-   - [Lecture Slides](slides/introduction.pdf)
-   - [Additional Resources](resources/introduction-resources.pdf)
+   - [Introduction](slides/1_Introduction.pdf)
+   - [Math Review](slides/2_MathReview.pptx)
 2. Supply and Demand Review
-   - [Lecture Slides](slides/supply-demand-review.pdf)
-   - [Additional Resources](resources/supply-demand-review-resources.pdf)
-3. Market Equilibrium
-   - [Lecture Slides](slides/market-equilibrium.pdf)
-   - [Additional Resources](resources/market-equilibrium-resources.pdf)
-4. Market Failure and Government Intervention
-   - [Lecture Slides](slides/market-failure-intervention.pdf)
-   - [Additional Resources](resources/market-failure-intervention-resources.pdf)
-5. Tax Policy
-   - [Lecture Slides](slides/tax-policy.pdf)
-   - [Additional Resources](resources/tax-policy-resources.pdf)
+   - [Demand](slides/3_Demand.pptx)
+   - [Supply](slides/4_Supply.pptx)
+3. Market Equilibrium, Market Failure and Government Intervention
+   - [Market Equilibrium](slides/5_Market_Equilibrium.pdf)
+   - [Market Failure](slides/6_GovtIntervention_MktFailure.pptx)
+4. Tax Policy
+   - [Tax Policy 1](slides/7_TaxPolicy1.pptx)
+   - [Tax Policy 2](slides/7_TaxPolicy2.pptx)
 6. Externalities
-   - [Lecture Slides](slides/externalities.pdf)
-   - [Additional Resources](resources/externalities-resources.pdf)
+   - [Externalities 1](slides/8_Externalities1.pptx)
+   - [Externalities 2](slides/8_Externalities2.pptx)
 7. Public Goods
-   - [Lecture Slides](slides/public-goods.pdf)
-   - [Additional Resources](resources/public-goods-resources.pdf)
+   - [Public Goods](slides/9_PublicGoods.pptx)
 8. Labor Market
-   - [Lecture Slides](slides/labor-market.pdf)
-   - [Additional Resources](resources/labor-market-resources.pdf)
-9. Health Policy
-   - [Lecture Slides](slides/health-policy.pdf)
-   - [Additional Resources](resources/health-policy-resources.pdf)
-10. Income Inequality and Poverty
-    - [Lecture Slides](slides/income-inequality-poverty.pdf)
-    - [Additional Resources](resources/income-inequality-poverty-resources.pdf)
-11. Monopoly
-    - [Lecture Slides](slides/monopoly.pdf)
-    - [Additional Resources](resources/monopoly-resources.pdf)
-12. Trade Policy
-    - [Lecture Slides](slides/trade-policy.pdf)
-    - [Additional Resources](resources/trade-policy-resources.pdf)
-13. Monetary Policy
-    - [Lecture Slides](slides/monetary-policy.pdf)
-    - [Additional Resources](resources/monetary-policy-resources.pdf)
+   - [Externalities 1](slides/8_Externalities1.pptx)
+   - [Externalities 2](slides/8_Externalities2.pptx)
+9. Poverty and Income Inequality
+   - [Poverty and Income Inequality 1](slides/11_Poverty_Income_Inequality.pptx)
+   - [Poverty and Income Inequality 2](slides/11_Poverty_Income_Inequality2.pptx)
+10. Trade Policy
+    - [Lecture Slides](slides/14_TradePolicy.pptx)
+11. Macroeconomics and Monetary Policy
+    - [Lecture Slides](slides/15_MacroeconomicMonetaryPolicy.pdf)
