@@ -1,13 +1,13 @@
 ---
-title: 'The Fiscal Structure of County Governments from 2002 to 2019: The Impact of the Great Recession and the Run-Up to the COVID-19 Pandemic'
+title: 'The Structure of County Government Debt from 2002 to 2020: The Financial Crisis, the Great Recession, and the COVID-19 Pandemic'
 weight: 5
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - admin
   - Craig Johnson
+  - admin
   - Andrey Yushkov
 
 date: '2023-01-01T00:00:00Z'
@@ -31,7 +31,8 @@ publication_short: Research Handbook
 abstract: ''
 
 tags:
-  - County Finance
+  - County Debt
+  - Financial Crisis
   - Great Recession
   - COVID-19
 
@@ -75,6 +76,6 @@ projects: []
 slides: ""
 ---
 
-In this article, the authors describe the fiscal structure of county governments from 2002 to 2019, highlighting the impact of the Great Recession and the run-up to the COVID-19 pandemic.
+In this article, the authors describe the structure of county government debt from 2002 to 2020, highlighting the financial crisis, the Great Recession, and the COVID-19 pandemic.
 
 <a href="https://www.e-elgar.com/shop/usd/research-handbook-on-city-and-municipal-finance-9781800372955.html" target="_blank" class="btn btn-primary">View Chapter</a>
