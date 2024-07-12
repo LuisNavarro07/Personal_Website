@@ -12,7 +12,7 @@ date: '2024-06-01T00:00:00Z'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2024-06-01T00:00:00Z'
+publishDate: '2024-07-10T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -42,11 +42,11 @@ featured: true
 
 url_pdf: ''
 url_slides: ''
-url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
+url_code: 'https://github.com/LuisNavarro07/mlf_volatility/tree/main/0_Script'
 # url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
 # url_poster: ''
 # url_project: ''
-# url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
+url_source: 'https://github.com/LuisNavarro07/mlf_volatility'
 # url_video: 'https://youtube.com'
 
 # Featured image
