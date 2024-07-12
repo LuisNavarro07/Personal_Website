@@ -24,7 +24,7 @@ sections:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          filename: background.jpg
+          filename: background2.jpg
           filters:
             brightness: 1.0
           size: cover
@@ -36,7 +36,7 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        I am public finance researcher applying a combination of economic theory and econometrics to study the intersection between fiscal federalism, government financial management, and the effects of local tax policy in regional markets.
+        I am public finance researcher applying a combination of economic theory and econometrics to study the intersection between fiscal federalism, financial markets, government financial management, and the effects of local tax policy in developing markets.
     design:
       columns: '1'
   - block: collection
