@@ -17,8 +17,8 @@ publishDate: "2024-06-01T00:00:00Z"
 status: R&R at JAAEA 
 
 # Publication name and optional abbreviated publication name.
-publication: ""
-publication_short: ""
+publication: "R&R JAAEA"
+publication_short: "R&R JAAEA"
 
 abstract: We examine the role of charitable food assistance during periods of economic distress by looking at donations to a large Midwestern food bank. First, we explore the historical determinants of in-kind food and financial donations, including during the COVID-19 pandemic. We find that both in-kind and financial donations dramatically increased at the onset of the pandemic but these increases were not persistent. As a result, we argue that this is evidence of the charitable food system serving as an "automatic nutritional stabilizer" in accepting charitable donations on behalf of households in need during times of crisis.
 
@@ -26,9 +26,6 @@ tags:
 - R&R JAAEA
 featured: true
 
-links:
-- name: Custom Link
-  url: http://example.org
 # url_pdf: http://arxiv.org/pdf/1512.04133v1
 url_code: 'https://github.com/LuisNavarro07/food_donations_covid'
 # url_dataset: '#'
