@@ -6,8 +6,8 @@ weight: 5
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
 # and it will be replaced with their full name and linked to their profile.
 authors:
-  - admin
   - Craig Johnson
+  - admin
   - Andrey Yushkov
 
 date: '2023-01-01T00:00:00Z'
@@ -43,10 +43,10 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: ''
-url_slides: ''
-url_code: ''
-url_dataset: ''
+# url_pdf: ''
+# url_slides: ''
+url_code: 'https://github.com/LuisNavarro07/county_fiscal_structure_handbook_chapter'
+# url_dataset: ''
 # url_poster: ''
 # url_project: ''
 url_source: ''
