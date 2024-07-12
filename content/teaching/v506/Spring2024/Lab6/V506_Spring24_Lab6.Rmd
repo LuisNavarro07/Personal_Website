@@ -1,0 +1,586 @@
+---
+title: "V506 Lab 6"
+author: "Luis Navarro"
+date: "Spring 2024"
+output:
+  slidy_presentation: default
+  #ioslides_presentation: default
+subtitle: Statistical Inference and Intro to Linear Regression
+---
+
+
+```{r setup, include=FALSE} 
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+```
+
+```{r, echo=FALSE, eval=TRUE}
+# Clean the environment 
+rm(list=ls())
+setwd("/Users/luisenriquenavarro/Library/CloudStorage/OneDrive-IndianaUniversity/V506/Lab6")
+if(!require(tidyverse)) {install.packages("tidyverse")}
+if(!require(rmarkdown)) {install.packages("rmarkdown")}
+if(!require(flextable)) {install.packages("flextable")}
+if(!require(cowplot)) {install.packages("cowplot")}
+if(!require(pacman)) {install.packages("pacman")}
+library(pacman)
+p_load(tidyverse, rmarkdown, descriptr, flextable, cowplot)
+```
+
+# Visual Representation of Statistical Analysis 
+
+- Let's use the fast food data set. 
+
+```{r, eval = TRUE, echo = TRUE}
+fastfood <- read.csv(file = "fastfood.csv", header = TRUE)  
+```
+
+- Let's examine quickly the caloric content and total fat of the items at each restaurant. 
+
+- First, let's look at the distribution of the menu at each restaurant. 
+
+```{r, eval = TRUE, echo = TRUE}
+ggplot(data = fastfood, mapping = aes(x = calories, color = restaurant, fill = restaurant)) + 
+       geom_boxplot(alpha = 0.5)+
+       theme_classic()+
+       scale_x_continuous(limits = quantile(fastfood$calories, c(0.05, 0.95))) + 
+       labs(x = "Calories", title = "Distribution of Calories in the Menu") + 
+       theme(plot.title = element_text(angle = 0, size = 12, face = "bold"))+
+       theme(legend.title = element_blank())
+```
+
+# Statistical Inference 
+
+- Suppose we are interested on calculating the average calories of fast food items in this data set.  
+
+- We do it directly with the mean function. 
+
+- **Point Estimate:** 530.91 calories. 
+
+```{r, echo = TRUE, eval = TRUE}
+mean(fastfood$calories, na.rm = TRUE)
+```
+
+- How can we know how reliable is this estimation? How likely is that if we take another sample of fast food items from other restaurants, we get a similar estimate for the average number of calories? 
+
+- **Objective:** estimate the value of population parameter $\mu$ (i.e. average number of calories of fast food items)
+
+- **Method:** use sample average $\bar{x}$ as the **estimator** for the population parameter $\mu$.  
+
+- Let $x_1, x_2, ..., x_n$ be a random sample of observations (in our example, $x_i$ is the number of calories of fast food item $i$). 
+
+- **Central Limit Theorem** If $N$ is large enough, the statistic $\bar{x}$ follows a normal distribution with mean $\mu$ and standard deviation $\sigma$, where $\mu$ and $\sigma$ are the mean and standard deviation of the distribution where the sample comes from. 
+
+- To assess the sampling variation of the estimate we compute the standard errors. 
+
+**Standard Error** 
+
+\begin{equation}
+SE_\bar{x} = \frac{\sigma_x}{\sqrt(n)}
+\end{equation}
+
+Where $\sigma_x$ is the standard deviation of and $n$ is the number of observations. 
+
+- Key intuition: as $n$ increases, the standard error decreases. As you add more observations to your sample, then the your estimates on the mean get more reliable. 
+
+- With the standard errors we can construct confidence intervals by calculating margin of errors. 
+
+- **Margin of Error** 
+
+\begin{equation}
+ME = z^* \times SE(\bar{x}) 
+\end{equation}
+
+Where $z^*$ is percentile of the normal distribution correspondent to the confidence level chose for the interval. 
+
+To understand intuitively the percentile recall the definition. Let $Z$ be a standard normal random variable. 
+
+\begin{equation}
+1-\alpha = Pr(-z^* < Z < z^*)
+\end{equation}
+
+Then, the definition of **Confidence Interval** 
+
+\begin{equation}
+CI = (\bar{x} - M.E, \bar{x} + M.E)
+\end{equation}
+
+Let's look at data. First, at the distribution of a standard normal random variable. 
+
+```{r, echo = TRUE, eval = TRUE}
+set.seed(123)  
+n_samples <- 100000  # Number of random samples to generate
+data <- data.frame(x = rnorm(n_samples))
+lower_value <- qnorm(0.025, mean = 0, sd =1, lower.tail = TRUE)
+upper_value <- qnorm(0.975, mean = 0, sd =1, lower.tail = TRUE)
+
+## Ggplot 
+xbar_dist <- ggplot(data, aes(x = x)) +
+             geom_density(color = "darkblue", fill = "lightblue") + 
+             geom_vline(xintercept = c(lower_value, upper_value), color = "red", linetype = "dashed")+
+             theme_bw() +
+             labs(title = "Distribution of the Sampling Average", x = "X Bar",y = "Density")
+xbar_dist
+```
+
+# Statistical Inference: Example
+
+```{r, echo = TRUE, eval = TRUE}
+# Data 
+calories <- fastfood$calories
+#Define the Statistics
+calories_mean <-mean(calories, na.rm = TRUE)
+calories_sd <-sd(calories, na.rm = TRUE)
+calories_obs <- calories %>% na.omit() %>% length()
+calories_se <- calories_sd / sqrt(calories_obs)
+# Compute the Margin Error 
+margin_error <- calories_se*upper_value
+# Compute the Confidence Interval
+ci <- c(calories_mean - margin_error, calories_mean + margin_error)
+ci <- paste("(",as.character(round(ci[1],4)),",",as.character(round(ci[2],4)), ")", sep="")
+# Display Results 
+tibble(`Average Calories` = calories_mean, 
+           `Standard Error of the Mean` = calories_se, 
+           `Confidence Interval` = ci) %>%
+  # code below is just for better visualization
+  flextable() %>% autofit()
+```
+
+# Hypothesis Testing: One Sample T-test 
+
+- We can get the same output using the *t.test* function. 
+
+- One sample t-test: allows us to determine whether the mean ofa sample data set is different than a known value. 
+
+```{r, echo = TRUE, eval = TRUE}
+t.test(calories, mu = 0) 
+```
+
+# Example: Average Calories by Restaurant
+
+- 1. Compute the average calories per item for each restaurant, the standard error of the mean, and the confidence interval. 
+
+- How would you do it? 
+
+- One solution: group_by and summarize. 
+
+
+```{r, eval = TRUE, echo = TRUE}
+calories_restaurant <- fastfood %>% group_by(restaurant) %>% 
+                                    summarize(mean = mean(calories, na.rm = TRUE), 
+                                              sd = sd(calories, na.rm = TRUE), 
+                                              obs = n()) %>% 
+                                    mutate(mean_se = sd/sqrt(obs)) %>% 
+                                    mutate(margin_error = qt(0.975,df=obs)*mean_se) %>% 
+                                    mutate(ci_low = mean - margin_error) %>% 
+                                    mutate(ci_high = mean + margin_error)
+
+calories_restaurant %>% 
+    # code below is just for better visualization
+  flextable() %>% autofit()
+```
+
+- We can represent the estimates for the mean in a graph. 
+
+```{r, eval = TRUE, echo = TRUE}
+calories_restaurant %>% ggplot(mapping = aes(x = reorder(restaurant, mean), y = mean, fill = restaurant, color = restaurant)) +
+                        geom_bar(stat = "identity", alpha = 0.5) + 
+                        geom_errorbar(aes(ymin = ci_low, ymax = ci_high), width=1)+
+                        coord_flip()+
+                        labs(x = "Calories", title = "Distribution of Calories in the Menu") + 
+                        theme_classic()+
+                        theme(plot.title = element_text(angle = 0, size = 12, face = "bold"))+
+                        theme(legend.title = element_blank())
+```
+
+
+# Two Sample Hypothesis Test
+
+- **Two Sample T-test:** used to compare one sample mean to another. 
+
+- Suppose we want to compare the average number of calories between two restaurants. Say we want to compare *Mcdonalds* and *Sonic* 
+
+- **Null Hypothesis:** Items from *Mcdonalds*, in average, have the same number of calories than items in restaurant *Sonic*.
+
+\begin{equation*}
+H_0: \bar{x}_m = \bar{x}_s
+\end{equation*}
+
+- **Alternative Hypothesis** Items from *Mcdonalds*, in average, have different number of calories than items in restaurant *Sonic*.
+
+\begin{equation*}
+H_a: \bar{x}_m \neq \bar{x}_s
+\end{equation*}
+
+- **Visual Intuition:** Let's look at the distribution of calories at the items on the menu. 
+
+
+```{r}
+mean_comparison <- calories_restaurant %>% filter(restaurant == "Mcdonalds" | restaurant == "Sonic") %>% 
+                                           ggplot(mapping = aes(x = reorder(restaurant, mean), y = mean, fill = restaurant, color = restaurant)) +
+                                           geom_bar(stat = "identity", alpha = 0.5) + 
+                                           geom_errorbar(aes(ymin = ci_low, ymax = ci_high), width=1)+
+                                           coord_flip() + # change x and y axis. 
+                                           theme_classic()+
+                                           labs(x = "Restaurant", y = "Calories", 
+                                                title = "Average Number of Calories per Item")+
+                                           theme(legend.position = "none") 
+
+dist_comparison <-fastfood %>% filter(restaurant == "Mcdonalds" | restaurant == "Sonic") %>% 
+                               ggplot(mapping = aes(x = calories, y = stat(count), 
+                                                    fill = restaurant, color = restaurant, 
+                                                    shape = restaurant)) + 
+                               geom_density(alpha = 0.5) + 
+                               theme_classic()+
+                               theme(legend.position = "none")+
+                               labs(x = "Calories", title = "Distribution of Calories in the Menu") 
+                               
+# Function to Format
+cowplot::plot_grid(dist_comparison, mean_comparison, nrow = 2)
+```
+
+- Test statistic: mean difference between both samples: $t = \bar{x}_m - \bar{x}_s$
+
+- Let's estimate the hypothesis test comparing the mean from two independent samples. 
+
+```{r}
+mcdonalds <- fastfood %>% filter(restaurant == "Mcdonalds") %>% select(calories)
+sonic <- fastfood %>% filter(restaurant == "Sonic") %>% select(calories)
+# test 
+test1 <- t.test(mcdonalds, sonic)
+degfree <- test1$parameter
+test1
+```
+
+- Small t-statistic == Large p-value == We cannot reject the null that both averages are the same across distributions. 
+
+
+-*Visual Representation of our draw from the distribution under the null hypothesis*
+
+```{r}
+# Compute the distribution of test-stastic under the null 
+t_dist_null <- data.frame(x = rt(n=1000, df =degfree)) %>% tibble()
+
+## Ggplot 
+t_dist_plot <- ggplot(t_dist_null, aes(x = x)) +
+               geom_density(color = "steelblue3", fill = "lightblue2", alpha = 0.5) + 
+               geom_vline(xintercept = test1$statistic, color = "red", linetype = "dashed")+
+               theme_classic() +
+               labs(title = "Distribution of the Sampling Average", x = "X Bar",y = "Density")
+t_dist_plot
+```
+
+- This suggests that items from the menu of Mcdonalds and Sonic arguably come from the same distribution (i.e. the distribution of high-calorie burgers)
+
+
+
+
+# Linear regression
+
+- We are not going to cover what a regression is, the mechanics, etc.
+- The goal is to demonstrate the R command so that you have a resource for when regressions are covered later in this course.
+
+- This example: simple linear regression using the *gapminder* data.
+- The gapminder data is part of the `gapminder` package, so we do not need the read.csv function:
+
+```{r,echo=TRUE,eval=TRUE}
+# For linear Regression example: load gapminder data 
+if(!require(gapminder)) {install.packages("gapminder")}
+library(gapminder)
+# Load data
+gapminder=tibble(gapminder)
+```
+
+- Explore the dataset
+```{r,echo=TRUE,eval=TRUE}
+slice_sample(gapminder, n = 6)  %>% 
+# code below is just for better visualization
+  tibble() %>% flextable() %>% autofit()
+```
+
+# Linear Regression Basics
+
+- In R, a “formula” is denoted as “y ~ x” (similar to the “y = x”, just note that the tilde is used here).
+- A multivariate regression (the variation in y depends on more than one variable) can be done by adding the additional variables to the formula (y ~ x + z, for example).
+
+- The basic form of a simple linear regression is the following:
+
+$$y_i = \alpha + \beta x_i + e_i$$
+
+- Example: What is the correlation between per capita income and life expectancy? 
+
+- *Dependent Variable:* life expectancy (measured in years)
+- *Independent Variable:* natural log GDP per capita.  
+
+- Visual Intuition: 
+
+```{r,echo=TRUE,eval=TRUE}
+# Create log GDP pc 
+gapminder <- gapminder %>%  
+  mutate(lngdppc = log(gdpPercap)) 
+
+# Show plot with intuition of linear regression 
+gapminder %>% 
+  ggplot(mapping = aes(x=lngdppc, y = lifeExp))+
+  geom_point(alpha = 0.5, col = "steelblue2") + 
+  geom_smooth(method = "lm", se = FALSE)+
+  labs(x ="Log Per Capita GDP", y="Life Expectancy", 
+       title = "Life Expectancy and Log GDP Per Capita") + 
+  theme_classic() 
+```
+
+- The relationship between *y* and *x* can be modeled by a straight line with some error *e*.
+
+- Model Estimation:
+
+```{r,echo=TRUE,eval=TRUE}
+reg1 = lm(lifeExp ~ lngdppc, data = gapminder)
+summary(reg1)
+```
+
+- Interpretation: An increase in one unit in log GDP per capita, is associated with an increase of 8.4 years in life expectancy.
+
+- This model allows you to predict values of life expectancy for given levels of GDP per capita. 
+
+```{r,echo=TRUE,eval=TRUE}
+data.frame(reg1$model, 
+           PredictedLifeExpectancy= reg1$fitted.values, 
+           Residuals = reg1$residuals) %>%  
+           mutate(SquaredRes = Residuals^2) %>% arrange(by_group = SquaredRes) %>% 
+  head(n=10) %>%   
+  # code below is just for better visualization
+  flextable() %>% autofit()
+```
+
+- The blue line in the graph above corresponds to the predicted life expectancy. 
+
+- Tip for intuition: for the simple linear regression model: 
+
+$$\beta_1 = \frac{cov(x,y)}{var(x)}$$
+
+- Regression coefficients capture the correlation of two variables, adjusting for the variance of the explanatory variable. 
+
+**Extra** 
+
+- Multivariate regression:
+
+```{r,echo=TRUE,eval=TRUE}
+reg2 = lm(lifeExp ~ lngdppc + year, data = gapminder)
+summary(reg2)
+```
+
+# Diagnostic Plots after you run a regression
+
+- After you run a regression, it is easy to see the diagnostic plots in R.
+- Using the plot() command will return the Residuals v. Fitted, Normal Q-Q, Scale-Location, and Residuals v. Leverage plots.
+- You need to run a regression and save the results (e.g., reg1 = lm(…)) because the saved results are the input for the plot() command.
+
+```{r,echo=TRUE,eval=TRUE}
+plot(reg1)
+```
+
+- The residual plot shows that $\hat{e}_i$ appears to be scattered around zero, the dashed horizontal line. A sign that there are no nonlinear relationships not captured by the model.
+- The normal QQ plot is used to visually assess the normality of the residuals (ideally points on the 45 degree line).
+- The scale-location plot shows the spread of the residuals over the fitted values (a test of homoskedasticity).
+- The residuals vs leverage plot allows you to detect influential observations or outliers that might change the results of the model significantly. These are the observations found *outside* of the Cook’s distance lines.
+
+# ANOVA
+
+- The Analysis of Variance (ANOVA) shows you the variation of the dependent variable broken into the variation of the regressors and the residuals.
+- The ANOVA also reports the test statistic F that compares the mean squares from the independent variables (explained variation) and the mean squares from the error term (unexplained variation). 
+
+```{r,echo=TRUE,eval=TRUE}
+aov_1 = aov(lifeExp ~ lngdppc, data = gapminder)
+aov(reg1)
+```
+
+```{r,echo=TRUE,eval=TRUE}
+summary(aov_1)
+```
+
+- The F value is equal to *Mean Sq LifeExp*/*Mean Sq Residuals*.
+- If the null hypothesis is true, any differences between the explained and unexplained variation are due to chance, therefore, the mean squares shout be roughly the same.
+
+```{r,echo=TRUE,eval=TRUE}
+aov_2 = aov(lifeExp ~ lngdppc + year, data = gapminder)
+summary(aov_2)
+```
+
+**What else can you do with the ANOVA?**
+
+- The sum of squares displayed in the ANOVA table allows you to compute the coefficient of determination ($R^2$), which is a measure of the variance in your outcome or dependent variable that is explained by the independent variable(s):
+
+$$R^2 = 1 - SSR/SST$$
+- Where $SSR$ is the sum of squared residuals and $SST$ is the total sum of squares.
+
+- For example, in *reg1*, $R^2 = 0.652$. This means that 65% of the variation in life expectancy can be explained by the variation in GDP per capita (log).
+
+$$R^2 = 1 - SSR/SST \Rightarrow 1 - 98814/(185335+98814) = 0.6522$$
+
+# Extra: Mean Estimation using lm function
+
+- Regression is way of computing conditional averages. 
+
+$$E[y |x] = \beta_0 + \beta_1 x$$
+
+- Example: unconditional average 
+
+- Suppose you want to estimate the sample mean of life expectancy, and obtain the standard error, confidence interval, and p-value of the point estimate. 
+
+- We have covered how to do that with the *t.test* function. 
+
+- One sample t-test where the null hypothesis is equal to zero. 
+
+```{r}
+t.test(gapminder$lifeExp, mu = 0)
+```
+- How is this related to linear regression? 
+
+$$E[y |x = 0] = \beta_0 $$
+
+- We can replicate this same calculation using the *lm* function to estimate a linear regression only using the intercept as explanatory variable. 
+
+```{r}
+lm(formula = lifeExp ~ 1, data = gapminder) %>% summary()
+```
+
+# Extra: Regression Based Two Sample T-Test. 
+
+- Example: compare life expectancy between countries with high population and low population. 
+
+- First, create a dummy variable that splits the sample between countries above the median population observed in the data. 
+
+```{r}
+median_pop <- median(gapminder$pop)
+gapminder <- gapminder %>% mutate(large_pop = ifelse(pop > median_pop, "Large Population", "Small Population"))
+```
+
+- With *t.test* command we estimate a two sample t-test that compares the average life expectancy for countries with large population. 
+
+```{r}
+# Store Samples Separately 
+large_pop <- gapminder %>% filter(large_pop == "Large Population") %>% select(lifeExp) 
+small_pop <- gapminder %>% filter(large_pop == "Small Population") %>% select(lifeExp) 
+```
+
+- Run t.test function. Look at the t-stat, the confidence interval 
+
+```{r}
+test <- t.test(large_pop, small_pop)
+test
+```
+
+- Mean Difference: 
+
+```{r}
+mean_large = test$estimate[1]
+mean_small = test$estimate[2]
+mean_difference = mean_large - mean_small
+mean_difference
+```
+
+
+- With *lm* function we just run a regression the dummy variable that splits the sample. 
+
+- Note the coefficient on the dummy captures the mean difference between the two. 
+
+```{r}
+lm(lifeExp ~ large_pop, data = gapminder) %>% summary()
+```
+- Using the fact that we are modelling the conditional mean of $y$ (life expectancy) on $x$ (GDP per capita)
+
+$$\beta_1 = E[Life Exp |LargePop = 1] -  E[Life Exp |LargePop = 0] $$
+
+- **NOTE** beware this interpretation is only valid for doing regression on dummy variables. With discrete and continuous variables intuition is similar but interpretation is slightly different. 
+
+- Useful to keep in mind the "calculus interpretation" of regression coefficients. 
+
+$$y = \beta_0 + \beta_1 x + e$$
+
+$$\beta_1 = \frac{dy}{dx}$$
+
+
+# Extra Example 
+
+- Let's do the same, but now comparing Sonic and Chick Fil-A 
+
+- **Visual Intuition:** Let's look at the distribution of calories at the items on the menu. 
+
+- **Tip:** Note this way you can write functions to format all your plots. 
+
+```{r, eval = TRUE, echo = TRUE}
+format_plot <- function(graph, title, fontsize){
+  # Format the Graph 
+  formatted_plot <- graph  + 
+           theme_classic() + 
+           labs(title = title)+
+           theme(axis.text.x = element_text(angle = 0, size = fontsize)) + 
+           theme(axis.text.y = element_text(angle = 0, size = fontsize)) + 
+           theme(axis.title.x = element_text(size = fontsize)) +
+           theme(axis.title.y = element_text(size = fontsize)) +
+           theme(legend.text = element_text(size = fontsize -2))+
+           theme(legend.title = element_blank())+
+           theme(legend.position = "none") +
+           theme(plot.title = element_text(angle = 0, size = fontsize + 3, face = "bold"))
+  return(formatted_plot)
+}
+
+```
+
+```{r}
+mean_comparison <- calories_restaurant %>% filter(restaurant == "Sonic" | restaurant == "Chick Fil-A") %>% 
+                                           ggplot(mapping = aes(x = reorder(restaurant, mean), y = mean, fill = restaurant, color = restaurant)) +
+                                           geom_bar(stat = "identity", alpha = 0.5) + 
+                                           geom_errorbar(aes(ymin = ci_low, ymax = ci_high), width=1)+
+                                           coord_flip()+
+                                           labs(x = "Restaurant", y = "Calories")+
+                                           theme(legend.position = "none") 
+# Function to Format
+mean_comparison <- format_plot(graph = mean_comparison, title = "Average Number of Calories per Item", fontsize = 10)
+
+dist_comparison <-fastfood %>% filter(restaurant == "Sonic" | restaurant == "Chick Fil-A") %>% 
+                               ggplot(mapping = aes(x = calories, y = stat(count), 
+                                                    fill = restaurant, color = restaurant, 
+                                                    shape = restaurant)) + 
+                               geom_density(alpha = 0.5) + 
+                               theme_classic()+
+                               theme(legend.position = "none")+
+                               labs(x = "Calories") 
+                               
+# Function to Format
+dist_comparison <- format_plot(graph = dist_comparison, title = "Distribution of Calories in the Menu", fontsize = 10)
+mean_comparison
+plot_grid(dist_comparison, mean_comparison, nrow = 2)
+```
+
+- Let's estimate the hypothesis test comparing the mean from two independent samples. 
+
+```{r}
+chickfila <- fastfood %>% filter(restaurant == "Chick Fil-A") %>% select(calories)
+# test 
+test2 <- t.test(sonic, chickfila)
+degfree <- test2$parameter
+test2
+```
+
+
+-*Visual Representation of our draw from the distribution under the null hypothesis*
+
+```{r}
+# Compute the distribution of test-stastic under the null 
+t_dist_null <- data.frame(x = rt(n=1000, df =degfree)) %>% tibble()
+
+## Ggplot 
+t_dist_plot <- ggplot(t_dist_null, aes(x = x)) +
+               geom_density(color = "steelblue3", fill = "lightblue2", alpha = 0.5) + 
+               geom_vline(xintercept = test2$statistic, color = "red", linetype = "dashed")+
+               theme_classic() +
+               labs(title = "Distribution of the Sampling Average", x = "X Bar",y = "Density")
+t_dist_plot
+```
+
+- Small p-value. We reject the null that both averages are the same across distributions. 
+
+- This suggests that items from the menu of Chick Fil-A come from a distribution (menu) with lower calories. 
+
+
+
