@@ -1,0 +1,334 @@
+---
+title: "V506 Lab 4"
+author: "Luis Navarro"
+date: "Spring 2024"
+output:
+  slidy_presentation: default
+  #ioslides_presentation: default
+subtitle: Data Summaries and Functions
+---
+
+```{r setup, include=FALSE} 
+knitr::opts_chunk$set(warning = FALSE, message = FALSE) 
+```
+
+```{r, echo=FALSE, eval=TRUE}
+# Clean the environment 
+rm(list=ls())
+setwd("/Users/luisenriquenavarro/Library/CloudStorage/OneDrive-IndianaUniversity/V506/Lab4")
+library(pacman)
+p_load(tidyverse, rmarkdown, dplyr, ggplot2, descriptr)
+```
+
+# Functions in R
+
+- We have explored several functions from base R and from specific packages. 
+
+- We can create our own functions too! 
+
+- Function structure: relationship between *inputs* and *outputs* through a rule of correspondence (program). 
+
+
+- Recall math intuition. Let $y$ be a function $f$ of $x$. 
+
+\begin{equation*}
+y = f(x)
+\end{equation*}
+
+- Function (program) $f$ transforms input $x$ on output $y$. 
+
+- Function syntax in R
+
+```{r, eval = FALSE, echo = TRUE}
+functionName = function(inputs) {
+< function body >
+return(value)
+}
+```
+
+
+# Functions: Example 
+
+- Example: Linear Function: 
+
+\begin{equation*}
+y = 1 + 2x
+\end{equation*}
+
+- In words: take $x$, multiply it by 2, and add 1. (Note: order of operations matter)
+
+```{r, eval = TRUE, echo = TRUE}
+line_function <- function(x){
+  y = 1 + 2*x
+  return(y)
+}
+```
+
+- Parameters (Input): x. 
+
+- Output: y 
+
+
+```{r}
+x1 <- 5 
+y1 <- line_function(x1)
+print(c(x1,y1))
+```
+
+- You can apply some functions to vectors. 
+
+```{r}
+seq_x <- c(1:100)
+seq_y <- line_function(seq_x)
+
+# Show data in data frame 
+data_line <- data.frame(x = seq_x, y = seq_y) 
+data_line %>% head(n=10)
+```
+```{r}
+ggplot(data = data_line, mapping = aes(x = x,y = y)) + 
+       geom_line(col="black") + 
+  theme_bw()
+```
+
+# Function 
+
+- Functions can have more than one parameters.
+
+- Recall the general form of the linear function: $b$ is the intercept, $m$ is the slope, and $x$ is the data. 
+
+\begin{equation*}
+y = b + mx
+\end{equation*}
+
+```{r, eval = TRUE, echo = TRUE}
+line_function1 <- function(x,b,m){
+  y = b + m*x
+  return(y)
+}
+```
+
+
+- **Example:** let $b=10$ and $m=-2$. 
+
+```{r, eval = TRUE, echo = TRUE}
+data_line2 <- data.frame(x = seq_x, 
+                         y = line_function1(x = seq_x, b = 10, m = -2))
+
+data_line2 %>% head(n=5L) 
+```
+
+```{r, eval = TRUE, echo = TRUE}
+ggplot(data = data_line2, mapping = aes(x = x,y = y)) + 
+       geom_line(col="red")+ theme_bw()
+```
+
+# Example: Fast Food Data 
+
+- Let's load the fast food data. It contains observations on the nutritional content of several items from fast food restaurants in the US. 
+
+- Task: build a table of descriptive statistics (mean, median, standard deviation, number of observations, % missing) for a given variable in the data set. 
+
+```{r, eval = TRUE, echo = TRUE}
+fastfood <- read.csv(file = "fastfood.csv", header = TRUE) %>% 
+  tibble() 
+# Show data: Slice_sample takes a random sample of size n 
+fastfood %>% 
+  slice_sample(n = 5) 
+```
+
+
+# Functions to compute analysis
+
+- You can use functions to perform more complex tasks than drawing lines. 
+
+- Let's create a function that summarizes a variable from the data set. 
+
+```{r, eval = TRUE, echo = TRUE}
+descriptive_table <- function(x){
+  # Compute the Descriptive Statistics using base R functions
+  x_count <- length(x)
+  x_miss <- sum(is.na(x))/length(x)
+  x_mean <- mean(x, na.rm = TRUE)
+  x_median <- median(x, na.rm = TRUE)
+  x_sd <- sd(x, na.rm = TRUE)
+  table <- data.frame(obs = x_count, 
+                      miss = x_miss, mean = x_mean, 
+                      median = x_median, sd = x_sd) %>% 
+    tibble() 
+
+  # Return Table 
+  return(table)
+}
+```
+
+- Let's try our function. 
+
+```{r, eval = TRUE, echo = TRUE}
+calories <- fastfood$calories
+descriptive_table(calories)
+```
+
+
+# Apply Functions to Multiple Objects 
+
+- Most of the times you build a function because you will use that program (recipe) several times. 
+
+- We can use `lapply` to apply a function to list of objects. 
+
+- Remember: lists are flexible and can store objects of any class. 
+
+- Tip: to access elements of a list we need to use double brackets notation.
+
+```{r}
+# Example: 
+calories <- fastfood$calories
+carbs <- fastfood$total_carb
+total_fat <- fastfood$total_fat
+# Create a list of Variables 
+variables <- list(calories, carbs, total_fat)
+```
+
+- Show the first element of the list 
+
+```{r, echo = TRUE, eval = FALSE}
+# Access first element of the list 
+variables[[1]]
+```
+
+- Apply the function we created to all the elements of the list. 
+
+- Note: the output of lapply is also a list. 
+
+- lapply syntax: lapply(list, function)
+
+```{r, echo = TRUE, eval = TRUE}
+variables_descriptive_tables <- lapply(variables, descriptive_table)
+```
+
+- Examine the object. Note each element is a data frame. 
+
+
+```{r}
+bind_rows(variables_descriptive_tables[[1]] %>% mutate(varname = "Calories"), 
+          variables_descriptive_tables[[2]] %>% mutate(varname = "Carbs"),
+          variables_descriptive_tables[[3]] %>% mutate(varname = "Total Fat")) %>% 
+  # Relocate allows you to change the order of the variables in the data frame 
+  relocate(varname)
+```
+
+
+
+
+# summarize() and group_by()
+- Today we explore two powerful `dplyr` functions for data analysis: `group_by` and `summarize`
+
+-   group_by() allows you to specify a categorical variable whose categories will create clusters or subsets of the data. Grouping by category.  
+
+-   summarize() creates a new data frame that uses the grouping variables to summarize the observations in the group. 
+
+- Useful summarizing functions, according to the dplyr documentation:
+
+    - Center: mean(), median()
+    - Spread: sd(), IQR(), mad()
+    - Range: min(), max(), quantile()
+    - Position: first(), last(), nth(),
+    - Count: n(), n_distinct()
+    - Logical: any(), all()
+
+
+# Example: Data Summary using summarize 
+
+- Use summarize to build the descriptive statistics of variable: `calories`
+
+```{r, eval=TRUE, echo=TRUE}
+descriptive_stats_calories <- fastfood %>% 
+  summarize(Mean = mean(calories, na.rm = TRUE), 
+            SD = sd(calories, na.rm = TRUE),
+            Min = min(calories, na.rm = TRUE), 
+            Percent25 = quantile(calories, probs = 0.25), 
+            Median = quantile(calories, probs = 0.50), 
+            Percent75 = quantile(calories, probs = 0.75), 
+            Max = max(calories, na.rm = TRUE), 
+            Obs = n()) 
+# Show the Table
+descriptive_stats_calories 
+```
+- Tip: Add the variable name to display the table better. 
+
+```{r, eval=TRUE, echo=TRUE}
+descriptive_stats_calories %>% 
+  mutate(Variable = "Calories") %>% 
+  # Function Relocate changes the ordering of the variables 
+  relocate(Variable, Obs, Mean, SD)
+```
+
+# Example: Data Summary by Category
+
+- Suppose you want to compute the descriptive statistics of the variable calories across restaurants. That is, compare their distributions. 
+
+- We can do that by adding `group_by` to our previous code. 
+
+```{r, eval=TRUE, echo=TRUE}
+descriptive_stats_calories_restaurant <- fastfood %>% 
+  # Add Grouping Criteria 
+  group_by(restaurant) %>% 
+  # Same code as before 
+  summarize(Mean = mean(calories, na.rm = TRUE), 
+            SD = sd(calories, na.rm = TRUE),
+            Min = min(calories, na.rm = TRUE), 
+            Percent25 = quantile(calories, probs = 0.25), 
+            Median = quantile(calories, probs = 0.50), 
+            Percent75 = quantile(calories, probs = 0.75), 
+            Max = max(calories, na.rm = TRUE), 
+            Obs = n()) 
+# Show the Table
+descriptive_stats_calories_restaurant %>% 
+  # Sort the data by highest average calories 
+  arrange(-Mean)
+```
+
+
+
+# Extra Example: Data Summary Across Variables 
+
+- You can do similar analysis and look at descriptive statistics of different variables 
+
+```{r, eval=TRUE, echo=TRUE}
+descriptive_stats_calories_restaurant <- fastfood %>% 
+  # Add Grouping Criteria 
+  group_by(restaurant) %>% 
+  # Same code as before 
+  summarize(mean_calories = mean(calories, na.rm = TRUE), 
+            mean_total_fat = mean(total_fat, na.rm = TRUE), 
+            mean_trans_fat = mean(trans_fat, na.rm = TRUE), 
+            mean_total_carbs = mean(total_carb, na.rm = TRUE),
+            Obs = n()) 
+# Show 
+descriptive_stats_calories_restaurant %>% 
+  arrange(-mean_calories)
+```
+
+
+# Additional functions 
+
+**descriptr's ds_freq_table()**
+
+- This returns a frequency table for categorical and continuous data, returning the frequency, cumulative, frequency, frequency percent, and cumulative frequency percent.
+
+```{r, echo = TRUE, eval = TRUE}
+if(!require("descriptr")) {
+  install.packages("descriptr")
+  library(descriptr)
+}
+```
+
+```{r}
+ds_freq_table(fastfood, calories)
+```
+
+```{r}
+ds_freq_table(fastfood, calories, bins = 10)
+```
+
+
