@@ -23,7 +23,7 @@ publishDate: '2023-01-01T00:00:00Z'
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["6"]
+# publication_types: ["6"]
 
 # Publication name and optional abbreviated publication name.
 publication: Research Handbook on City and Municipal Finance
@@ -52,7 +52,6 @@ featured: true
 # url_poster: ''
 # url_project: ''
 # url_source: ''
-url: 'https://www.e-elgar.com/shop/usd/research-handbook-on-city-and-municipal-finance-9781800372955.html'
 # url_video: 'https://youtube.com'
 
 # Featured image
@@ -61,7 +60,12 @@ image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
   focal_point: ''
   preview_only: false
-
+  
+# Custom links
+links:
+  - name: Edward Elgar Publishing
+    url: 'https://www.e-elgar.com/shop/usd/research-handbook-on-city-and-municipal-finance-9781800372955.html'
+    
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
 #   Simply enter your project's folder or file name without extension.
