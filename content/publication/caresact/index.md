@@ -16,8 +16,8 @@ publishDate: "2024-06-01T00:00:00Z"
 status: Working Paper
 
 # Publication name and optional abbreviated publication name.
-publication: ""
-publication_short: ""
+publication: "Working Paper"
+publication_short: "Working Paper"
 
 abstract: Access to cash can affect the ability of local governments to respond to crises. Federal aid to local governments can supply this directly, though the effectiveness on a dollar-per-dollar basis depends on its complementary or substitutability with local borrowing. Through this lens this examines the effects of the Coronavirus Relief Fund (CRF) on the local governments borrowing using a regression discontinuity design that exploits the quasi-experimental setting induced by the fund eligibility criterion imposed by the US Treasury. The findings indicate that recipient governments observed mild reductions in borrowing costs and increased their debt issuance on the primary market, with no significant spillovers to the secondary market. Moreover, this analysis provides some suggestive evidence on the liquidity management undertaken by local governments. It documents an increase in the issuance of short-term debt, at the expense of reductions on the issuance of longer-term bonds. Together, these findings shed some light on the mechanisms through which federal aid to local governments translates into improved borrowing conditions on the bond market. 
 
@@ -26,9 +26,7 @@ tags:
 - Paper presented at Brookings Municipal Finance Conference
 featured: true
 
-links:
-- name: Custom Link
-# url: http://example.org
+
 # url_pdf: http://arxiv.org/pdf/1512.04133v1
 url_code: 'https://github.com/LuisNavarro07/cares_act_counties_debt'
 # url_dataset: '#'
