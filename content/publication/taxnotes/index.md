@@ -42,13 +42,13 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://www.taxnotes.com/special-reports/individual-income-taxation/long-term-trends-state-personal-income-tax/2024/04/11/7jdd2'
-url_slides: ''
+# url_pdf: 'https://www.taxnotes.com/special-reports/individual-income-taxation/long-term-trends-state-personal-income-tax/2024/04/11/7jdd2'
+# url_slides: ''
 url_code: 'https://github.com/LuisNavarro07/StateI_Income_Tax/tree/main/code'
-url_dataset: 'https://github.com/LuisNavarro07/StateI_Income_Tax/tree/main/input'
+# url_dataset: 'https://github.com/LuisNavarro07/StateI_Income_Tax/tree/main/input'
 # url_poster: ''
 # url_project: ''
-url_source: 'https://github.com/LuisNavarro07/StateI_Income_Tax'
+# url_source: 'https://github.com/LuisNavarro07/StateI_Income_Tax'
 # url_video: 'https://youtube.com'
 
 # Featured image
