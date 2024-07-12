@@ -50,8 +50,13 @@ url_code: 'https://github.com/LuisNavarro07/county_fiscal_structure_handbook_cha
 # url_poster: ''
 # url_project: ''
 url_source: ''
-url: 'https://www.e-elgar.com/shop/usd/research-handbook-on-city-and-municipal-finance-9781800372955.html'
+# url: 'https://www.e-elgar.com/shop/usd/research-handbook-on-city-and-municipal-finance-9781800372955.html'
 # url_video: 'https://youtube.com'
+
+# Custom links
+links:
+  - name: Edward Elgar Publishing
+    url: 'https://www.e-elgar.com/shop/usd/research-handbook-on-city-and-municipal-finance-9781800372955.html'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
