@@ -44,19 +44,19 @@ featured: true
 
 url_pdf: 'https://www.taxnotes.com/special-reports/individual-income-taxation/long-term-trends-state-personal-income-tax/2024/04/11/7jdd2'
 url_slides: ''
-url_code: 'https://github.com/HugoBlox/hugo-blox-builder'
-# url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
+url_code: 'https://github.com/LuisNavarro07/StateI_Income_Tax/tree/main/code'
+# url_dataset: 'https://github.com/LuisNavarro07/StateI_Income_Tax/tree/main/input'
 # url_poster: ''
 # url_project: ''
-# url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
+ url_source: 'https://github.com/LuisNavarro07/StateI_Income_Tax'
 # url_video: 'https://youtube.com'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
-image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
-  focal_point: ''
-  preview_only: false
+# image:
+#  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
+#  focal_point: ''
+#  preview_only: false
 
 # Associated Projects (optional).
 #   Associate this publication with one or more of your projects.
