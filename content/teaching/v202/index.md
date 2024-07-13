@@ -73,28 +73,28 @@ Syllabus:
 
 1. Introduction
    - [Introduction](slides/1_Introduction.pdf)
-   - [Math Review](slides/2_MathReview.pptx)
+   - [Math Review](slides/2_MathReview.pdf)
 2. Supply and Demand Review
-   - [Demand](slides/3_Demand.pptx)
-   - [Supply](slides/4_Supply.pptx)
+   - [Demand](slides/3_Demand.pdf)
+   - [Supply](slides/4_Supply.pdf)
 3. Market Equilibrium, Market Failure and Government Intervention
    - [Market Equilibrium](slides/5_Market_Equilibrium.pdf)
-   - [Market Failure](slides/6_GovtIntervention_MktFailure.pptx)
+   - [Market Failure](slides/6_GovtIntervention_MktFailure.pdf)
 4. Tax Policy
-   - [Tax Policy 1](slides/7_TaxPolicy1.pptx)
-   - [Tax Policy 2](slides/7_TaxPolicy2.pptx)
+   - [Tax Policy 1](slides/7_TaxPolicy1.pdf)
+   - [Tax Policy 2](slides/7_TaxPolicy2.pdf)
 6. Externalities
-   - [Externalities 1](slides/8_Externalities1.pptx)
-   - [Externalities 2](slides/8_Externalities2.pptx)
+   - [Externalities 1](slides/8_Externalities1.pdf)
+   - [Externalities 2](slides/8_Externalities2.pdf)
 7. Public Goods
-   - [Public Goods](slides/9_PublicGoods.pptx)
+   - [Public Goods](slides/9_PublicGoods.pdf)
 8. Labor Market
-   - [Externalities 1](slides/8_Externalities1.pptx)
-   - [Externalities 2](slides/8_Externalities2.pptx)
+   - [Externalities 1](slides/8_Externalities1.pdf)
+   - [Externalities 2](slides/8_Externalities2.pdf)
 9. Poverty and Income Inequality
-   - [Poverty and Income Inequality 1](slides/11_Poverty_Income_Inequality.pptx)
-   - [Poverty and Income Inequality 2](slides/11_Poverty_Income_Inequality2.pptx)
+   - [Poverty and Income Inequality 1](slides/11_Poverty_Income_Inequality.pdf)
+   - [Poverty and Income Inequality 2](slides/11_Poverty_Income_Inequality2.pdf)
 10. Trade Policy
-    - [Lecture Slides](slides/14_TradePolicy.pptx)
+    - [Lecture Slides](slides/14_TradePolicy.pdf)
 11. Macroeconomics and Monetary Policy
     - [Lecture Slides](slides/15_MacroeconomicMonetaryPolicy.pdf)

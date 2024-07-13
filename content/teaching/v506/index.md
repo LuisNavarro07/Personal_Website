@@ -4,8 +4,8 @@ weight: 5
 
 
 # Publication name and optional abbreviated publication name.
-publication: V202
-publication_short: V202
+publication: V506
+publication_short: V506
 
 description: Applied Statistics (MPA Program)
 
@@ -55,28 +55,27 @@ This lab sessions aim to introduce students to the use of R to perform data mani
 Lab Material: 
 
 1. Introduction to R 
-   - [Lecture Slides](slides/V506_Spring24_Lab1.html)
-   - [Rmd File](slides/V506_Spring24_Lab1.Rmd)
+   - [Lecture Slides](V506_Spring24_Lab1.html)
+   - [Rmd File](V506_Spring24_Lab1.Rmd)
 
 2. Working with Data - Intro to Graphs
-   - [Lecture Slides](slides/V506_Spring24_Lab2.html)
-   - [Rmd File](slides/V506_Spring24_Lab2.Rmd)
+   - [Lecture Slides](V506_Spring24_Lab2.html)
+   - [Rmd File](V506_Spring24_Lab2.Rmd)
 
 
 3. Dplyr, Pipes, and ggplot
-   - [Lecture Slides](slides/V506_Spring24_Lab3.html)
-   - [Rmd File](slides/V506_Spring24_Lab3.Rmd)
-
+   - [Lecture Slides](V506_Spring24_Lab3.html)
+   - [Rmd File](V506_Spring24_Lab3.Rmd)
 
 4. Data Summaries and Functions
-   - [Lecture Slides](slides/V506_Spring24_Lab4.html)
-   - [Rmd File](slides/V506_Spring24_Lab4.Rmd)
+   - [Lecture Slides](V506_Spring24_Lab4.html)
+   - [Rmd File](V506_Spring24_Lab4.Rmd)
 
 
 5. Data Reshape and Random Variables
-   - [Lecture Slides](slides/V506_Spring24_Lab5.html)
-   - [Rmd File](slides/V506_Spring24_Lab5.Rmd)
+   - [Lecture Slides](V506_Spring24_Lab5.html)
+   - [Rmd File](V506_Spring24_Lab5.Rmd)
 
 6. Statistical Inference and Intro to Linear Regression
-   - [Lecture Slides](slides/V506_Spring24_Lab6.html)
-   - [Rmd File](slides/V506_Spring24_Lab6.Rmd)
+   - [Lecture Slides](V506_Spring24_Lab6.html)
+   - [Rmd File](V506_Spring24_Lab6.Rmd)
