@@ -70,7 +70,6 @@ Lab Material:
 <a href="V506_Spring24_Lab4.html" download class="btn btn-secondary">Lecture Slides</a>
 <a href="V506_Spring24_Lab4.Rmd" download class="btn btn-secondary">Rmd File</a>
 
-
 5. Data Reshape and Random Variables
 <a href="V506_Spring24_Lab5.html" download class="btn btn-secondary">Lecture Slides</a>
 <a href="V506_Spring24_Lab5.Rmd" download class="btn btn-secondary">Rmd File</a>
