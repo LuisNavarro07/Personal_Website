@@ -40,6 +40,12 @@ imaging:
   resampleFilter: lanczos
   quality: 100
   anchor: smart
+  exif:
+    disableDate: false
+    disableLatLong: false
+    excludeFields: ""
+    includeFields: ""
+
 timeout: 600000
 taxonomies:
   author: authors
@@ -53,3 +59,4 @@ security:
   _merge: deep
 sitemap:
   _merge: deep
+

@@ -37,6 +37,8 @@ sections:
       subtitle: ''
       text: |-
         I am public finance researcher applying a combination of economic theory and econometrics to study the intersection between fiscal federalism, financial markets, government financial management, and the effects of local tax policy in developing markets.
+
+        **I am currently in the job market (Fall 2024-Spring 2025)**
     design:
       columns: '1'
   - block: collection

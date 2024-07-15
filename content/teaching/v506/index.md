@@ -55,7 +55,7 @@ This lab sessions aim to introduce students to the use of R to perform data mani
 Lab Material: 
 
 1. Introduction to R 
-<a href="V506_Spring24_Lab1.html" download class="btn btn-secondary">Lecture Slides</a>
+<a href="1_Introduction.pdf" download class="btn btn-secondary">Lecture Slides</a>
 <a href="V506_Spring24_Lab1.Rmd" download class="btn btn-secondary">Rmd File</a>
 
 2. Working with Data - Intro to Graphs
