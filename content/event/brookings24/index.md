@@ -2,6 +2,7 @@
 title: Federal Assistance and Municipal Borrowing Unpacking the Effects of the CARES Act on Government Liquidity Management
 
 event: Brookings 13th Annual Municipal Finance Conference
+date: "2024-07-18T00:00:00Z"
 
 abstract: "Access to cash can affect the ability of local governments to respond to
 crises. Federal aid to local governments can supply this directly, though the
