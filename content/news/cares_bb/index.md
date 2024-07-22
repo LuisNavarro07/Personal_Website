@@ -1,19 +1,15 @@
 ---
-title: Federal Assistance and Municipal Borrowing Unpacking the Effects of the CARES Act on Government Liquidity Management
-
-publication: The Bond Buyer
+title: "Coronavirus aid lowered borrowing costs, credit quality: study"
 date: "2024-07-16T00:00:00Z"
-
 authors:
   - admin
-
-tags: []
-
-# Is this a featured talk? (true/false)
+tags: 
+  - Paper presented at Brookings Municipal Finance Conference
+  - COVID-19 
+  - CARES Act
 featured: true
-
 links:
- - url: "https://www.bondbuyer.com/news/coronavirus-aid-lowered-borrowing-costs-credit-quality-study"
+  - url: "https://www.bondbuyer.com/news/coronavirus-aid-lowered-borrowing-costs-credit-quality-study"
 ---
 
-<a href="https://www.bondbuyer.com/news/coronavirus-aid-lowered-borrowing-costs-credit-quality-study" target="_blank" class="btn btn-primary">View Article</a>
+<a href="https://www.bondbuyer.com/news/coronavirus-aid-lowered-borrowing-costs-credit-quality-study" target="_blank" class="btn btn-primary">View Bond Buyer Article</a>
