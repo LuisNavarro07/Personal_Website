@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title: "Luis Navarro"
-date: 2024-06-18
+date: 2024-07-23
 type: landing
 
 design:
