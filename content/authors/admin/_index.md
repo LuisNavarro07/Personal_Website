@@ -26,6 +26,9 @@ profiles:
     url: "https://www.linkedin.com/in/luis-enrique-navarro-2aa029a6"
   - icon: academicons/orcid
     url: "https://orcid.org/0009-0005-8257-9283"
+  - icon: brands/google-scholar
+    url: "https://scholar.google.com/citations?user=sVkdECQAAAAJ&hl=es&authuser=1&oi=ao"
+    # label: Google Scholar
 interests:
   - Public Finance
   - State and Local Tax Policy
@@ -121,4 +124,3 @@ awards:
     summary: |
       Ostrom Fellow (Fall 2023 - Spring 2024)
 ---
-
