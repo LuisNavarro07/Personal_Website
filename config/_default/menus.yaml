@@ -7,6 +7,9 @@ main:
   - name: Bio
     url: /
     weight: 9
+  - name: CV
+    url: cv/
+    weight: 10
   - name: Research
     url: /#papers
     weight: 11
@@ -20,8 +23,5 @@ main:
     url: /#talks
     weight: 13
   - name: News
-    url: /#news
+    url: news/
     weight: 15
-  - name: CV
-    url: cv/
-    weight: 14
