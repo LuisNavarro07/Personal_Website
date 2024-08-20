@@ -41,7 +41,7 @@ sections:
         **I am currently in the job market (Fall 2024-Spring 2025)**
     design:
       columns: '1'
-  - block: collection
+- block: collection
     id: papers
     content:
       title: Research
@@ -49,6 +49,7 @@ sections:
         folders:
           - publication
         featured_only: true
+      pagination: 10  # Add this line to display 10 entries
     design:
       view: article-grid
       columns: 2
@@ -60,6 +61,7 @@ sections:
         folders:
           - publication
         exclude_featured: false
+      pagination: 10  # Add this line to display 10 entries
     design:
       view: citation
   - block: collection
