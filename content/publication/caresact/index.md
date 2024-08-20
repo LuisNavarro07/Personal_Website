@@ -3,7 +3,7 @@ title: "Federal Assistance and Municipal Borrowing: Unpacking the effects of the
 weight: 3
 authors:
 - admin
-date: "2024-06-01T00:00:00Z"
+date: "2024-08-20T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -31,8 +31,8 @@ tags:
 featured: true
 
 
-url_pdf: "federal_assistance_cares_act.pdf"
-url_slides: "cares_slides_mfc.pdf"
+url_pdf: "/federal_assistance_cares_act.pdf"
+url_slides: "/cares_slides_mfc.pdf"
 url_code: 'https://github.com/LuisNavarro07/cares_act_counties_debt'
 # url_dataset: '#'
 # url_poster: '#'
