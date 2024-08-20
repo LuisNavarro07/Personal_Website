@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title: "Luis Navarro"
-date: 2024-07-23
+date: 2024-08-20
 type: landing
 
 design:
@@ -36,26 +36,23 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        I am public finance researcher applying a combination of economic theory and econometrics to study the intersection between fiscal federalism, financial markets, government financial management, and the effects of local tax policy in developing markets.
+        
+        I am public finance/budgeting scholar with research interests that lie within the intersections of fiscal federalism, local tax policy, financial management and municipal debt. I am particularly interested on 
+        how the interactions between governments from different levels shape state and local policies, economic outcomes, as well as their impact on debt markets. Also, I do research to understand how tax policy influences the development of new markets. 
+           
+        A stream of my research analyzes the role of federal aid on state and local debt markets. In my solo-authored paper "Federal Assistance and Municipal Borrowing: Unpacking the Effects of the CARES Act on Government Liquidity Management" (Michael Curro Award Best Graduate Student Paper 2024), and my joint work with Felipe Lozano Rojas "  Liquidity and Volatility in the Municipal Bond Market: Evidence from the Municipal Liquidity Facility and other early interventions" (Under review Journal of Financial Intermediation) I explore the mechanisms through which federal interventions improve access to debt financing and restore investor confidence during periods of turmoil.
+
+        In a similar line, in my dissertation research "Cash Reserves and Short-Term Debt Under Liquidity Constraints" I develop and test a theory that shows how capitalization levels influence the decision to manage cash-flows via cash reserves and short-term borrowing. 
+
+        My teaching experience includes several sections of SPEA V202: Contemporary Economics Issues for Public Affairs (undergraduate microeconomics for public policy analysis) as well as a Lab Instructor role for SPEA V506: Statistical Analysis for Effective Decision Making (graduate statistics) in which I teach R programming for statistical analysis.  
+
 
         **I am currently in the job market (Fall 2024-Spring 2025)**
     design:
       columns: '1'
 - block: collection
-    id: papers
     content:
-      title: Research
-      filters:
-        folders:
-          - publication
-        featured_only: true
-      pagination: 10  # Add this line to display 10 entries
-    design:
-      view: article-grid
-      columns: 2
-  - block: collection
-    content:
-      title: Replication Packages
+      title: Research and Replication Packages
       text: ""
       filters:
         folders:
@@ -64,6 +61,18 @@ sections:
       pagination: 10  # Add this line to display 10 entries
     design:
       view: citation
+- block: collection
+    id: papers
+    content:
+      title: Relevant Projects
+      filters:
+        folders:
+          - publication
+        featured_only: true
+      pagination: 10  # Add this line to display 10 entries
+    design:
+      view: article-grid
+      columns: 2
   - block: collection
     id: teaching
     content:
