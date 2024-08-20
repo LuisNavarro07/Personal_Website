@@ -5,8 +5,10 @@
 
 # Appearance
 appearance:
-  mode: dark
-  color: red
+  theme_day: cyberpunk
+  theme_night: minimal
+  font: classic
+  font_size: M
 
 # SEO
 marketing:

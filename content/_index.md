@@ -2,7 +2,7 @@
 # Leave the homepage title empty to use the site title
 title: "Luis Navarro"
 date: 2024-08-20
-type: landing
+type: pages
 
 design:
   # Default section spacing
