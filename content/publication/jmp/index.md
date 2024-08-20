@@ -40,8 +40,8 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'liquidity_mexico.pdf'
-url_slides: 'liquidity_mexico_slides.pdf'
+url_pdf: 'https://luisenavarro.com/publication/jmp/liquidity_mexico.pdf'
+url_slides: 'https://luisenavarro.com/publication/jmp/liquidity_mexico_slides.pdf'
 url_code: 'https://github.com/LuisNavarro07/cashresliquiditymx'
 url_dataset: 'https://github.com/LuisNavarro07/cashresliquiditymx'
 # url_poster: ''

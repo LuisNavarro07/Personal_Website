@@ -40,7 +40,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-# url_pdf: ''
+url_pdf: 'https://luisenavarro.com/publication/mlf/mlf_synth.pdf'
 # url_slides: ''
 url_code: 'https://github.com/LuisNavarro07/mlf_volatility/tree/main/0_Script'
 # url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'

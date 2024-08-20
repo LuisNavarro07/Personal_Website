@@ -42,7 +42,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-# url_pdf: 'https://www.taxnotes.com/special-reports/individual-income-taxation/long-term-trends-state-personal-income-tax/2024/04/11/7jdd2'
+url_pdf: 'https://www.taxnotes.com/special-reports/individual-income-taxation/long-term-trends-state-personal-income-tax/2024/04/11/7jdd2'
 # url_slides: ''
 url_code: 'https://github.com/LuisNavarro07/StateI_Income_Tax/tree/main/code'
 # url_dataset: 'https://github.com/LuisNavarro07/StateI_Income_Tax/tree/main/input'

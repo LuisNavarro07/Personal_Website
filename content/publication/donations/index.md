@@ -28,7 +28,7 @@ tags:
 - Charitable Donations
 featured: true
 
-# url_pdf: http://arxiv.org/pdf/1512.04133v1
+url_pdf: 'https://luisenavarro.com/publication/donations/Food_Donations_Manuscript.pdf'
 url_code: 'https://github.com/LuisNavarro07/food_donations_covid'
 # url_dataset: '#'
 # url_poster: '#'
