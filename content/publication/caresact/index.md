@@ -23,23 +23,27 @@ abstract: Access to cash can affect the ability of local governments to respond 
 
 
 tags:
-- Paper presented at Brookings Municipal Finance Conference
+- Job Market Papers
+- COVID-19 
+- CARES Act
+- Financial Management
+- Fiscal Federalism
 featured: true
 
 
-# url_pdf: http://arxiv.org/pdf/1512.04133v1
+url_pdf: "federal_assistance_cares_act.pdf"
+url_slides: "cares_slides_mfc.pdf"
 url_code: 'https://github.com/LuisNavarro07/cares_act_counties_debt'
 # url_dataset: '#'
 # url_poster: '#'
 # url_project: ''
-# url_slides: ''
 # url_source: '#'
-# url_video: '#'
+url_video: 'https://www.youtube.com/live/4NjIVY14spE?si=upqlKelmBJliFf5Z&t=9974'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/s9CC2SKySJM)'
+  caption: 'Image credit: Luis Navarro'
   focal_point: ""
   preview_only: false
 

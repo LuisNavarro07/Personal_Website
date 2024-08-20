@@ -24,6 +24,8 @@ abstract: We examine the role of charitable food assistance during periods of ec
 
 tags:
 - R&R JAAEA
+- COVID-19
+- Charitable Donations
 featured: true
 
 # url_pdf: http://arxiv.org/pdf/1512.04133v1

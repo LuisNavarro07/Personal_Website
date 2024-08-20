@@ -69,7 +69,9 @@ d. Use economic models to predict the impact of these policies and programs on w
 e. Explain the results of economic models demonstrating the impact of policies and programs on welfare and behavior.
 
 
-Syllabus: 
+[Syllabus](v202_syllabus_LNfall2024.pdf) 
+
+Course Outline and Material
 
 1. Introduction
    - [Introduction](slides/1_Introduction.pdf)
@@ -95,11 +97,11 @@ Syllabus:
    - [Poverty and Income Inequality 1](slides/11_Poverty_Income_Inequality.pdf)
    - [Poverty and Income Inequality 2](slides/11_Poverty_Income_Inequality2.pdf)
 10. Health Care and Insurance
-   - [Health Care and Insurance 1](slides/Healthcare_Insurance.pdf)
-   - [Health Care and Insurance 2](slides/Healthcare_Insurance2.pdf)
+   - [Health Care and Insurance 1](slides/12_Healthcare_Insurance.pdf)
+   - [Health Care and Insurance 2](slides/12_Healthcare_Insurance2.pdf)
 11. Monopoly and Antitrust Regulation
-   - [Health Care and Insurance 1](slides/Monopoly.pdf)
-   - [Health Care and Insurance 2](slides/Monopoly2.pdf)
+   - [Monopoly and Antitrust Regulation 1](slides/13_Monopoly.pdf)
+   - [Monopoly and Antitrust Regulation 2](slides/13_Monopoly2.pdf)
 12. Trade Policy
     - [Lecture Slides](slides/14_TradePolicy.pdf)
 13. Money, Credit Markets, Monetary Policy and Macroeconomics
