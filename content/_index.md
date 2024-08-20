@@ -48,7 +48,7 @@ sections:
 
   - block: collection
     content:
-      title: Research and Replication Packages
+      title: Replication Packages
       text: ""
       filters:
         folders:
