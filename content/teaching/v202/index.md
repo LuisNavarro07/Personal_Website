@@ -94,7 +94,13 @@ Syllabus:
 9. Poverty and Income Inequality
    - [Poverty and Income Inequality 1](slides/11_Poverty_Income_Inequality.pdf)
    - [Poverty and Income Inequality 2](slides/11_Poverty_Income_Inequality2.pdf)
-10. Trade Policy
+10. Health Care and Insurance
+   - [Health Care and Insurance 1](slides/Healthcare_Insurance.pdf)
+   - [Health Care and Insurance 2](slides/Healthcare_Insurance2.pdf)
+11. Monopoly and Antitrust Regulation
+   - [Health Care and Insurance 1](slides/Monopoly.pdf)
+   - [Health Care and Insurance 2](slides/Monopoly2.pdf)
+12. Trade Policy
     - [Lecture Slides](slides/14_TradePolicy.pdf)
-11. Macroeconomics and Monetary Policy
+13. Money, Credit Markets, Monetary Policy and Macroeconomics
     - [Lecture Slides](slides/15_MacroeconomicMonetaryPolicy.pdf)
