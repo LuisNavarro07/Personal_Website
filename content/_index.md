@@ -50,6 +50,7 @@ sections:
     content:
       title: Research Projects
       text: ""
+      count: 10
       filters:
         folders:
           - publication
