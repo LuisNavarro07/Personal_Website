@@ -30,12 +30,12 @@ featured: true
 
 url_pdf: 'https://luisenavarro.com/publication/donations/Food_Donations_Manuscript.pdf'
 url_code: 'https://github.com/LuisNavarro07/food_donations_covid'
-url_dataset: '#'
-url_poster: '#'
-url_project: ''
-url_slides: ''
-url_source: '#'
-url_video: '#'
+# url_dataset: '#'
+# url_poster: '#'
+# url_project: ''
+# url_slides: ''
+# url_source: '#'
+# url_video: '#'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
