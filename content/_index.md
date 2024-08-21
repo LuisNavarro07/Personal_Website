@@ -57,18 +57,18 @@ sections:
     design:
       view: citation
 
-  - block: collection
-    id: papers
-    content:
-      title: Relevant Projects
-      filters:
-        folders:
-          - publication
-        featured_only: true
-      pagination: 10  # Add this line to display 10 entries
-    design:
-      view: article-grid
-      columns: 2
+  #- block: collection
+  #  id: papers
+  #  content:
+  #    title: Relevant Projects
+  #    filters:
+  #      folders:
+  #        - publication
+  #      featured_only: true
+  #    pagination: 10  # Add this line to display 10 entries
+  #  design:
+  #    view: article-grid
+  #    columns: 2
 
   - block: collection
     id: teaching
