@@ -46,7 +46,7 @@ url_code: 'https://github.com/LuisNavarro07/cashresliquiditymx'
 url_dataset: 'https://github.com/LuisNavarro07/cashresliquiditymx'
 # url_poster: '#'
 url_project: 'https://luisenavarro.com/publication/jmp/liquidity_mexico_slides.pdf'
-url_source: 'https://luisenavarro.com/publication/jmp/liquidity_mexico_slides.pdf'
+url_slides: 'https://luisenavarro.com/publication/jmp/liquidity_mexico_slides.pdf'
 # url_video: ''
 
 # Featured image
