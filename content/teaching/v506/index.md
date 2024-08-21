@@ -1,6 +1,6 @@
 ---
 title: 'SPEA V506: Statistical Analysis for Effective Decision Making'
-weight: 5
+weight: 8
 
 
 # Publication name and optional abbreviated publication name.

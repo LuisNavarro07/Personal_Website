@@ -6,7 +6,7 @@ cms_exclude: true
 view: citation
 
 content: 
-  count: 10 
+  count: 15 
 
 # Optional header image (relative to `static/media/` folder).
 banner:
