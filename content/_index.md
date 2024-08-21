@@ -48,13 +48,12 @@ sections:
 
   - block: collection
     content:
-      title: Replication Packages
+      title: Research Projects
       text: ""
       filters:
         folders:
           - publication
         exclude_featured: false
-      pagination: 10  # Add this line to display 10 entries
     design:
       view: citation
 
