@@ -57,19 +57,6 @@ sections:
     design:
       view: citation
 
-  #- block: collection
-  #  id: papers
-  #  content:
-  #    title: Relevant Projects
-  #    filters:
-  #      folders:
-  #        - publication
-  #      featured_only: true
-  #    pagination: 10  # Add this line to display 10 entries
-  #  design:
-  #    view: article-grid
-  #    columns: 2
-
   - block: collection
     id: teaching
     content:
@@ -92,13 +79,6 @@ sections:
     design:
       view: article-grid
       columns: 2
-  - block: collection
-    id: news
-    content:
-      title: On the News
-      filters:
-        text: |-
-        My paper Federal Assistance and Municipal Borrowing: Unpacking the Effects of the CARES Act on Government Liquidity Management received some coverage on the [Bond Buyer](https://www.bondbuyer.com/news/coronavirus-aid-lowered-borrowing-costs-credit-quality-study) and won the [Michael Curro Award](https://abfm.org/2024-annual-award-recipients/) for best graduate student paper in public budgeting or finance at the Association for Budgeting and Financial Management. 
 
   - block: cta-card
     demo: true # Only display this section in the Hugo Blox Builder demo site
@@ -121,3 +101,7 @@ sections:
         css_class: "bg-primary-700"
         css_style: ""
 ---
+
+**On the news** 
+
+My paper Federal Assistance and Municipal Borrowing: Unpacking the Effects of the CARES Act onGovernment Liquidity Management received some coverage on the [Bond Buyer](https://www.bondbuyer.comnews/coronavirus-aid-lowered-borrowing-costs-credit-quality-study) and won the [Michael Curro Award(https://abfm.org/2024-annual-award-recipients/) for best graduate student paper in public budgetingor finance at the Association for Budgeting and Financial Management. 
