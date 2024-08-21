@@ -93,17 +93,6 @@ sections:
       view: article-grid
       columns: 2
 
-  - block: collection
-    id: media
-    content:
-      title: On the News
-      filters:
-        folders:
-          - news
-    design:
-      view: article-grid
-      columns: 2
-
   - block: cta-card
     demo: true # Only display this section in the Hugo Blox Builder demo site
     content:
