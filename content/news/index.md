@@ -2,7 +2,7 @@
 title: "On the News"
 ---
 
-My paper Federal Assistance and Municipal Borrowing: Unpacking the Effects of the CARES Act on Government Liquidity Management received some coverage on the Bond Buyer. 
+My paper Federal Assistance and Municipal Borrowing: Unpacking the Effects of the CARES Act on Government Liquidity Management received some coverage on the [Bond Buyer](https://www.bondbuyer.com/news/coronavirus-aid-lowered-borrowing-costs-credit-quality-study") and won the [Michael Curro Award](https://abfm.org/2024-annual-award-recipients/) for best graduate student paper in public budgeting or finance at the Association for Budgeting and Financial Management. 
 
 
 <a href="https://www.bondbuyer.com/news/coronavirus-aid-lowered-borrowing-costs-credit-quality-study" target="_blank" class="btn btn-primary">View Bond Buyer Article</a>

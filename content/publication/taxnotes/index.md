@@ -1,6 +1,6 @@
 ---
 title: 'Long Term Trends in Personal Income Tax'
-weight: 5
+weight: 7
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
