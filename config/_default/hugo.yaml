@@ -29,13 +29,31 @@ paginate: 10
 enableEmoji: true
 enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
+
+# Ensure ignoreFiles is commented out or does not include .html files
 # ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
+
+# Permalinks structure is correct for your use case
 permalinks:
   authors: '/author/:slug/'
-disableAliases: true
+
+# Ensure HTML output is correctly configured for all content types
 outputs:
   home: [HTML, RSS, headers, redirects, backlinks]
   section: [HTML, RSS]
+  page: [HTML]  # Add this line to ensure pages output as HTML
+  taxonomy: [HTML, RSS]
+  term: [HTML]
+
+# Optional: Specify output formats explicitly if needed
+outputFormats:
+  HTML:
+    mediaType: text/html
+    baseName: index
+    isPlainText: false
+    noUgly: true
+
+# Imaging settings
 imaging:
   resampleFilter: lanczos
   quality: 100
@@ -59,4 +77,3 @@ security:
   _merge: deep
 sitemap:
   _merge: deep
-
