@@ -6,7 +6,7 @@ weight: 5
 # Publication name and optional abbreviated publication name.
 publication: V506
 publication_short: V506
-
+date: '2024-20-09T00:00:00Z'
 description: Applied Statistics (MPA Program)
 
 # Display this page in the Featured widget?
@@ -28,7 +28,7 @@ featured: false
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
+  caption: 'Image credit: Luis Navarro'
   focal_point: ''
   preview_only: false
 

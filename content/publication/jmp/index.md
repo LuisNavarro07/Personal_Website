@@ -7,7 +7,7 @@ weight: 1
 authors:
   - admin
 
-date: '2024-07-10T00:00:00Z'
+date: '2024-09-10T00:00:00Z'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
@@ -26,7 +26,7 @@ doi: ''
 publication: Job Market Papers
 publication_short: Job Market Papers
 
-abstract: Governments ensure uninterrupted service delivery with timely payments on operating expenses by maintaining sufficient cash reserves and/or resorting to short-term borrowing. A theoretical model of cash-flow management that shows the precautionary and operational role of cash reserves under liquidity constraints. Using a unique dataset of quarterly financial statements from 2018 and 2022 from Mexican state governments, this paper tests this theory in a setting where local governments face stringent liquidity constraints. To provide causal estimates, I instrument cash reserves with plausibly exogenous variation in the deviation from anticipated monthly distributions of selected federal transfers, which are not correlated with annual financial conditions but lead to temporary changes in states' potential cash holdings. Consistent with the theoretical model, the main results find a positive effect of cash reserves on short-term borrowing. Furthermore, I found evidence that cash reserves induce lower borrowing costs for short-term debt, implying that additional cash holdings make states more attractive to lenders. Complementing these findings, I document that the increase in short-term borrowing is larger for states with lower credit quality. These findings are consistent with theoretical expectations of cash management under liquidity constraints and provide evidence that complements the previous empirical research studying American local governments with softer credit constraints. 
+abstract: Governments ensure uninterrupted service delivery with timely payments on operating expenses by maintaining sufficient cash reserves and/or resorting to short-term borrowing. A theoretical model of cash-flow management shows that the precautionary role of cash reserves shapes the liquidity constraints experienced by low-capitalized governments. I test this theory by looking at state governments from Mexico that face stringent liquidity constraints. To provide causal estimates, I instrument cash reserves with plausibly exogenous variation in the deviation from anticipated monthly distributions of one of the largest federal grants, which are not correlated with annual financial conditions but lead to temporary changes in states' potential cash holdings. Empirical results find a positive effect of cash reserves on short-term borrowing, with an implied elasticity between 0.6 and 1.3, where the magnitude of this effect is determined by the stringency of the liquidity constraints faced by state governments, which for this analysis are explored in terms of levels of cash-reserves, credit quality, and stage of the fiscal year. These findings are consistent with theoretical expectations of cash-flow  management under liquidity constraints and provide evidence that complements the previous empirical research studying American local governments with softer credit constraints. 
 
 tags:
   - Job Market Papers
@@ -40,6 +40,8 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
+slides: liquidity_mexico_slides.pdf
+
 url_pdf: 'https://luisenavarro.com/publication/jmp/liquidity_mexico.pdf'
 # url_slides: 
 url_code: 'https://github.com/LuisNavarro07/cashresliquiditymx'
@@ -52,7 +54,7 @@ url_slides: 'https://luisenavarro.com/publication/jmp/liquidity_mexico_slides.pd
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
+  caption: 'Image credit: Luis Navarro'
   focal_point: ''
   preview_only: false
 
@@ -69,10 +71,9 @@ projects:
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
-slides: liquidity_mexico.pdf
 ---
 
-Governments ensure uninterrupted service delivery with timely payments on operating expenses by maintaining sufficient cash reserves and/or resorting to short-term borrowing. A theoretical model of cash-flow management that shows the precautionary and operational role of cash reserves under liquidity constraints. Using a unique dataset of quarterly financial statements from 2018 and 2022 from Mexican state governments, this paper tests this theory in a setting where local governments face stringent liquidity constraints. To provide causal estimates, I instrument cash reserves with plausibly exogenous variation in the deviation from anticipated monthly distributions of selected federal transfers, which are not correlated with annual financial conditions but lead to temporary changes in states' potential cash holdings. Consistent with the theoretical model, the main results find a positive effect of cash reserves on short-term borrowing. Furthermore, I found evidence that cash reserves induce lower borrowing costs for short-term debt, implying that additional cash holdings make states more attractive to lenders. Complementing these findings, I document that the increase in short-term borrowing is larger for states with lower credit quality. These findings are consistent with theoretical expectations of cash management under liquidity constraints and provide evidence that complements the previous empirical research studying American local governments with softer credit constraints. 
+Governments ensure uninterrupted service delivery with timely payments on operating expenses by maintaining sufficient cash reserves and/or resorting to short-term borrowing. A theoretical model of cash-flow management shows that the precautionary role of cash reserves shapes the liquidity constraints experienced by low-capitalized governments. I test this theory by looking at state governments from Mexico that face stringent liquidity constraints. To provide causal estimates, I instrument cash reserves with plausibly exogenous variation in the deviation from anticipated monthly distributions of one of the largest federal grants, which are not correlated with annual financial conditions but lead to temporary changes in states' potential cash holdings. Empirical results find a positive effect of cash reserves on short-term borrowing, with an implied elasticity between 0.6 and 1.3, where the magnitude of this effect is determined by the stringency of the liquidity constraints faced by state governments, which for this analysis are explored in terms of levels of cash-reserves, credit quality, and stage of the fiscal year. These findings are consistent with theoretical expectations of cash-flow  management under liquidity constraints and provide evidence that complements the previous empirical research studying American local governments with softer credit constraints. 
 
 <a href="liquidity_mexico.pdf" target="_blank" class="btn btn-primary">Preview PDF</a>
 

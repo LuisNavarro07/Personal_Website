@@ -30,6 +30,7 @@ tags:
 - Fiscal Federalism
 featured: true
 
+slides: cares_slides_mfc.pdf
 
 url_pdf: "https://luisenavarro.com/publication/caresact/federal_assistance_cares_act.pdf"
 #url_slides: "https://luisenavarro.com/publication/caresact/cares_slides_mfc.pdf"
@@ -60,7 +61,6 @@ projects:
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
-slides: example
 ---
 
 Access to cash can affect the ability of local governments to respond to crises. Federal aid to local governments can supply this directly, though the effectiveness on a dollar-per-dollar basis depends on its complementary or substitutability with local borrowing. Through this lens this examines the effects of the Coronavirus Relief Fund (CRF) on the local governments borrowing using a regression discontinuity design that exploits the quasi-experimental setting induced by the fund eligibility criterion imposed by the US Treasury. The findings indicate that recipient governments observed mild reductions in borrowing costs and increased their debt issuance on the primary market, with no significant spillovers to the secondary market. Moreover, this analysis provides some suggestive evidence on the liquidity management undertaken by local governments. It documents an increase in the issuance of short-term debt, at the expense of reductions on the issuance of longer-term bonds. Together, these findings shed some light on the mechanisms through which federal aid to local governments translates into improved borrowing conditions on the bond market. 

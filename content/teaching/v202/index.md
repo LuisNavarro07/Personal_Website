@@ -6,6 +6,7 @@ weight: 5
 # Publication name and optional abbreviated publication name.
 publication: V202
 publication_short: V202
+date: '2024-20-09T00:00:00Z'
 
 description: Economics for Public Policy (Introductory)
 
@@ -29,7 +30,7 @@ featured: false
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
+  caption: 'Image credit: Luis Navarro'
   focal_point: ''
   preview_only: false
 
@@ -69,7 +70,7 @@ d. Use economic models to predict the impact of these policies and programs on w
 e. Explain the results of economic models demonstrating the impact of policies and programs on welfare and behavior.
 
 
-[Syllabus](v202_syllabus_LNfall2024.pdf) 
+[Syllabus](/content/teaching/v202/v202_syllabus_LN_fall2024.pdf) 
 
 Course Outline and Material
 
