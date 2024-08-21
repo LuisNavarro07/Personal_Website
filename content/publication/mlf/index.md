@@ -41,13 +41,13 @@ featured: true
 #   url: http://example.org
 
 url_pdf: 'https://luisenavarro.com/publication/mlf/mlf_synth.pdf'
-# url_slides: ''
+url_slides: ''
 url_code: 'https://github.com/LuisNavarro07/mlf_volatility/tree/main/0_Script'
-# url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
-# url_poster: ''
-# url_project: ''
-# url_source: 'https://github.com/LuisNavarro07/mlf_volatility'
-# url_video: 'https://youtube.com'
+url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
+url_poster: ''
+url_project: ''
+url_source: 'https://github.com/LuisNavarro07/mlf_volatility'
+url_video: 'https://youtube.com'
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.

@@ -44,10 +44,10 @@ url_pdf: 'https://luisenavarro.com/publication/jmp/liquidity_mexico.pdf'
 url_slides: 'https://luisenavarro.com/publication/jmp/liquidity_mexico_slides.pdf'
 url_code: 'https://github.com/LuisNavarro07/cashresliquiditymx'
 url_dataset: 'https://github.com/LuisNavarro07/cashresliquiditymx'
-# url_poster: ''
-# url_project: ''
-# url_source: 'https://github.com/HugoBlox/hugo-blox-builder'
-# url_video: 'https://youtube.com'
+url_poster: '#'
+url_project: '#'
+url_source: 'https://luisenavarro.com/publication/jmp/liquidity_mexico_slides.pdf'
+url_video: ''
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.

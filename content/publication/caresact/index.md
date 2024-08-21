@@ -34,10 +34,10 @@ featured: true
 url_pdf: "https://luisenavarro.com/publication/caresact/federal_assistance_cares_act.pdf"
 url_slides: "https://luisenavarro.com/publication/caresact/cares_slides_mfc.pdf"
 url_code: 'https://github.com/LuisNavarro07/cares_act_counties_debt'
-# url_dataset: '#'
-# url_poster: '#'
-# url_project: ''
-# url_source: '#'
+url_dataset: '#'
+url_poster: '#'
+url_project: ''
+url_source: '#'
 url_video: 'https://www.youtube.com/live/4NjIVY14spE?si=6oDLyke8-7Ar_0oq&t=9848'
 
 # Featured image
