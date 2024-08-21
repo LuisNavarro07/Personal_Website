@@ -3,7 +3,7 @@ title: Research Projects
 cms_exclude: true
 
 # View.
-view: citation
+view: list
 count: 10 
 
 # Optional header image (relative to `static/media/` folder).
