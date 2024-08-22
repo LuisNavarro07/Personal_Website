@@ -30,6 +30,9 @@ enableEmoji: true
 enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
 
+markup:
+  defaultMarkdownHandler: goldmark
+  
 # Ensure ignoreFiles is commented out or does not include .html files
 # ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
 
