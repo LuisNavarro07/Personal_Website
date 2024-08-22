@@ -33,19 +33,19 @@ sections:
       avatar_class: avatar  # Add this line to link the CSS class
 
     - block: markdown
-    content:
-      title: '📚 My Research'
-      subtitle: ''
-      text: |-
-        I am PhD Candidate in Public Affairs at the O'Neill School of Public and Environmental Affairs, expected to graduate in May 2025, and **in the academic job market (Fall 2024-Spring 2025)**.  
+      content:
+        title: '📚 My Research'
+        subtitle: ''
+        text: |-
+          I am PhD Candidate in Public Affairs at the O'Neill School of Public and Environmental Affairs, expected to graduate in May 2025, and **in the academic job market (Fall 2024-Spring 2025)**.  
 
-        My research interests that lie within the intersections of fiscal federalism, local tax policy, financial management and municipal debt. I am particularly interested in how the interactions between governments from different levels shape state and local policies, economic outcomes, as well as their impact on debt markets. Also, I do research to understand how tax policy influences the development of new markets.
+          My research interests that lie within the intersections of fiscal federalism, local tax policy, financial management and municipal debt. I am particularly interested in how the interactions between governments from different levels shape state and local policies, economic outcomes, as well as their impact on debt markets. Also, I do research to understand how tax policy influences the development of new markets.
 
-        A stream of my research analyzes the role of federal aid on state and local debt markets. In my solo-authored paper "Federal Assistance and Municipal Borrowing: Unpacking the Effects of the CARES Act on Government Liquidity Management" (Michael Curro Award Best Graduate Student Paper 2024), and my joint work with Felipe Lozano Rojas "Liquidity and Volatility in the Municipal Bond Market: Evidence from the Municipal Liquidity Facility and other early interventions" (Under review Journal of Financial Intermediation) I explore the mechanisms through which federal interventions improve access to debt financing and restore investor confidence during periods of turmoil. In a similar line, in my dissertation research "Cash Reserves and Short-Term Debt Under Liquidity Constraints" I develop and test a theory that shows how capitalization levels influence the decision to manage cash-flows via cash reserves and short-term borrowing.
+          A stream of my research analyzes the role of federal aid on state and local debt markets. In my solo-authored paper "Federal Assistance and Municipal Borrowing: Unpacking the Effects of the CARES Act on Government Liquidity Management" (Michael Curro Award Best Graduate Student Paper 2024), and my joint work with Felipe Lozano Rojas "Liquidity and Volatility in the Municipal Bond Market: Evidence from the Municipal Liquidity Facility and other early interventions" (Under review Journal of Financial Intermediation) I explore the mechanisms through which federal interventions improve access to debt financing and restore investor confidence during periods of turmoil. In a similar line, in my dissertation research "Cash Reserves and Short-Term Debt Under Liquidity Constraints" I develop and test a theory that shows how capitalization levels influence the decision to manage cash-flows via cash reserves and short-term borrowing.
 
-        My teaching experience includes several sections of SPEA V202: Contemporary Economics Issues for Public Affairs (undergraduate microeconomics for public policy analysis) and I have also served as Lab Instructor for SPEA V506: Statistical Analysis for Effective Decision Making (graduate statistics) in which I teach R programming for statistical analysis.
+          My teaching experience includes several sections of SPEA V202: Contemporary Economics Issues for Public Affairs (undergraduate microeconomics for public policy analysis) and I have also served as Lab Instructor for SPEA V506: Statistical Analysis for Effective Decision Making (graduate statistics) in which I teach R programming for statistical analysis.
 
-        Prior to my time in IU, I worked as financial advisor/investment banker for governments (at all levels) and as economist in the Ministry of Finance (Mexico), with experience in debt structuring, project finance, cost benefit analysis for major infrastructure projects, and financial regulation.
+          Prior to my time in IU, I worked as financial advisor/investment banker for governments (at all levels) and as economist in the Ministry of Finance (Mexico), with experience in debt structuring, project finance, cost benefit analysis for major infrastructure projects, and financial regulation.
     design:
       columns: '1'
 
