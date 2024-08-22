@@ -55,7 +55,7 @@ url_slides: 'https://luisenavarro.com/publication/airbnb_referendums/slides_airb
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
+  caption: 'Image credit: Luis Navarro'
   focal_point: ''
   preview_only: false
 

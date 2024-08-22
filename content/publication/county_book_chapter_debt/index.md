@@ -1,6 +1,6 @@
 ---
 title: 'The Structure of County Government Debt from 2002 to 2020: The Financial Crisis, the Great Recession, and the COVID-19 Pandemic'
-weight: 7
+weight: 4
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
