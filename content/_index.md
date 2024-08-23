@@ -86,7 +86,7 @@ sections:
 
   - block: markdown
     content:
-      title: '📰 On the News'
+      title: 'On the News'
       text: |-
         {{< readfile path="content/news/index.md" >}}
     design:
