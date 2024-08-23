@@ -6,7 +6,7 @@ highlight_name: true
 # Role 
 role: PhD Candidate
 
-bio: I am PhD Candidate of Public Affairs at the O'Neill School at Indiana University, Bloomington. My research interests include public finance, state and local tax policy, the municipal bond market, and public economics in general. 
+bio: I am a Ph.D. candidate in Public Affairs at the O'Neill School of Public and Environmental Affairs at Indiana University, Bloomington. My research interests include public finance, state and local tax policy, fiscal federalism, financial management,  municipal debt, and generally the intersection of public economics and public administration. 
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -34,8 +34,9 @@ interests:
   - State and Local Tax Policy
   - Municipal Bond Market
   - Public Economics
+  - Public Administration
 education:
-  - area: PhD Public Affairs
+  - area: PhD Public Affairs (Public Finance)
     institution: Indiana University, Bloomington
     date_start: 2020-08-01
     date_end: 2025-12-31
@@ -119,6 +120,10 @@ languages:
 
 # Awards
 awards:
+  - title: Michael Curro award for best graduate student paper, 2024
+    url: https://abfm.org/2024-annual-award-recipients/
+    summary: |
+      My paper [Federal Assistance and Municipal Borrowing: Unpacking the Effects of the CARES Act on Government Liquidity Management](https://luisenavarro.com/publication/caresact/) received the [Michael Curro Award](https://abfm.org/2024-annual-award-recipients/) for best graduate student paper in public budgeting or finance at the Association for Budgeting and Financial Management. 
   - title: Ostrom Fellow
     url: https://ostromworkshop.indiana.edu/index.html
     summary: |
