@@ -6,7 +6,6 @@ weight: 8
 # Publication name and optional abbreviated publication name.
 publication: V506
 publication_short: V506
-date: '2024-10-08T00:00:00Z'
 description: Applied Statistics (MPA Program)
 
 # Display this page in the Featured widget?

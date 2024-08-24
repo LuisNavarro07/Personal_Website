@@ -6,8 +6,6 @@ weight: 5
 # Publication name and optional abbreviated publication name.
 publication: V202
 publication_short: V202
-date: '2024-20-09T00:00:00Z'
-
 description: Economics for Public Policy (Introductory)
 
 # Display this page in the Featured widget?
