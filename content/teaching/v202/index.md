@@ -69,8 +69,9 @@ d. Use economic models to predict the impact of these policies and programs on w
 
 e. Explain the results of economic models demonstrating the impact of policies and programs on welfare and behavior.
 
+<a href="/content/teaching/v202/v202_syllabus_LN_fall2024.pdf" target="_blank" class="btn btn-primary">Preview Syllabus</a>
 
-[Syllabus](/content/teaching/v202/v202_syllabus_LN_fall2024.pdf) 
+<a href="/content/teaching/v202/v202_syllabus_LN_fall2024.pdf" download class="btn btn-secondary">Download Syllabus</a>
 
 Course Outline and Material
 

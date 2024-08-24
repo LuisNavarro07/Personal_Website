@@ -10,7 +10,7 @@ date: '2024-10-08T00:00:00Z'
 description: Applied Statistics (MPA Program)
 
 # Display this page in the Featured widget?
-featured: false
+featured: true
 
 # Custom links (uncomment lines below)
 # links:
@@ -46,6 +46,19 @@ projects:
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 # slides: example
+
+# <a href="/content/teaching/v506/V506_Spring24_Lab1.html" target="_blank" class="btn btn-primary">Preview Slides</a>
+# <a href="/content/teaching/v506/V506_Spring24_Lab1.html" download class="btn btn-secondary">Download Lecture Slides</a>
+# <a href="/content/teaching/v506/V506_Spring24_Lab2.html" target="_blank" class="btn btn-primary">Preview Slides</a>
+# <a href="/content/teaching/v506/V506_Spring24_Lab2.html" download class="btn btn-secondary">Download Lecture Slides</a>
+# <a href="/content/teaching/v506/V506_Spring24_Lab3.html" target="_blank" class="btn btn-primary">Preview Slides</a>
+# <a href="/content/teaching/v506/V506_Spring24_Lab3.html" download class="btn btn-secondary">Lecture Slides</a>
+# <a href="/content/teaching/v506/V506_Spring24_Lab4.html" target="_blank" class="btn btn-primary">Preview Slides</a>
+# <a href="/content/teaching/v506/V506_Spring24_Lab4.html" download class="btn btn-secondary">Download Lecture Slides</a>
+# <a href="/content/teaching/v506/V506_Spring24_Lab5.html" target="_blank" class="btn btn-primary">Preview Slides</a>
+# <a href="/content/teaching/v506/V506_Spring24_Lab5.html" download class="btn btn-secondary">Download Lecture Slides</a>
+# <a href="/content/teaching/v506/V506_Spring24_Lab6.html" target="_blank" class="btn btn-primary">Preview Slides</a>
+# <a href="/content/teaching/v506/V506_Spring24_Lab6.html" download class="btn btn-secondary">Download Lecture Slides</a>
 ---
 
 Lab Description: 
@@ -55,31 +68,25 @@ This lab sessions aim to introduce students to the use of R to perform data mani
 Lab Material: 
 
 1. Introduction to R 
-<a href="V506_Spring24_Lab1.html" target="_blank" class="btn btn-primary">Preview Slides</a>
-<a href="V506_Spring24_Lab1.html" download class="btn btn-secondary">Download Lecture Slides</a>
-<a href="V506_Spring24_Lab1.Rmd" download class="btn btn-secondary">Download Rmd File</a>
+
+<a href="/content/teaching/v506/V506_Spring24_Lab1.Rmd" download class="btn btn-secondary">Download Rmd File</a>
 
 2. Working with Data - Intro to Graphs
-<a href="/content/teaching/v506/V506_Spring24_Lab2.html" target="_blank" class="btn btn-primary">Preview Slides</a>
-<a href="/content/teaching/v506/V506_Spring24_Lab2.html" download class="btn btn-secondary">Download Lecture Slides</a>
-<a href="/content/teaching/v506/V506_Spring24_Lab2.Rmd" download class="btn btn-secondary">Rmd File</a>
+
+<a href="/content/teaching/v506/V506_Spring24_Lab2.Rmd" download class="btn btn-secondary">Download Rmd File</a>
 
 3. Dplyr, Pipes, and ggplot
-<a href="/content/teaching/v506/V506_Spring24_Lab3.html" target="_blank" class="btn btn-primary">Preview Slides</a>
-<a href="/content/teaching/v506/V506_Spring24_Lab3.html" download class="btn btn-secondary">Lecture Slides</a>
+
 <a href="/content/teaching/v506/V506_Spring24_Lab3.Rmd" download class="btn btn-secondary">Download Rmd File</a>
 
 4. Data Summaries and Functions
-<a href="/content/teaching/v506/V506_Spring24_Lab4.html" target="_blank" class="btn btn-primary">Preview Slides</a>
-<a href="/content/teaching/v506/V506_Spring24_Lab4.html" download class="btn btn-secondary">Download Lecture Slides</a>
+
 <a href="/content/teaching/v506/V506_Spring24_Lab4.Rmd" download class="btn btn-secondary">Download Rmd File</a>
 
 5. Data Reshape and Random Variables
-<a href="/content/teaching/v506/V506_Spring24_Lab5.html" target="_blank" class="btn btn-primary">Preview Slides</a>
-<a href="/content/teaching/v506/V506_Spring24_Lab5.html" download class="btn btn-secondary">Download Lecture Slides</a>
+
 <a href="/content/teaching/v506/V506_Spring24_Lab5.Rmd" download class="btn btn-secondary">Download Rmd File</a>
 
 6. Statistical Inference and Intro to Linear Regression
-<a href="/content/teaching/v506/V506_Spring24_Lab6.html" target="_blank" class="btn btn-primary">Preview Slides</a>
-<a href="/content/teaching/v506/V506_Spring24_Lab6.html" download class="btn btn-secondary">Download Lecture Slides</a>
+
 <a href="/content/teaching/v506/V506_Spring24_Lab6.Rmd" download class="btn btn-secondary">Download Rmd File</a>
