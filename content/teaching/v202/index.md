@@ -73,8 +73,6 @@ e. Explain the results of economic models demonstrating the impact of policies a
 
 <a href="docs/v202_syllabus.pdf" download class="btn btn-secondary">Download Syllabus</a>
 
-- [Syllabus](docs/v202_syllabus.pdf)
-
 Course Outline and Material
 
 1. Introduction
