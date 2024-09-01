@@ -6,7 +6,7 @@ highlight_name: true
 # Role 
 role: PhD Candidate
 
-bio: I am a Ph.D. candidate in Public Affairs at the O'Neill School of Public and Environmental Affairs at Indiana University, Bloomington. My research interests include public finance, state and local tax policy, fiscal federalism, financial management,  municipal debt, and generally the intersection of public economics and public administration. 
+bio: I am a Ph.D. candidate in Public Affairs at the O'Neill School of Public and Environmental Affairs at Indiana University, Bloomington. My research interests include public finance, state and local tax policy, fiscal federalism, financial management,  municipal debt, and generally the intersection of public economics and public administration. I am currently in the Academic Job Market (Fall 2024/Spring 2025).
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
