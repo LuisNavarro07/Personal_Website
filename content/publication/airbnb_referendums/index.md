@@ -44,7 +44,7 @@ featured: false
 slides: slides_airbnb_referendums.pdf
 
 # url_pdf: 'https://luisenavarro.com/publication/jmp/liquidity_mexico.pdf'
-# url_slides: 
+url_slides: slides_airbnb_referendums.pdf
 # url_code: 'https://github.com/LuisNavarro07/cashresliquiditymx'
 # url_dataset: 'https://github.com/LuisNavarro07/cashresliquiditymx'
 # url_poster: '#'

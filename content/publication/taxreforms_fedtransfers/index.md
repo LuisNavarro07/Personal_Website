@@ -44,10 +44,10 @@ featured: false
 # - name: Custom Link
 #   url: http://example.org
 
-slides: liquidity_mexico_slides.pdf
+slides: taxreforms_fedtransfers_slides_abfm.pdf
 
 url_pdf: 'https://luisenavarro.com/publication/taxreforms_fedtransfers/taxreforms_fedtransfers_draft.pdf'
-# url_slides: 
+# url_slides: taxreforms_fedtransfers_slides_abfm.pdf
 # url_code: 'https://github.com/LuisNavarro07/cashresliquiditymx'
 # url_dataset: 'https://github.com/LuisNavarro07/cashresliquiditymx'
 # url_poster: '#'
