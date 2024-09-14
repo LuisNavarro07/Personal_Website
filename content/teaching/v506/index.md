@@ -67,25 +67,19 @@ This lab sessions aim to introduce students to the use of R to perform data mani
 Lab Material: 
 
 1. Introduction to R 
-
 <a href="/content/teaching/v506/V506_Spring24_Lab1.Rmd" download class="btn btn-secondary">Download Rmd File</a>
 
 2. Working with Data - Intro to Graphs
-
 <a href="/content/teaching/v506/V506_Spring24_Lab2.Rmd" download class="btn btn-secondary">Download Rmd File</a>
 
 3. Dplyr, Pipes, and ggplot
-
 <a href="/content/teaching/v506/V506_Spring24_Lab3.Rmd" download class="btn btn-secondary">Download Rmd File</a>
 
 4. Data Summaries and Functions
-
 <a href="/content/teaching/v506/V506_Spring24_Lab4.Rmd" download class="btn btn-secondary">Download Rmd File</a>
 
 5. Data Reshape and Random Variables
-
 <a href="/content/teaching/v506/V506_Spring24_Lab5.Rmd" download class="btn btn-secondary">Download Rmd File</a>
 
 6. Statistical Inference and Intro to Linear Regression
-
 <a href="/content/teaching/v506/V506_Spring24_Lab6.Rmd" download class="btn btn-secondary">Download Rmd File</a>
