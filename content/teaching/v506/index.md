@@ -7,6 +7,8 @@ weight: 8
 publication: V506
 publication_short: V506
 description: Applied Statistics (MPA Program)
+date: '2024-08-20T00:00:00Z'
+
 
 # Display this page in the Featured widget?
 featured: true
@@ -72,7 +74,7 @@ Lab Material:
 
 2. [Working with Data - Intro to Graphs](https://github.com/LuisNavarro07/V506/tree/main/Lab2)
 
-3.[ Dplyr, Pipes, and ggplot](https://github.com/LuisNavarro07/V506/tree/main/Lab3)
+3. [ Dplyr, Pipes, and ggplot](https://github.com/LuisNavarro07/V506/tree/main/Lab3)
 
 4. [User written functions and data summaries](https://github.com/LuisNavarro07/V506/tree/main/Lab4)
 

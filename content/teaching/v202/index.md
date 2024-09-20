@@ -7,6 +7,7 @@ weight: 5
 publication: V202
 publication_short: V202
 description: Economics for Public Policy (Introductory)
+date: '2024-08-20T00:00:00Z'
 
 # Display this page in the Featured widget?
 featured: false
