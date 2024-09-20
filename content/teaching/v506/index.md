@@ -64,22 +64,18 @@ Lab Description:
 
 This lab sessions aim to introduce students to the use of R to perform data manipulation, analysis, visualization, and statistical analysis. 
 
+<a href="https://github.com/LuisNavarro07/V506" target="_blank" class="btn btn-primary">View Course Material</a>
+
 Lab Material: 
 
-1. Introduction to R 
-<a href="/content/teaching/v506/V506_Spring24_Lab1.Rmd" download class="btn btn-secondary">Download Rmd File</a>
+1. [Introduction to R](https://github.com/LuisNavarro07/V506/tree/main/Lab1) 
 
-2. Working with Data - Intro to Graphs
-<a href="/content/teaching/v506/V506_Spring24_Lab2.Rmd" download class="btn btn-secondary">Download Rmd File</a>
+2. [Working with Data - Intro to Graphs](https://github.com/LuisNavarro07/V506/tree/main/Lab2)
 
-3. Dplyr, Pipes, and ggplot
-<a href="/content/teaching/v506/V506_Spring24_Lab3.Rmd" download class="btn btn-secondary">Download Rmd File</a>
+3.[ Dplyr, Pipes, and ggplot](https://github.com/LuisNavarro07/V506/tree/main/Lab3)
 
-4. Data Summaries and Functions
-<a href="/content/teaching/v506/V506_Spring24_Lab4.Rmd" download class="btn btn-secondary">Download Rmd File</a>
+4. [User written functions and data summaries](https://github.com/LuisNavarro07/V506/tree/main/Lab4)
 
-5. Data Reshape and Random Variables
-<a href="/content/teaching/v506/V506_Spring24_Lab5.Rmd" download class="btn btn-secondary">Download Rmd File</a>
+5. [Data Reshape, Merge, and Hypothesis Testing](https://github.com/LuisNavarro07/V506/tree/main/Lab5)
 
-6. Statistical Inference and Intro to Linear Regression
-<a href="/content/teaching/v506/V506_Spring24_Lab6.Rmd" download class="btn btn-secondary">Download Rmd File</a>
+6. [Review of Critical Functions and Applied Data Analyisis](https://github.com/LuisNavarro07/V506/tree/main/Lab6)
