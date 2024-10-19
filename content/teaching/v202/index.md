@@ -92,8 +92,8 @@ Course Outline and Material
 7. Public Goods
    - [Public Goods](slides/9_PublicGoods.pdf)
 8. Labor Market
-   - [Externalities 1](slides/8_Externalities1.pdf)
-   - [Externalities 2](slides/8_Externalities2.pdf)
+   - [Externalities 1](slides/10_LaborMarket.pdf)
+   - [Externalities 2](slides/10_LaborMarket_2.pdf)
 9. Poverty and Income Inequality
    - [Poverty and Income Inequality 1](slides/11_Poverty_Income_Inequality.pdf)
    - [Poverty and Income Inequality 2](slides/11_Poverty_Income_Inequality2.pdf)
