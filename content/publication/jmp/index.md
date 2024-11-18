@@ -82,8 +82,6 @@ Governments ensure uninterrupted service delivery with timely payments on operat
 
 <a href="liquidity_mexico.pdf" download class="btn btn-secondary">Download PDF</a>
 
-<a href="liquidity_mexico_slides_abfm.pdf" target="_blank" class="btn btn-primary">Preview Slides - ABFM</a>
-
-<a href="liquidity_mexico_slides_longv.pdf" target="_blank" class="btn btn-primary">Preview Slides - 45 minute version</a>
+<a href="navarro_jmt_slides_cash_debt.pdf" target="_blank" class="btn btn-primary">Preview Slides - 45 minute version</a>
 
 
