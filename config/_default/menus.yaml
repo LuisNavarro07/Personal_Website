@@ -16,6 +16,9 @@ main:
   - name: Teaching
     url: teaching/
     weight: 12
+  - name: Data
+    url: data/
+    weight: 13
   - name: Experience
     url: experience/
     weight: 20
