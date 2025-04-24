@@ -84,4 +84,5 @@ Governments ensure uninterrupted service delivery with timely payments on operat
 
 <a href="navarro_jmt_slides_cash_debt.pdf" target="_blank" class="btn btn-primary">Preview Slides - 45 minute version</a>
 
+<a href="dissertation_defense_slides.pdf" target="_blank" class="btn btn-primary">Dissertation Defense Slides</a>
 
