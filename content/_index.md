@@ -37,15 +37,10 @@ sections:
       title: '📚 My Research'
       subtitle: ''
       text: |-
-        I am a Ph.D. candidate in Public Affairs at the O'Neill School of Public and Environmental Affairs at Indiana University, Bloomington, and expect to graduate in May 2025. **I am currently in the academic job market (Fall 2024-Spring 2025)**.  
 
         My research interests lie at the intersection of fiscal federalism, local tax policy, financial management, and municipal debt. I am particularly interested in how interactions between different levels of government shape state and local policies, economic outcomes, and their impact on debt markets. I also conduct research to understand how tax policy influences the development of new markets.
 
-        One strand of my research analyzes the role of federal aid in state and local debt markets. In my solo paper, "Federal Assistance and Municipal Borrowing: Unpacking the Effects of the CARES Act on Government Liquidity Management" (Michael Curro Award Best Graduate Student Paper 2024), and my collaborative paper with Felipe Lozano Rojas, "Liquidity and Volatility in the Municipal Bond Market: Evidence from the Municipal Liquidity Facility and other early interventions" (under review Journal of Financial Intermediation), I examine the mechanisms by which government interventions improve access to debt financing and restore investor confidence during times of turmoil. Similarly, in my dissertation research, "Cash Reserves and Short-Term Debt Under Liquidity Constraints," I develop and test a theory that shows how capitalization levels affect the decision to manage cash flows through cash reserves and short-term debt.
-
-        My teaching experience includes several sections of SPEA V202: Contemporary Economics Issues for Public Affairs (undergraduate microeconomics for public policy analysis), and I have also served as a lab instructor for SPEA V506: Statistical Analysis for Effective Decision Making (graduate statistics), where I teach R programming for statistical analysis.
-
-        Prior to my time at IU, I worked as a financial advisor/investment banker for governments (at all levels) and as an economist in the Ministry of Finance (Mexico), with experience in debt structuring, project finance, cost-benefit analysis for large infrastructure projects, and financial regulation.
+        I graduated with a PhD in Public Affairs (Public Finance and Public Policy) from Indiana University, Bloomington. This Fall (2025) I'll join the Evans School of Public Policy and Governance at the University of Washington, as an Assistant Professor. 
     design:
       columns: '1'
 
