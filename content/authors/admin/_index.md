@@ -1,22 +1,22 @@
 ---
-title: Luis Navarro
+title: Luis Navarro, PhD
 superuser: true
 highlight_name: true
 
 # Role 
-role: PhD Candidate
+role: Assistant Professor, Public Finance & Financial Management
 
-bio: I am a Ph.D. candidate in Public Affairs at the O'Neill School of Public and Environmental Affairs at Indiana University, Bloomington. My research interests include public finance, state and local tax policy, fiscal federalism, financial management,  municipal debt, and generally the intersection of public economics and public administration. I am currently in the Academic Job Market (Fall 2024/Spring 2025).
+bio: I am an Assistant Professor of Public Finance and Financial Management in the Evans School of Public Policy and Governance at the University of Washington. My research interests include public finance, state and local tax policy, fiscal federalism, financial management,  municipal debt, and generally the intersection of public economics and public administration. I graduated with a PhD in Public Affairs (Public Finance and Policy Analysis) from the O'Neill School of Public and Environmental Affairs at Indiana University, Bloomington. 
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: O'Neill School of Public and Environmental Affairs, Indiana University, Bloomington
-    url: https://oneill.indiana.edu/doctoral/degrees/public-affairs/index.html
+  - name: Evans School of Public Policy and Governance, University of Washington
+    url: https://evans.uw.edu/
 
 # Social network links
 profiles:
   - icon: at-symbol
-    url: 'mailto:lunavarr@iu.edu'
+    url: 'mailto:lunavarr@uw.edu'
     label: E-mail Me
   - icon: brands/x
     url: "https://twitter.com/Luis_EN07"
@@ -46,6 +46,13 @@ education:
     date_start: 2011-08-01
     date_end: 2016-12-31
 work:
+  - position: Assistant Professor
+    company_name: Evans School of Public Policy and Governance (Seattle, WA)
+    date_start: 2025-09-01
+    date_end: ''
+    summary: |-
+      - Lead instructor of V202: Contemporary Economic Issues for Public Affairs 
+      - Fall 2022, Spring 2023, Fall 2024
   - position: Associate Instructor - Economics for Public Policy (Undergraduate)
     company_name: O'Neill School of Public and Environmental Affairs (Bloomington, IN)
     date_start: 2022-08-01

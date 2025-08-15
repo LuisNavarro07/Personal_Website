@@ -34,7 +34,7 @@ sections:
 
   - block: markdown
     content:
-      title: '📚 My Research'
+      title: 'About Me'
       subtitle: ''
       text: |-
 
