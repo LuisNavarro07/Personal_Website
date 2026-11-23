@@ -1,12 +1,12 @@
 ---
-title: Luis Navarro, PhD
+title: Luis Navarro
 superuser: true
 highlight_name: true
 
 # Role 
 role: Assistant Professor, Public Finance & Financial Management
 
-bio: I am an Assistant Professor of Public Finance and Financial Management in the Evans School of Public Policy and Governance at the University of Washington. My research interests include public finance, state and local tax policy, fiscal federalism, financial management,  municipal debt, and generally the intersection of public economics and public administration. I graduated with a PhD in Public Affairs (Public Finance and Policy Analysis) from the O'Neill School of Public and Environmental Affairs at Indiana University, Bloomington. 
+bio: I am an Assistant Professor of Public Finance and Financial Management in the Evans School of Public Policy and Governance at the University of Washington. My research interests include public finance, state and local tax policy, fiscal federalism, financial management, municipal debt, and generally the intersection of public economics and public administration. I graduated with a PhD in Public Affairs (Public Finance and Policy Analysis) from the O'Neill School of Public and Environmental Affairs at Indiana University, Bloomington. 
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -33,50 +33,51 @@ interests:
   - Public Finance
   - State and Local Tax Policy
   - Municipal Bond Market
-  - Public Economics
-  - Public Administration
+  - Public Financial Management
+  - Fiscal Federalism
 education:
-  - area: PhD Public Affairs (Public Finance)
-    institution: Indiana University, Bloomington
+  - area: PhD Public Affairs (Public Finance and Policy Analysis)
+    institution: O'Neill School of Public and Environmental Affairs, Indiana University, Bloomington
     date_start: 2020-08-01
-    date_end: 2025-12-31
+    date_end: 2025-05-31
   
-  - area: BA Economics 
-    institution: Instituto Tecnologico Autonomo de Mexico
+  - area: BA Economics
+    institution: Instituto Tecnológico Autónomo de México (ITAM)
     date_start: 2011-08-01
     date_end: 2016-12-31
 work:
-  - position: Assistant Professor
-    company_name: Evans School of Public Policy and Governance (Seattle, WA)
+  - position: Assistant Professor of Public Finance and Financial Management
+    company_name: Evans School of Public Policy and Governance, University of Washington (Seattle, WA)
     date_start: 2025-09-01
     date_end: ''
     summary: |-
-      - Lead instructor of V202: Contemporary Economic Issues for Public Affairs 
-      - Fall 2022, Spring 2023, Fall 2024
+      Courses taught:
+      - PUBPOL 322: Principles of Public Budgeting (undergraduate)
+      - PUBPOL 522: Financial Management & Budgeting (MPA core)
+      - PUBPOL 528: Quantitative Analysis II (MPA core)
+
   - position: Associate Instructor - Economics for Public Policy (Undergraduate)
-    company_name: O'Neill School of Public and Environmental Affairs (Bloomington, IN)
+    company_name: O'Neill School of Public and Environmental Affairs, Indiana University (Bloomington, IN)
     date_start: 2022-08-01
-    date_end: ''
+    date_end: 2024-12-31
     summary: |-
-      - Lead instructor of V202: Contemporary Economic Issues for Public Affairs 
+      - Lead instructor of V202: Contemporary Economic Issues for Public Affairs
       - Fall 2022, Spring 2023, Fall 2024
       
   - position: Lab Manager - Statistics (Graduate)
-    company_name: O'Neill School of Public and Environmental Affairs (Bloomington, IN)
+    company_name: O'Neill School of Public and Environmental Affairs, Indiana University (Bloomington, IN)
     date_start: 2023-08-01
-    date_end: ''
+    date_end: 2024-05-31
     summary: |-
       Responsibilities include:
-      - Teach introductory R programming for graduate students on the MPA program. 
-      - Base R and Tidyverse 
-      - Data Manipulation, Visualization, and Statistical Inference. 
+      - Taught introductory R programming to MPA students (V506)
+      - Base R and Tidyverse
+      - Data manipulation, visualization, and statistical inference
   
   - position: Graduate Research Assistant
-    company_name: O'Neill School of Public and Environmental Affairs (Bloomington, IN)
-    company_url: ''
-    company_logo: ''
+    company_name: O'Neill School of Public and Environmental Affairs, Indiana University (Bloomington, IN)
     date_start: 2020-08-20
-    date_end: ''
+    date_end: 2025-05-31
     summary: |
       Graduate Research Assistant for the following faculty:
       - Justin Ross
@@ -90,7 +91,7 @@ work:
     date_end: 2020-07-01
     summary: |-
       - Cost Benefit Analysis (Infrastructure, Transport, Public Private Partnerships)
-      - Debt Structuring and Financial Analysis for Local Governemnts
+      - Debt Structuring and Financial Analysis for Local Governments
       - Federal Fiscal Policy and Macroeconomic Analysis
 
   - position: Economist - Staff of the Deputy Minister of Finance
@@ -130,7 +131,7 @@ awards:
   - title: Michael Curro award for best graduate student paper, 2024
     url: https://abfm.org/2024-annual-award-recipients/
     summary: |
-      My paper [Federal Assistance and Municipal Borrowing: Unpacking the Effects of the CARES Act on Government Liquidity Management](https://luisenavarro.com/publication/caresact/) received the [Michael Curro Award](https://abfm.org/2024-annual-award-recipients/) for best graduate student paper in public budgeting or finance at the Association for Budgeting and Financial Management. 
+      My paper [Federal Assistance and Municipal Borrowing: Unpacking the Effects of the CARES Act on Government Liquidity Management](/publication/caresact/) received the [Michael Curro Award](https://abfm.org/2024-annual-award-recipients/) for best graduate student paper in public budgeting or finance at the Association for Budgeting and Financial Management. 
   - title: Ostrom Fellow
     url: https://ostromworkshop.indiana.edu/index.html
     summary: |

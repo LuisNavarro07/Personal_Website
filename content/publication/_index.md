@@ -1,15 +1,35 @@
 ---
-title: Research Projects
+title: Research
+type: landing
 cms_exclude: true
 
-# View.
-view: citation
+design:
+  spacing: '4rem'
 
-content: 
-  count: 15 
+sections:
+  - block: collection
+    content:
+      title: Publications
+      count: 0
+      filters:
+        folders:
+          - publication
+        exclude_publication_type: article
+      sort_by: Date
+      sort_ascending: false
+    design:
+      view: citation
 
-# Optional header image (relative to `static/media/` folder).
-banner:
-  caption: ''
-  image: ''
+  - block: collection
+    content:
+      title: Working Papers
+      count: 0
+      filters:
+        folders:
+          - publication
+        publication_type: article
+      sort_by: Weight
+      sort_ascending: true
+    design:
+      view: citation
 ---

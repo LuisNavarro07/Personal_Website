@@ -16,8 +16,8 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: ''
-    description: 'The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website.'
-    twitter: 'GetResearchDev'
+    description: 'Luis Navarro is an Assistant Professor of Public Finance and Financial Management at the Evans School of Public Policy and Governance, University of Washington. Research on fiscal federalism, municipal debt, state and local tax policy, and public financial management.'
+    twitter: 'Luis_EN07'
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -42,7 +42,7 @@ header:
 # Site footer
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} Luis Navarro. This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false

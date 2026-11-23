@@ -1,0 +1,21 @@
+# Hugo build output and caches
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+.hugo_build.lock
+hugo_stats.json
+
+# Node (Pagefind)
+node_modules/
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+*.swp
+.Rhistory
+.Rproj.user/
+
+# Working files that should not be published (keep PDFs only)
+*.pptx
+*.key
+~$*
