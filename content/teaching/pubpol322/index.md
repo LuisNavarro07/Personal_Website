@@ -30,7 +30,7 @@ By the end of this course, students will be able to:
 6. **Apply practical methods of cost estimation and revenue forecasting:** growth rates, deterministic expenditure projections, and elementary forecasting techniques.
 7. **Assess federal debt and long-run fiscal sustainability:** deficits, debt, and the debt ceiling; the dynamics of debt accumulation; fiscal rules; and long-run pressures, including entitlements and generational equity.
 
-<a href="docs/PUBPOL322_Syllabus_Autumn2026.pdf" target="_blank">Preview Syllabus</a> · <a href="docs/PUBPOL322_Syllabus_Autumn2026.pdf" download>Download Syllabus</a>
+<a href="PUBPOL322_Syllabus_Autumn2026.pdf" target="_blank">Preview Syllabus</a> · <a href="PUBPOL322_Syllabus_Autumn2026.pdf" download>Download Syllabus</a>
 
 ## Course Schedule
 

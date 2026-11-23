@@ -26,7 +26,7 @@ By the end of this course, students will be able to:
 4. Prepare the essential financial management spreadsheets for a public organization (financial ratio analysis, basic financial statements, and program and cash flow budgets) and use them to inform decisions about program design, personnel management, resource allocation, policy development, and financial strategy.
 5. Understand the key institutions, processes, incentives, and politics that shape how public organizations allocate their scarce financial resources.
 
-<a href="docs/PUBPOL522_Syllabus_Autumn2026.pdf" target="_blank">Preview Syllabus</a> · <a href="docs/PUBPOL522_Syllabus_Autumn2026.pdf" download>Download Syllabus</a>
+<a href="PUBPOL522_Syllabus_Autumn2026.pdf" target="_blank">Preview Syllabus</a> · <a href="PUBPOL522_Syllabus_Autumn2026.pdf" download>Download Syllabus</a>
 
 ## Course Schedule
 

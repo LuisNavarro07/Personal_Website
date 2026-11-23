@@ -31,7 +31,7 @@ By the end of this course, students will be able to:
 7. **Understand and apply methods for causal inference:** the potential outcomes framework, randomized controlled trials, panel data with fixed effects, difference-in-differences, instrumental variables, and regression discontinuity designs.
 8. **Critically evaluate published empirical research:** assess internal and external validity, identify threats to causal interpretation, and communicate statistical findings clearly for policy audiences.
 
-<a href="docs/PUBPOL528_Syllabus_Spring2026.pdf" target="_blank">Preview Syllabus</a> · <a href="docs/PUBPOL528_Syllabus_Spring2026.pdf" download>Download Syllabus</a>
+<a href="PUBPOL528_Syllabus_Spring2026.pdf" target="_blank">Preview Syllabus</a> · <a href="PUBPOL528_Syllabus_Spring2026.pdf" download>Download Syllabus</a>
 
 ## Course Schedule
 
