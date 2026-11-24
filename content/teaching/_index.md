@@ -1,35 +1,45 @@
 ---
 title: Teaching
+type: landing
 cms_exclude: true
 
-# View.
-view: card
+design:
+  spacing: '4rem'
 
-# Optional header image (relative to `static/media/` folder).
-banner:
-  caption: 'Explore the Courses and Materials'
-  image: 'background1.jpg'
-
-background: 
-  color: '#f8f9fa'
-
-description: Welcome to my teaching section. Here you'll find details on the classes I am currently teaching and taught in the past. 
-
-# Sections
 sections:
-  - title: 'Contemporary Economic Issues for Public Affairs'
-    subtitle: 'SPEA V202'
-    image: 'economics-banner.jpg'
-    image_alt: 'V202 Economics'
-    link: '/teaching/v202/'
-    description: |
-      Introductory economics for public policy analysis. Topics including market tax policy, externalities, public goods, environmental policy, labor markets, welfare programs, trade policy, etc. 
+  - block: markdown
+    content:
+      title: Teaching
+      text: |-
+        I teach public budgeting, public financial management, and quantitative methods at the Evans School of Public Policy and Governance, University of Washington. Below are the courses I currently teach and the courses I taught at Indiana University, with course objectives, schedules, and materials.
+    design:
+      columns: '1'
 
-  - title: 'Statitical Analysis for Effective Decision Making'
-    subtitle: 'SPEA V506'
-    image: 'statistics-banner.jpg'
-    image_alt: 'V506 Statistics'
-    link: '/teaching/v506/'
-    description: |
-      Lab sessions for V506. Introduction to R for data manipualtion, visualization, and analysis. Introduction to statistical analysis. 
+  - block: collection
+    content:
+      title: University of Washington
+      count: 0
+      filters:
+        folders:
+          - teaching
+        tag: University of Washington
+      sort_by: Weight
+      sort_ascending: true
+    design:
+      view: article-grid
+      columns: 3
+
+  - block: collection
+    content:
+      title: Indiana University
+      count: 0
+      filters:
+        folders:
+          - teaching
+        tag: Indiana University
+      sort_by: Weight
+      sort_ascending: true
+    design:
+      view: article-grid
+      columns: 2
 ---

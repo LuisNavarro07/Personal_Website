@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title: "Luis Navarro"
-date: 2024-08-20
+date: 2026-11-23
 type: pages
 
 design:
@@ -30,29 +30,45 @@ sections:
           size: cover
           position: center
           parallax: false
-      avatar_class: avatar  # Add this line to link the CSS class
 
   - block: markdown
     content:
       title: 'About Me'
       subtitle: ''
       text: |-
+        I am an Assistant Professor of Public Finance and Financial Management at the [Evans School of Public Policy and Governance](https://evans.uw.edu/) at the University of Washington. My research lies at the intersection of fiscal federalism, local tax policy, public financial management, and municipal debt. I study how interactions between different levels of government shape state and local policies and economic outcomes, how institutional design affects borrowing costs in the municipal bond market, and how tax policy influences the development of new markets.
 
-        My research interests lie at the intersection of fiscal federalism, local tax policy, financial management, and municipal debt. I am particularly interested in how interactions between different levels of government shape state and local policies, economic outcomes, and their impact on debt markets. I also conduct research to understand how tax policy influences the development of new markets.
-
-        I graduated with a PhD in Public Affairs (Public Finance and Public Policy) from Indiana University, Bloomington. This Fall (2025) I'll join the Evans School of Public Policy and Governance at the University of Washington, as an Assistant Professor. 
+        I teach public budgeting, financial management, and quantitative methods at the Evans School. I received my PhD in Public Affairs (Public Finance and Policy Analysis) from the O'Neill School of Public and Environmental Affairs at Indiana University, Bloomington.
     design:
       columns: '1'
 
   - block: collection
+    id: publications
     content:
-      title: Publications and Work in Progress
+      title: Publications
       text: ""
-      count: 10
+      count: 0
       filters:
         folders:
           - publication
-        exclude_featured: false
+        exclude_publication_type: article
+      sort_by: Date
+      sort_ascending: false
+    design:
+      view: citation
+
+  - block: collection
+    id: working-papers
+    content:
+      title: Working Papers
+      text: ""
+      count: 0
+      filters:
+        folders:
+          - publication
+        publication_type: article
+      sort_by: Weight
+      sort_ascending: true
     design:
       view: citation
 
@@ -60,13 +76,15 @@ sections:
     id: teaching
     content:
       title: Teaching
+      count: 0
       filters:
         folders:
           - teaching
-        featured_only: false
+      sort_by: Weight
+      sort_ascending: true
     design:
       view: article-grid
-      columns: 2
+      columns: 3
 
   - block: collection
     id: talks
@@ -80,32 +98,16 @@ sections:
       columns: 2
 
   - block: markdown
+    id: news
     content:
-      title: '📰 On the News'
+      title: 'In the News'
       text: |
-        My paper <a href="https://luisenavarro.com/publication/caresact/" target="_blank">Federal Assistance and Municipal Borrowing: Unpacking the Effects of the CARES Act on Government Liquidity Management</a> received the <a href="https://abfm.org/2024-annual-award-recipients/" target="_blank">Michael Curro Award</a> for best graduate student paper in public budgeting or finance at the Association for Budgeting and Financial Management and received some coverage on the <a href="https://www.bondbuyer.com/news/coronavirus-aid-lowered-borrowing-costs-credit-quality-study" target="_blank">Bond Buyer</a>.
+        - **2026:** "Liquidity and volatility in the municipal bond market" (with Felipe Lozano-Rojas) published in the [*International Review of Economics & Finance*](https://doi.org/10.1016/j.iref.2026.105212).
+        - **2026:** "State Revolving Fund Collateralized Debt Obligations (SRF CDOs)" conditionally accepted at the *Journal of Public Budgeting, Accounting & Financial Management*.
+        - **2025:** Joined the Evans School of Public Policy and Governance, University of Washington, as Assistant Professor.
+        - **2025:** "The role of charitable food assistance during times of crisis" (with Denvil Duncan and Shellye Suttles) published in the [*Journal of the Agricultural and Applied Economics Association*](https://doi.org/10.1002/jaa2.70006).
+        - **2024:** My paper [Federal Assistance and Municipal Borrowing](/publication/caresact/) received the [Michael Curro Award](https://abfm.org/2024-annual-award-recipients/) for best graduate student paper in public budgeting or finance from the Association for Budgeting and Financial Management, and was covered by [The Bond Buyer](https://www.bondbuyer.com/news/coronavirus-aid-lowered-borrowing-costs-credit-quality-study).
     design:
       columns: '1'
-
-  - block: cta-card
-    demo: true # Only display this section in the Hugo Blox Builder demo site
-    content:
-      title: 👉 Build your own academic website like this
-      text: |-
-        This site is generated by Hugo Blox Builder - the FREE, Hugo-based open source website builder trusted by 250,000+ academics like you.
-
-        <a class="github-button" href="https://github.com/HugoBlox/hugo-blox-builder" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star HugoBlox/hugo-blox-builder on GitHub">Star</a>
-
-        Easily build anything with blocks - no-code required!
-        
-        From landing pages, second brains, and courses to academic resumés, conferences, and tech blogs.
-      button:
-        text: Get Started
-        url: https://hugoblox.com/templates/
-    design:
-      card:
-        # Card background color (CSS class)
-        css_class: "bg-primary-700"
-        css_style: ""
 ---
 
