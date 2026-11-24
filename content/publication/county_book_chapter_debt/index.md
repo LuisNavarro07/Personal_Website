@@ -20,4 +20,5 @@ featured: false
 links:
   - name: "Edward Elgar Publishing"
     url: 'https://www.e-elgar.com/shop/usd/research-handbook-on-city-and-municipal-finance-9781800372955.html'
+pages: '319–334'
 ---

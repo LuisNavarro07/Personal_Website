@@ -38,7 +38,7 @@
 
   {{- with .Params.news }}
   <section class="section" id="news">
-    <h2>News</h2>
+    <h2>In the news</h2>
     <ul class="dated-list">
       {{- range . }}
       <li><span class="dated-list__date">{{ .date }}</span><span>{{ .text | markdownify }}</span></li>

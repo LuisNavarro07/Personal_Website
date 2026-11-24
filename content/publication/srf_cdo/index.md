@@ -1,7 +1,9 @@
 ---
 title: "State Revolving Fund Collateralized Debt Obligations (SRF CDOs): Repayment Security, Credit Ratings and Borrowing Costs"
 authors:
+  - Craig Johnson
   - Luis Navarro
+  - Marc Plooster
 date: '2026-11-01T00:00:00Z'
 weight: 1
 publication_types: ["article"]
@@ -24,4 +26,6 @@ tags:
   - Credit Ratings
   - Environmental Finance
 featured: false
+url_pdf: 'srf_cdo_jnp.pdf'
+url_code: 'https://github.com/LuisNavarro07/SRF_CDO_Credit_Ratings'
 ---

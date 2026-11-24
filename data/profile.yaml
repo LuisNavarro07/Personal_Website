@@ -5,7 +5,7 @@ organization:
   name: Evans School of Public Policy and Governance, University of Washington
   url: https://evans.uw.edu/
 email: lunavarr@uw.edu
-cv: /uploads/cv_len.pdf
+cv: /cv/cv_len.pdf   # file lives in content/cv/; replace it there to update
 photo: images/avatar.jpeg   # path under assets/
 
 interests:

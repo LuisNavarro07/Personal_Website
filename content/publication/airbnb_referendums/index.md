@@ -3,9 +3,9 @@ title: "Preferences for Local Public Goods and the Gig Economy"
 authors:
   - Luis Navarro
 date: '2024-04-10T00:00:00Z'
-weight: 6
+weight: 8
 publication_types: ["article"]
-publication: "Work in Progress"
+publication: "Working paper"
 abstract: >-
   The gig economy has influenced the operations of key markets such as transportation and housing.
   Although there is a growing body of literature on this topic, the impact of individuals' preferences

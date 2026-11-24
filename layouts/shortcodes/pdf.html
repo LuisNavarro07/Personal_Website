@@ -1,5 +1,10 @@
 {{- /* Read + Download buttons for a PDF in the page folder.
-  Usage: {{< pdf file="syllabus.pdf" label="syllabus" >}} */ -}}
-{{- $file := partial "url.html" (dict "page" .Page "url" (.Get "file")) -}}
+  Usage: {{< pdf file="syllabus.pdf" label="syllabus" >}}
+  Renders nothing until the file exists in the page folder, so a missing upload never shows a broken link. */ -}}
+{{- $name := .Get "file" -}}
 {{- $label := .Get "label" | default "PDF" -}}
+{{- $res := .Page.Resources.GetMatch $name -}}
+{{- if or $res (hasPrefix $name "/") (hasPrefix $name "http") -}}
+{{- $file := $name -}}{{- with $res }}{{ $file = .RelPermalink }}{{ end -}}
 <div class="actions">{{ partial "pdf-actions.html" (dict "file" $file "title" (printf "%s: %s" .Page.Title (title $label)) "label" $label) }}</div>
+{{- end -}}

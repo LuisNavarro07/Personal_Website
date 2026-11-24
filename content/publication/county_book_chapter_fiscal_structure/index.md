@@ -21,4 +21,5 @@ url_code: 'https://github.com/LuisNavarro07/county_fiscal_structure_handbook_cha
 links:
   - name: "Edward Elgar Publishing"
     url: 'https://www.e-elgar.com/shop/usd/research-handbook-on-city-and-municipal-finance-9781800372955.html'
+pages: '257–270'
 ---

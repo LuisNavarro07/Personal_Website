@@ -27,3 +27,14 @@
   for = "/fonts/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+# Files that moved; old links keep working.
+[[redirects]]
+  from = "/uploads/cv_len.pdf"
+  to = "/cv/cv_len.pdf"
+  status = 301
+
+[[redirects]]
+  from = "/publication/caresact/federal_assistance_cares_act.pdf"
+  to = "/publication/caresact/crf_muni_market_navarro_nov26.pdf"
+  status = 301

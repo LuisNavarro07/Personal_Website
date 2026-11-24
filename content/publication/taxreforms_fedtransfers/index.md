@@ -1,14 +1,12 @@
 ---
-title: "State Tax Reforms in a Federalist System"
+title: "State Tax Reforms, Fiscal Space and Intergovernmental Grant Incentives in a Federalist System"
 authors:
   - Luis Navarro
   - Craig Johnson
-  - Andrey Yushkov
-  - Bahawal Sharyar
 date: '2024-08-21T00:00:00Z'
-weight: 5
+weight: 7
 publication_types: ["article"]
-publication: "Work in Progress"
+publication: "Working paper"
 abstract: >-
   Federal grants represent one of the main sources of revenues for state governments and, hence, shape
   the way states conduct their fiscal policy. While literature on fiscal federalism and the flypaper
