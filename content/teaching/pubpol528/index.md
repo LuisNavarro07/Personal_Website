@@ -49,8 +49,13 @@ By the end of this course, students will be able to:
 | 4 | Thu, Apr 23 | Internal, External, and Construct Validity; Data Problems | [SW] Ch. 9.1–9.2; [W] Ch. 9.1–9.2 · *Discussion 3* |
 | 5 | Tue, Apr 28 | Model Specification: Choosing the Right Variables | [S] Ch. 6, 8; [SW] Ch. 6.1 |
 | 5 | Thu, Apr 30 | Model Specification: Functional Form | [S] Ch. 7; [SW] Ch. 8 · *Discussion 4* |
-| 6 | Tue, May 5 | Midterm Review | — |
-| 6 | Thu, May 7 | **Midterm Exam** | — |
+
+### Midterm (Week 6)
+
+| Week | Date | Session |
+|---|---|---|
+| 6 | Tue, May 5 | Midterm Review |
+| 6 | Thu, May 7 | **Midterm Exam** |
 
 ### Part II: Causal Inference (Weeks 7–9)
 
