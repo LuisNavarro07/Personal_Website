@@ -1,0 +1,35 @@
+{{ define "main" }}
+<article class="wrap page-body paper">
+  <p class="crumb"><a href="/publication/">Research</a></p>
+  <header class="page-header">
+    <h1 class="paper__title">{{ .Title }}</h1>
+    <p class="paper__authors">{{ partial "authors.html" .Params.authors }}</p>
+    {{- with .Params.publication }}<p class="paper__venue">{{ . | markdownify }}{{ if not (in $.Params.publication_types "article") }}, {{ $.Date.Format "2006" }}{{ end }}</p>{{ end }}
+    {{ partial "pub-links.html" (dict "page" . "full" true) }}
+  </header>
+
+  {{- with .Params.abstract }}
+  <section class="section section--tight">
+    <h2>Abstract</h2>
+    <div class="prose">{{ . | markdownify }}</div>
+  </section>
+  {{- end }}
+
+  {{- with .Content }}
+  <div class="prose">{{ . }}</div>
+  {{- end }}
+
+  {{- with (.Resources.GetMatch "featured.*") }}
+  {{- $img := .Resize "1200x webp q82" }}
+  <figure class="paper__figure">
+    <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="Figure from the paper" loading="lazy">
+  </figure>
+  {{- end }}
+
+  <details class="cite">
+    <summary>Cite this paper</summary>
+    <pre><code>{{ partial "bibtex.html" . }}</code></pre>
+    <button class="btn btn--quiet" type="button" data-copy>Copy BibTeX</button>
+  </details>
+</article>
+{{ end }}

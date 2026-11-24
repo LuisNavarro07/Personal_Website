@@ -1,0 +1,74 @@
+{{ define "main" }}
+{{- $p := site.Data.profile }}
+<section class="hero">
+  <div class="wrap hero__inner">
+    {{- with resources.Get $p.photo }}
+    {{- $sm := .Fill "420x525 Center webp q85" }}
+    {{- $lg := .Fill "840x1050 Center webp q82" }}
+    <figure class="hero__photo">
+      <img src="{{ $sm.RelPermalink }}" srcset="{{ $sm.RelPermalink }} 1x, {{ $lg.RelPermalink }} 2x"
+           width="{{ $sm.Width }}" height="{{ $sm.Height }}" alt="Portrait of {{ $p.name }}" fetchpriority="high">
+    </figure>
+    {{- end }}
+    <div class="hero__text">
+      <h1 class="hero__name">{{ $p.name }}</h1>
+      <p class="hero__role">{{ $p.role }}</p>
+      <p class="hero__org"><a href="{{ $p.organization.url }}">{{ $p.organization.name }}</a></p>
+      <p class="hero__interests">I study {{ delimit (apply $p.interests "lower" ".") ", " ", and " }}.</p>
+      <div class="hero__actions">
+        <a class="btn btn--light" href="{{ partial "viewer-url.html" (dict "file" $p.cv "title" (printf "Curriculum Vitae, %s" $p.name)) }}">Read my CV</a>
+        <a class="btn btn--ghost" href="{{ $p.cv }}" download="CV_Luis_Navarro.pdf">Download CV</a>
+        <a class="btn btn--ghost" href="#contact">Get in touch</a>
+      </div>
+      <ul class="hero__profiles">
+        {{- range $p.profiles }}
+        <li><a href="{{ .url }}" aria-label="{{ .name }}" title="{{ .name }}">{{ partial "icon.html" .icon }}</a></li>
+        {{- end }}
+        <li><a href="mailto:{{ $p.email }}" aria-label="Email" title="Email">{{ partial "icon.html" "email" }}</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="wrap page-body">
+  <section class="section section--about" id="about">
+    <h2>About</h2>
+    <div class="prose">{{ .Content }}</div>
+  </section>
+
+  {{- with .Params.news }}
+  <section class="section" id="news">
+    <h2>In the news</h2>
+    <ul class="dated-list">
+      {{- range . }}
+      <li><span class="dated-list__date">{{ .date }}</span><span>{{ .text | markdownify }}</span></li>
+      {{- end }}
+    </ul>
+  </section>
+  {{- end }}
+
+  {{ partial "pub-lists.html" . }}
+
+  <section class="section" id="teaching">
+    <h2>Teaching</h2>
+    {{- $uw := where (where site.RegularPages "Section" "teaching") "Params.tags" "intersect" (slice "University of Washington") }}
+    <ul class="link-list">
+      {{- range $uw.ByWeight }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a><span class="link-list__note">{{ .Params.term }}</span></li>
+      {{- end }}
+    </ul>
+    <p class="more"><a href="/teaching/">All courses, including Indiana University</a></p>
+  </section>
+
+  <section class="section" id="talks">
+    <h2>Recent talks</h2>
+    <ul class="dated-list">
+      {{- range first 4 (where site.RegularPages "Section" "event").ByDate.Reverse }}
+      <li><span class="dated-list__date">{{ .Date.Format "Jan 2006" }}</span><span><a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Params.event }}, {{ . }}{{ end }}</span></li>
+      {{- end }}
+    </ul>
+  </section>
+
+  {{ partial "contact.html" . }}
+</div>
+{{ end }}

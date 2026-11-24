@@ -1,0 +1,7 @@
+{{- $p := site.Data.profile }}
+<footer class="site-footer">
+  <div class="wrap site-footer__inner">
+    <p>© {{ now.Year }} {{ $p.name }}. {{ $p.role }}, {{ $p.organization.name }}.</p>
+    <p><a href="mailto:{{ $p.email }}">{{ $p.email }}</a></p>
+  </div>
+</footer>

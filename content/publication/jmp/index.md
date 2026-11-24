@@ -1,11 +1,11 @@
 ---
 title: "Cash Reserves and Short-Term Borrowing under Liquidity Constraints"
 authors:
-  - admin
+  - Luis Navarro
 date: '2024-11-18T00:00:00Z'
-weight: 3
+weight: 6
 publication_types: ["article"]
-publication: "Working Paper"
+publication: "Working paper"
 abstract: >-
   Governments ensure uninterrupted service delivery with timely payments on operating expenses by
   maintaining sufficient cash reserves and/or resorting to short-term borrowing. A theoretical model

@@ -2,11 +2,11 @@
 title: "Reassessing the Value of the Full-Faith and Credit Pledge in the Municipal Bond Market"
 authors:
   - Sharon Kioko
-  - admin
+  - Luis Navarro
 date: '2026-11-06T00:00:00Z'
-weight: 2
+weight: 5
 publication_types: ["article"]
-publication: "Working Paper"
+publication: "Working paper"
 abstract: >-
   The conventional view of municipal finance holds that the general obligation (GO) pledge of a
   government's full faith, credit, and taxing power provides a broader and more secure source of

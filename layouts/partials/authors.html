@@ -1,0 +1,8 @@
+{{- /* Author list with the site owner in bold: "A, B, and C". Usage: partial "authors.html" .Params.authors */ -}}
+{{- $me := site.Params.me -}}
+{{- $n := len . -}}
+{{- range $i, $a := . -}}
+  {{- if and (gt $i 0) (gt $n 2) }}, {{ end -}}
+  {{- if and (eq $i (sub $n 1)) (gt $n 1) }}{{ if eq $n 2 }} {{ end }}and {{ end -}}
+  {{- if eq $a $me }}<strong>{{ $a }}</strong>{{ else }}{{ $a }}{{ end -}}
+{{- end -}}

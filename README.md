@@ -1,38 +1,38 @@
 # Luis Navarro — Personal Website
 
-Source for [luisenavarro.com](https://luisenavarro.com), built with [Hugo](https://gohugo.io/) and the [Hugo Blox](https://hugoblox.com/) Academic CV theme (`blox-tailwind` module). Every push to `main` is built and deployed by **Netlify** (configured in `netlify.toml`), which serves luisenavarro.com. Do not delete `netlify.toml`.
+Source for [luisenavarro.com](https://luisenavarro.com). Built with [Hugo](https://gohugo.io/) (0.126.3, extended) and a small custom theme that lives entirely in this repo — no external theme modules. **Netlify** builds and serves the site from `main` (see `netlify.toml`; do not delete it). Every pull request gets a Netlify preview link.
 
 ## Where things live
 
-| Section | Folder | Notes |
-|---|---|---|
-| Homepage | `content/_index.md` | Bio, About Me, Publications, Working Papers, Teaching, Talks, News |
-| Profile (bio, education, work, awards) | `content/authors/admin/_index.md` | Feeds the homepage and the Experience page |
-| Research | `content/publication/<paper>/index.md` | One folder per paper; PDFs and slides go in the same folder |
-| Teaching | `content/teaching/<course>/index.md` | One folder per course; syllabus in `docs/`, slides in `slides/` |
-| Talks | `content/event/<talk>/index.md` | |
-| Data | `content/data/<dataset>/index.md` | |
-| CV | `static/uploads/cv_len.pdf` | Single copy; linked from the CV page and the homepage button |
-| Menu | `config/_default/menus.yaml` | |
-| Site settings / SEO | `config/_default/params.yaml`, `config/_default/hugo.yaml` | |
+| What | Where |
+|---|---|
+| Name, role, photo, email, social links, positions, education, awards | `data/profile.yaml` |
+| Homepage About text and News items | `content/_index.md` |
+| Papers (one folder each, PDFs inside) | `content/publication/<paper>/index.md` |
+| Courses (one folder each, syllabus and slides inside) | `content/teaching/<course>/index.md` |
+| Talks | `content/event/<talk>/index.md` |
+| Data | `content/data/<dataset>/index.md` |
+| CV PDF | `static/uploads/cv_len.pdf` |
+| Menu and site settings | `hugo.yaml` |
+| Page templates | `layouts/` |
+| Styles / scripts | `assets/css/main.css`, `assets/js/site.js` |
+| Fonts (Public Sans, Newsreader; OFL) | `static/fonts/` |
 
-## Research entries
+## Papers
 
-Each paper sets `publication_types`, which decides where it appears:
+- `publication_types: ["article"]` → **Working papers** (ordered by `weight`); anything else (`article-journal`, `chapter`, `report`) → **Publications** (newest first).
+- Links: `url_pdf`, `url_preprint`, `url_slides` (a bare file name in the paper folder is fine), `url_code`, `url_video`, `doi`, and `links:` (name + url).
+- Optional citation fields used for BibTeX and Google Scholar: `journal`, `volume`, `number`, `pages`, `booktitle`, `publisher`.
 
-- `article-journal`, `chapter`, `report` → **Publications**
-- `article` → **Working Papers** (use `publication:` for the status, e.g. "Under review", "Conditionally accepted, JPBAFM")
+## PDFs
 
-`weight` controls the order within Working Papers (lower = higher on the page). Publications are sorted by date.
+Every PDF on the site opens in an on-site viewer (`/view/?file=…`) with a Download button. In page text, a normal Markdown link to a PDF is upgraded automatically; for a button pair use `{{< pdf file="syllabus.pdf" label="syllabus" >}}`.
 
-## Adding files
+## Contact form
 
-- Put only the **current** PDF of a paper or slide deck in its folder. Link the paper with `url_pdf: '/publication/<folder>/<file>.pdf'` (full site path; a bare filename breaks on list pages). `url_slides:`, `url_preprint:` and `links:` accept a bare filename from the same folder. Replace the file instead of adding `_new`/`_v2` copies.
-- `.pptx`, `.key` and `.DS_Store` files are ignored by `.gitignore`; export slides to PDF before committing.
+The homepage form uses Netlify Forms. Submissions appear in Netlify under **Forms**; email notifications are set there.
 
 ## Local preview
-
-Requires Hugo extended 0.126.3 and Go.
 
 ```bash
 hugo server

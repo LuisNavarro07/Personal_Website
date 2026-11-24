@@ -1,0 +1,7 @@
+{{- /* "Read" + "Download" buttons for one PDF.
+  Usage: partial "pdf-actions.html" (dict "file" "/path.pdf" "title" "Doc title" "label" "paper") */ -}}
+{{- $view := partial "viewer-url.html" (dict "file" .file "title" .title) -}}
+<span class="pdf-actions">
+  <a class="btn" href="{{ $view }}">Read {{ .label }}</a>
+  <a class="btn btn--quiet" href="{{ .file }}" download>Download {{ .label }}</a>
+</span>

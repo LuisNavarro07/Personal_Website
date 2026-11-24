@@ -1,0 +1,17 @@
+{{- /* Contact form handled by Netlify Forms (form detection must be on in Netlify). */ -}}
+{{- $p := site.Data.profile }}
+<section class="section contact" id="contact">
+  <h2>Get in touch</h2>
+  <p class="contact__lede">Questions about my research, data, or courses? Send me a message, or email me directly at <a href="mailto:{{ $p.email }}">{{ $p.email }}</a>.</p>
+  <form class="contact__form" name="contact" method="POST" action="/thanks/" data-netlify="true" netlify-honeypot="company">
+    <input type="hidden" name="form-name" value="contact">
+    <p class="visually-hidden" aria-hidden="true"><label>Leave this empty <input name="company" tabindex="-1" autocomplete="off"></label></p>
+    <div class="field-row">
+      <p class="field"><label for="c-name">Name</label><input id="c-name" name="name" autocomplete="name" required></p>
+      <p class="field"><label for="c-email">Email</label><input id="c-email" name="email" type="email" autocomplete="email" required></p>
+    </div>
+    <p class="field"><label for="c-subject">Subject</label><input id="c-subject" name="subject"></p>
+    <p class="field"><label for="c-message">Message</label><textarea id="c-message" name="message" rows="6" required></textarea></p>
+    <p><button class="btn" type="submit">Send message</button></p>
+  </form>
+</section>

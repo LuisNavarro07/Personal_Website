@@ -1,0 +1,40 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+{{- $title := cond .IsHome site.Title (printf "%s | %s" .Title site.Title) }}
+{{- $desc := .Description | default (cond .IsPage (.Params.abstract | default .Summary) site.Params.description) | plainify | truncate 300 }}
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $desc }}">
+<link rel="canonical" href="{{ .Permalink }}">
+{{- if .Params.noindex }}<meta name="robots" content="noindex">{{ end }}
+
+{{/* Social previews */}}
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ site.Title }}">
+{{- with resources.Get site.Data.profile.photo }}
+{{- $og := .Fill "600x600 Center jpg q80" }}
+<meta property="og:image" content="{{ $og.Permalink }}">
+{{- end }}
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@{{ site.Params.twitter }}">
+
+{{/* Google Scholar indexing for paper pages */}}
+{{- if and .IsPage (eq .Section "publication") }}
+{{- partial "scholar-meta.html" . }}
+{{- end }}
+
+{{- if .IsHome }}
+{{- $same := slice }}{{ range site.Data.profile.profiles }}{{ $same = $same | append .url }}{{ end }}
+<script type="application/ld+json">
+{{ dict "@context" "https://schema.org" "@type" "Person" "name" site.Data.profile.name "jobTitle" site.Data.profile.role "email" (printf "mailto:%s" site.Data.profile.email) "url" site.BaseURL "affiliation" (dict "@type" "Organization" "name" site.Data.profile.organization.name) "sameAs" $same | jsonify | safeJS }}
+</script>
+{{- end }}
+
+<link rel="preload" href="/fonts/public-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+{{- $css := resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+{{- with .OutputFormats.Get "rss" }}<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ site.Title }}">{{ end }}

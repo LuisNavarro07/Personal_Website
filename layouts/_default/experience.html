@@ -1,0 +1,51 @@
+{{ define "main" }}
+{{- $p := site.Data.profile }}
+<div class="wrap page-body">
+  <header class="page-header page-header--row">
+    <h1>{{ .Title }}</h1>
+    <div class="actions"><a class="btn btn--quiet" href="/cv/">Full CV</a></div>
+  </header>
+
+  <section class="section section--tight">
+    <h2>Positions</h2>
+    <ol class="timeline">
+      {{- range $p.work }}
+      <li>
+        <p class="timeline__dates">{{ (time .start).Format "Jan 2006" }} – {{ with .end }}{{ (time .).Format "Jan 2006" }}{{ else }}Present{{ end }}</p>
+        <div>
+          <h3>{{ .position }}</h3>
+          <p class="muted">{{ .organization }}</p>
+          {{- with .summary }}<div class="prose small">{{ . | markdownify }}</div>{{ end }}
+        </div>
+      </li>
+      {{- end }}
+    </ol>
+  </section>
+
+  <section class="section section--tight">
+    <h2>Education</h2>
+    <ol class="timeline">
+      {{- range $p.education }}
+      <li>
+        <p class="timeline__dates">{{ (time .start).Format "2006" }} – {{ (time .end).Format "2006" }}</p>
+        <div><h3>{{ .degree }}</h3><p class="muted">{{ .institution }}</p></div>
+      </li>
+      {{- end }}
+    </ol>
+  </section>
+
+  <section class="section section--tight">
+    <h2>Awards and fellowships</h2>
+    <ul class="dated-list">
+      {{- range $p.awards }}
+      <li><span class="dated-list__date">{{ .year }}</span><span>{{ with .url }}<a href="{{ . }}">{{ end }}{{ .title }}{{ with .url }}</a>{{ end }}{{ with .summary }}. {{ . | markdownify }}{{ end }}</span></li>
+      {{- end }}
+    </ul>
+  </section>
+
+  <section class="section section--tight two-col">
+    <div><h2>Programming</h2><p>{{ delimit $p.skills ", " }}</p></div>
+    <div><h2>Languages</h2><p>{{ delimit $p.languages ", " }}</p></div>
+  </section>
+</div>
+{{ end }}

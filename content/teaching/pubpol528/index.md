@@ -1,16 +1,14 @@
 ---
 title: 'PUBPOL 528: Quantitative Analysis II'
 weight: 3
-description: MPA core course · Evans School, University of Washington · Spring 2026
+description: "Spring 2026, Evans School, University of Washington"
 date: '2026-03-30T00:00:00Z'
 tags:
   - University of Washington
-summary: "MPA core course in applied regression and causal inference: OLS, inference, model specification, RCTs, fixed effects, DiD, IV, and RD. Spring 2026."
+summary: "MPA core course in applied regression and causal inference: OLS, inference, model specification, RCTs, fixed effects, DiD, IV, and RD."
+term: "Spring 2026"
 featured: false
 ---
-
-**Evans School of Public Policy and Governance, University of Washington · Spring 2026**\
-Tuesdays and Thursdays, 2:30–3:50 p.m. · Parrington Hall 360 · Quiz sections on Fridays
 
 ## Course Description
 
@@ -31,54 +29,29 @@ By the end of this course, students will be able to:
 7. **Understand and apply methods for causal inference:** the potential outcomes framework, randomized controlled trials, panel data with fixed effects, difference-in-differences, instrumental variables, and regression discontinuity designs.
 8. **Critically evaluate published empirical research:** assess internal and external validity, identify threats to causal interpretation, and communicate statistical findings clearly for policy audiences.
 
-<a href="PUBPOL528_Syllabus_Spring2026.pdf" target="_blank">Preview Syllabus</a> · <a href="PUBPOL528_Syllabus_Spring2026.pdf" download>Download Syllabus</a>
+{{< pdf file="PUBPOL528_Syllabus_Spring2026.pdf" label="syllabus" >}}
 
-## Course Schedule
+## Topics and slides
 
-### Part I: Foundations of Regression Analysis (Weeks 1–5)
+1. [From policy questions to statistical models](slides/1_Introduction.pdf)
+2. [Linear regression and OLS](slides/2_Regression_OLS.pdf)
+3. [Multiple regression](slides/3_MultivariateOLS.pdf)
+4. [OLS assumptions](slides/4_OLS_Assumptions.pdf)
+5. [Inference and hypothesis testing](slides/5_Inference_Hypothesis_Testing.pdf)
+6. [Dummy variables](slides/6_Dummy_Variables.pdf)
+7. [Standard errors](slides/7_StandardErrors.pdf)
+8. [Data problems and validity](slides/8_Data_Problems_Validity.pdf)
+9. [Functional form](slides/9_FunctionalForm.pdf)
+10. [Model specification](slides/10_ModelSpecification.pdf)
+11. [Binary dependent variables](slides/11_Binary_Dep_Var.pdf)
+12. [Causal inference and randomized controlled trials](slides/12_Causal_Inference_RCTs.pdf)
+13. [Panel data and fixed effects](slides/13_FixedEffects.pdf)
+14. [Differences-in-differences](slides/14_DID.pdf)
+15. [Instrumental variables and 2SLS](slides/15_IV_2SLS.pdf)
+16. [Regression discontinuity designs](slides/16_RDD.pdf)
+17. [Causal inference recap](slides/17_Causal_Inference_Recap.pdf)
 
-| Week | Date | Session | Readings |
-|---|---|---|---|
-| 1 | Tue, Mar 31 | From Policy Questions to Statistical Models | [S] Ch. 1; [SW] Ch. 4.1 |
-| 1 | Thu, Apr 2 | Linear Regression and OLS | [S] Ch. 2; [SW] Ch. 4.2–4.5 |
-| 2 | Tue, Apr 7 | Multiple Regression | [S] Ch. 2.2, 3.1–3.2; [SW] Ch. 6.2–6.4 |
-| 2 | Thu, Apr 9 | OLS Assumptions | [S] Ch. 4; [SW] Ch. 6.5 · *Discussion 1* |
-| 3 | Tue, Apr 14 | Inference and Hypothesis Testing | [S] Ch. 5; [SW] Ch. 5.1–5.3, 7.1–7.4 |
-| 3 | Thu, Apr 16 | Dummy Variables | [S] Ch. 3.3, 7.4; [SW] Ch. 5.3 · *Discussion 2* |
-| 4 | Tue, Apr 21 | Standard Errors | [S] Ch. 10; [SW] Ch. 5.4; [CM] 2.25–2.27 |
-| 4 | Thu, Apr 23 | Internal, External, and Construct Validity; Data Problems | [SW] Ch. 9.1–9.2; [W] Ch. 9.1–9.2 · *Discussion 3* |
-| 5 | Tue, Apr 28 | Model Specification: Choosing the Right Variables | [S] Ch. 6, 8; [SW] Ch. 6.1 |
-| 5 | Thu, Apr 30 | Model Specification: Functional Form | [S] Ch. 7; [SW] Ch. 8 · *Discussion 4* |
-
-### Midterm (Week 6)
-
-| Week | Date | Session |
-|---|---|---|
-| 6 | Tue, May 5 | Midterm Review |
-| 6 | Thu, May 7 | **Midterm Exam** |
-
-### Part II: Causal Inference (Weeks 7–9)
-
-| Week | Date | Session | Readings |
-|---|---|---|---|
-| 7 | Tue, May 12 | Binary Dependent Variables | [S] Ch. 13; [SW] Ch. 11 |
-| 7 | Thu, May 14 | Causal Inference: Randomized Controlled Trials | [S] Ch. 16.1; [SW] Ch. 13.1–13.2 · *Discussion 5* |
-| 8 | Tue, May 19 | Panel Data and Fixed Effects | [S] Ch. 16.2–16.3; [SW] Ch. 10.1–10.5 |
-| 8 | Thu, May 21 | Differences-in-Differences | [SW] Ch. 13.4–13.5; [W] Ch. 13.1–13.3; [CM] Ch. 8–9 · *Discussion 6* |
-| 9 | Tue, May 26 | Instrumental Variables | [S] Ch. 14; [SW] Ch. 12.1–12.4; [CM] Ch. 7 |
-| 9 | Thu, May 28 | Regression Discontinuity Designs | [SW] Ch. 13.4; [CM] Ch. 6 · *Discussion 7* |
-
-### Wrap-Up (Weeks 10–11)
-
-| Week | Date | Session |
-|---|---|---|
-| 10 | Tue, Jun 2 | Optional Topic or Project Workshop |
-| 10 | Thu, Jun 4 | Wrap-Up |
-| 11 | Tue, Jun 9 | **Final project due** |
-
-*This outline is preliminary and may change during the quarter.*
-
-### Papers for In-Class Discussion
+## Papers for in-class discussion
 
 1. Bahl, R., & Duncombe, W. (1993). State and Local Debt Burdens in the 1980s: A Study in Contrast. *Public Administration Review*, 53(1), 31–40. [doi:10.2307/977274](https://doi.org/10.2307/977274)
 2. Carpenter, C. S., Feir, D., Pendakur, K., & Warman, C. (2026). Nonbinary and Transgender Identities and Earnings: Evidence from a National Census. *American Economic Review: Insights*, 8(1), 36–52. [doi:10.1257/aeri.20240571](https://doi.org/10.1257/aeri.20240571)
@@ -87,20 +60,3 @@ By the end of this course, students will be able to:
 5. Baicker, K., et al. (2013). The Oregon Experiment: Effects of Medicaid on Clinical Outcomes. *New England Journal of Medicine*, 368(18), 1713–1722. [doi:10.1056/NEJMsa1212321](https://doi.org/10.1056/NEJMsa1212321)
 6. Alpert, A., Powell, D., & Pacula, R. L. (2018). Supply-Side Drug Policy in the Presence of Substitutes: Evidence from the Introduction of Abuse-Deterrent Opioids. *American Economic Journal: Economic Policy*, 10(4), 1–35.
 7. To be announced.
-
-## Assessments
-
-| Component | Weight |
-|---|---|
-| Assignments (five; Canvas quizzes and Stata analysis) | 40% |
-| Class participation (including leading one paper discussion) | 5% |
-| Midterm Exam (May 7) | 25% |
-| Final Project: data analysis or critical review of empirical studies (due Jun 9) | 30% |
-
-## Textbooks
-
-- **[S]** Studenmund, A. H. *Using Econometrics: A Practical Guide* (7th ed.). Pearson. *(Main text)*
-- **[SW]** Stock, J. H., & Watson, M. W. *Introduction to Econometrics* (4th ed.). Pearson.
-- **[W]** Wooldridge, J. M. *Introductory Econometrics: A Modern Approach* (7th ed.). Cengage. *(Optional)*
-- **[TE]** Huntington-Klein, N. *The Effect: An Introduction to Research Design and Causality.* Free online at [theeffectbook.net](https://theeffectbook.net)
-- **[CM]** Cunningham, S. *Causal Inference: The Mixtape.* Free online at [mixtape.scunning.com](https://mixtape.scunning.com)

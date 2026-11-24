@@ -1,11 +1,12 @@
 ---
 title: 'SPEA V202: Contemporary Economic Issues in Public Affairs'
 weight: 10
-description: Undergraduate economics for public policy · O'Neill School, Indiana University · Fall 2022, Spring 2023, Fall 2024
+description: "Fall 2022, Spring 2023, and Fall 2024, O'Neill School, Indiana University"
 date: '2024-08-20T00:00:00Z'
 tags:
   - Indiana University
-summary: "Undergraduate economics for public policy: markets, taxes, externalities, public goods, labor markets, inequality, health care, and trade. Fall 2022, Spring 2023, Fall 2024."
+summary: "Undergraduate economics for public policy: markets, taxes, externalities, public goods, labor markets, inequality, health care, and trade."
+term: "Fall 2022, Spring 2023, and Fall 2024"
 featured: false
 ---
 
@@ -30,9 +31,7 @@ d. Use economic models to predict the impact of these policies and programs on w
 
 e. Explain the results of economic models demonstrating the impact of policies and programs on welfare and behavior.
 
-<a href="docs/v202_syllabus.pdf" target="_blank">Preview Syllabus</a>
-
-<a href="docs/v202_syllabus.pdf" download>Download Syllabus</a>
+{{< pdf file="docs/v202_syllabus.pdf" label="syllabus" >}}
 
 ## Course Outline and Material
 

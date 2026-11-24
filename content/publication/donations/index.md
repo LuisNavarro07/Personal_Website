@@ -2,12 +2,16 @@
 title: "The role of charitable food assistance during times of crisis"
 authors:
   - Denvil Duncan
-  - admin
+  - Luis Navarro
   - Shellye Suttles
 date: '2025-03-01T00:00:00Z'
 publication_types: ["article-journal"]
 publication: "*Journal of the Agricultural and Applied Economics Association*, 4(1), 118–134"
 doi: '10.1002/jaa2.70006'
+journal: Journal of the Agricultural and Applied Economics Association
+volume: 4
+number: 1
+pages: '118–134'
 abstract: >-
   We explore the determinants of in-kind food provisions and financial donations during the COVID-19
   pandemic and find that both types of assistance dramatically increased at the onset of the pandemic.

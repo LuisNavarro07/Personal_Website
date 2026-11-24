@@ -1,0 +1,19 @@
+{{- /* BibTeX entry built from front matter. Context: the paper page. */ -}}
+{{- $type := index (.Params.publication_types | default (slice "article")) 0 -}}
+{{- $first := index .Params.authors 0 -}}
+{{- $last := index (last 1 (split $first " ")) 0 -}}
+{{- $word := index (findRE `[A-Za-z]{4,}` .Title 1) 0 | default "paper" -}}
+{{- $key := printf "%s%s%s" ($last | lower | replaceRE `[^a-z]` "") (.Date.Format "2006") ($word | lower) -}}
+{{- $venue := .Params.publication | default "" | markdownify | plainify | htmlUnescape -}}
+{{- $kind := "unpublished" -}}
+{{- if eq $type "article-journal" }}{{ $kind = "article" }}{{ else if eq $type "chapter" }}{{ $kind = "incollection" }}{{ else if eq $type "report" }}{{ $kind = "misc" }}{{ end -}}
+{{- $f := slice (printf "  title     = {%s}" .Title) (printf "  author    = {%s}" (delimit .Params.authors " and ")) (printf "  year      = {%s}" (.Date.Format "2006")) -}}
+{{- if eq $kind "article" }}{{ $f = $f | append (printf "  journal   = {%s}" (.Params.journal | default $venue)) }}{{ end -}}
+{{- with .Params.volume }}{{ $f = $f | append (printf "  volume    = {%v}" .) }}{{ end -}}
+{{- with .Params.number }}{{ $f = $f | append (printf "  number    = {%v}" .) }}{{ end -}}
+{{- with .Params.pages }}{{ $f = $f | append (printf "  pages     = {%s}" (replace . "–" "--")) }}{{ end -}}
+{{- if eq $kind "incollection" }}{{ $f = $f | append (printf "  booktitle = {%s}" (.Params.booktitle | default $venue)) }}{{ with .Params.publisher }}{{ $f = $f | append (printf "  publisher = {%s}" .) }}{{ end }}{{ end -}}
+{{- if or (eq $kind "misc") (eq $kind "unpublished") }}{{ $f = $f | append (printf "  note      = {%s}" $venue) }}{{ end -}}
+{{- with .Params.doi }}{{ $f = $f | append (printf "  doi       = {%s}" .) }}{{ end -}}
+{{- $f = $f | append (printf "  url       = {%s}" .Permalink) -}}
+{{- printf "@%s{%s,\n%s\n}" $kind $key (delimit $f ",\n") -}}

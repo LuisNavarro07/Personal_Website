@@ -1,0 +1,16 @@
+{{ define "main" }}
+{{- $p := site.Data.profile }}
+<div class="wrap page-body">
+  <header class="page-header page-header--row">
+    <h1>{{ .Title }}</h1>
+    <div class="actions">
+      <a class="btn" href="{{ $p.cv }}" download="CV_Luis_Navarro.pdf">Download CV</a>
+      <a class="btn btn--quiet" href="{{ $p.cv }}" target="_blank" rel="noopener">Open in a new tab</a>
+    </div>
+  </header>
+  <div class="pdf-frame">
+    <iframe src="{{ $p.cv }}#view=FitH" title="Curriculum vitae of {{ $p.name }} (PDF)"></iframe>
+  </div>
+  <p class="muted small pdf-hint">If the CV doesn't display, <a href="{{ $p.cv }}">open the PDF directly</a>.</p>
+</div>
+{{ end }}

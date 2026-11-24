@@ -1,0 +1,11 @@
+{{ define "main" }}
+<div class="wrap page-body">
+  <header class="page-header"><h1>{{ .Title }}</h1></header>
+  <ul class="dated-list dated-list--roomy">
+    {{- range .RegularPages.ByDate.Reverse }}
+    <li><span class="dated-list__date">{{ .Date.Format "Jan 2006" }}</span>
+      <span><a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ with .Params.event }}<br><span class="muted">{{ . }}</span>{{ end }}</span></li>
+    {{- end }}
+  </ul>
+</div>
+{{ end }}

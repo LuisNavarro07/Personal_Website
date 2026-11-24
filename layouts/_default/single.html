@@ -1,0 +1,7 @@
+{{ define "main" }}
+<article class="wrap page-body">
+  {{- with .Parent }}{{ if not .IsHome }}<p class="crumb"><a href="{{ .RelPermalink }}">{{ .Title }}</a></p>{{ end }}{{ end }}
+  <header class="page-header"><h1>{{ .Title }}</h1></header>
+  <div class="prose">{{ .Content }}</div>
+</article>
+{{ end }}

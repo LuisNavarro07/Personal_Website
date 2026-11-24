@@ -1,0 +1,22 @@
+{{ define "main" }}
+{{- /* Generic on-site PDF viewer: /view/?file=/path/to/file.pdf&title=Title
+     Only PDFs hosted on this site are shown (checked in site.js). */ -}}
+<div class="wrap page-body viewer" data-viewer>
+  <header class="page-header page-header--row">
+    <div>
+      <p class="crumb"><a href="/" data-back>Back</a></p>
+      <h1 class="viewer__title" data-viewer-title>Document</h1>
+    </div>
+    <div class="actions">
+      <a class="btn" href="#" download data-viewer-download>Download PDF</a>
+      <a class="btn btn--quiet" href="#" target="_blank" rel="noopener" data-viewer-open>Open in a new tab</a>
+    </div>
+  </header>
+  <div class="pdf-frame"><iframe data-viewer-frame title="PDF document"></iframe></div>
+  <p class="muted small pdf-hint">If the document doesn't display, use <em>Open in a new tab</em>.</p>
+  <div class="viewer__error" data-viewer-error hidden>
+    <p>This link doesn't point to a PDF on this site. <a href="/">Go to the homepage</a>.</p>
+  </div>
+  <noscript><p>The viewer needs JavaScript. Use your browser's back button and open the PDF link directly.</p></noscript>
+</div>
+{{ end }}

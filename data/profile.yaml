@@ -1,0 +1,91 @@
+# Everything about Luis that appears on the homepage hero and the Experience page.
+name: Luis Navarro
+role: Assistant Professor of Public Finance and Financial Management
+organization:
+  name: Evans School of Public Policy and Governance, University of Washington
+  url: https://evans.uw.edu/
+email: lunavarr@uw.edu
+cv: /cv/cv_len.pdf   # file lives in content/cv/; replace it there to update
+photo: images/avatar.jpeg   # path under assets/
+
+interests:
+  - Public finance
+  - State and local tax policy
+  - The municipal bond market
+  - Public financial management
+  - Fiscal federalism
+
+# icon = file name in assets/icons/ (without .svg)
+profiles:
+  - { name: Google Scholar, icon: googlescholar, url: "https://scholar.google.com/citations?user=sVkdECQAAAAJ" }
+  - { name: ORCID, icon: orcid, url: "https://orcid.org/0009-0005-8257-9283" }
+  - { name: GitHub, icon: github, url: "https://github.com/LuisNavarro07" }
+  - { name: LinkedIn, icon: linkedin, url: "https://www.linkedin.com/in/luis-enrique-navarro-2aa029a6" }
+  - { name: X, icon: x, url: "https://twitter.com/Luis_EN07" }
+
+education:
+  - degree: PhD in Public Affairs (Public Finance and Policy Analysis)
+    institution: O'Neill School of Public and Environmental Affairs, Indiana University, Bloomington
+    start: 2020-08-01
+    end: 2025-05-31
+  - degree: BA in Economics
+    institution: Instituto Tecnológico Autónomo de México (ITAM)
+    start: 2011-08-01
+    end: 2016-12-31
+
+# end: '' means "Present"
+work:
+  - position: Assistant Professor of Public Finance and Financial Management
+    organization: Evans School of Public Policy and Governance, University of Washington (Seattle, WA)
+    start: 2025-09-01
+    end: ''
+    summary: |-
+      Courses taught:
+      - PUBPOL 322: Principles of Public Budgeting (undergraduate)
+      - PUBPOL 522: Financial Management & Budgeting (MPA core)
+      - PUBPOL 528: Quantitative Analysis II (MPA core)
+  - position: Associate Instructor, Economics for Public Policy (Undergraduate)
+    organization: O'Neill School of Public and Environmental Affairs, Indiana University (Bloomington, IN)
+    start: 2022-08-01
+    end: 2024-12-31
+    summary: |-
+      - Lead instructor of V202: Contemporary Economic Issues for Public Affairs
+      - Fall 2022, Spring 2023, Fall 2024
+  - position: Lab Manager, Statistics (Graduate)
+    organization: O'Neill School of Public and Environmental Affairs, Indiana University (Bloomington, IN)
+    start: 2023-08-01
+    end: 2024-05-31
+    summary: |-
+      - Taught introductory R programming to MPA students (V506)
+      - Base R and Tidyverse
+      - Data manipulation, visualization, and statistical inference
+  - position: Graduate Research Assistant
+    organization: O'Neill School of Public and Environmental Affairs, Indiana University (Bloomington, IN)
+    start: 2020-08-20
+    end: 2025-05-31
+    summary: |-
+      Research assistant to Justin Ross, Denvil Duncan, Craig Johnson, and Kosali Simon.
+  - position: Senior Analyst, Investment Banking and Public Finance Division
+    organization: Altor Finanzas e Infraestructura (Mexico City)
+    start: 2017-02-01
+    end: 2020-07-01
+    summary: |-
+      - Cost-benefit analysis (infrastructure, transport, public-private partnerships)
+      - Debt structuring and financial analysis for local governments
+      - Federal fiscal policy and macroeconomic analysis
+  - position: Economist, Staff of the Deputy Minister of Finance
+    organization: Secretaría de Hacienda y Crédito Público (Mexico)
+    start: 2016-06-01
+    end: 2017-02-01
+
+awards:
+  - title: Michael Curro Award for best graduate student paper, Association for Budgeting and Financial Management
+    year: 2024
+    url: https://abfm.org/2024-annual-award-recipients/
+    summary: For [Federal Assistance and Municipal Borrowing](/publication/caresact/).
+  - title: Ostrom Fellow, Ostrom Workshop, Indiana University
+    year: 2023–2024
+    url: https://ostromworkshop.indiana.edu/
+
+skills: [R, Stata, Python]
+languages: [English, Spanish]
