@@ -1,6 +1,6 @@
 # Everything about Luis that appears on the homepage hero and the Experience page.
 name: Luis Navarro
-role: Assistant Professor of Public Finance and Financial Management
+role: Assistant Professor of Public Budgeting and Financial Management
 organization:
   name: Evans School of Public Policy and Governance, University of Washington
   url: https://evans.uw.edu/
@@ -35,7 +35,7 @@ education:
 
 # end: '' means "Present"
 work:
-  - position: Assistant Professor of Public Finance and Financial Management
+  - position: Assistant Professor of Public Budgeting and Financial Management
     organization: Evans School of Public Policy and Governance, University of Washington (Seattle, WA)
     start: 2025-09-01
     end: ''

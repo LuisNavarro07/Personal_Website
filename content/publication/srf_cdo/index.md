@@ -7,7 +7,7 @@ authors:
 date: '2026-11-01T00:00:00Z'
 weight: 1
 publication_types: ["article"]
-publication: "Conditionally accepted, *Journal of Public Budgeting, Accounting & Financial Management*"
+publication: "Revise and resubmit, *Journal of Public Budgeting, Accounting & Financial Management*"
 abstract: >-
   This study examines differences in credit ratings and borrowing costs between State Revolving Fund
   collateralized debt obligations (SRF CDOs) and traditional municipal revenue (REV) and general
