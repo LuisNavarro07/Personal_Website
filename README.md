@@ -1,6 +1,6 @@
 # Luis Navarro — Personal Website
 
-Source for [luisenavarro.com](https://luisenavarro.com), built with [Hugo](https://gohugo.io/) and the [Hugo Blox](https://hugoblox.com/) Academic CV theme (`blox-tailwind` module). Every push to `main` is built and deployed by **Netlify** (configured in `netlify.toml`), which serves luisenavarro.com. The GitHub Actions workflow `.github/workflows/publish.yaml` also publishes a copy to luisnavarro07.github.io/Personal_Website/. Do not delete `netlify.toml`.
+Source for [luisenavarro.com](https://luisenavarro.com), built with [Hugo](https://gohugo.io/) and the [Hugo Blox](https://hugoblox.com/) Academic CV theme (`blox-tailwind` module). Every push to `main` is built and deployed by **Netlify** (configured in `netlify.toml`), which serves luisenavarro.com. Do not delete `netlify.toml`.
 
 ## Where things live
 
