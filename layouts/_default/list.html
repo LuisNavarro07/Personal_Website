@@ -1,0 +1,16 @@
+{{ define "main" }}
+<div class="wrap page-body">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{- with .Content }}<div class="prose lede">{{ . }}</div>{{ end }}
+  </header>
+  <ul class="course-list">
+    {{- range .RegularPages.ByWeight }}
+    <li>
+      <a class="course-list__title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+      {{- with .Description }}<p class="course-list__summary">{{ . }}</p>{{ end }}
+    </li>
+    {{- end }}
+  </ul>
+</div>
+{{ end }}

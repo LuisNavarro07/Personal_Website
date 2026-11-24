@@ -1,0 +1,37 @@
+{{- /* Links for one paper. Usage: partial "pub-links.html" (dict "page" . "full" true)
+  full=true  → buttons (paper page): Read/Download for each PDF, then other links
+  full=false → compact text links (lists): PDFs open in the viewer */ -}}
+{{- $p := .page -}}
+{{- $full := .full -}}
+{{- $items := slice -}}
+{{- $pdfs := slice -}}
+{{- with $p.Params.url_pdf }}{{ $pdfs = $pdfs | append (dict "label" "paper" "short" "PDF" "url" (partial "url.html" (dict "page" $p "url" .))) }}{{ end -}}
+{{- with $p.Params.url_preprint }}{{ $pdfs = $pdfs | append (dict "label" "preprint" "short" "Preprint" "url" (partial "url.html" (dict "page" $p "url" .))) }}{{ end -}}
+{{- with $p.Params.url_slides }}{{ $pdfs = $pdfs | append (dict "label" "slides" "short" "Slides" "url" (partial "url.html" (dict "page" $p "url" .))) }}{{ end -}}
+{{- with $p.Params.doi }}{{ $items = $items | append (dict "short" "DOI" "url" (printf "https://doi.org/%s" .)) }}{{ end -}}
+{{- range $p.Params.links -}}
+  {{- $u := partial "url.html" (dict "page" $p "url" .url) -}}
+  {{- if hasSuffix (lower $u) ".pdf" -}}
+    {{- $pdfs = $pdfs | append (dict "label" (lower .name) "short" .name "url" $u) -}}
+  {{- else -}}
+    {{- $items = $items | append (dict "short" .name "url" $u) -}}
+  {{- end -}}
+{{- end -}}
+{{- with $p.Params.url_code }}{{ $items = $items | append (dict "short" "Code" "url" .) }}{{ end -}}
+{{- with $p.Params.url_video }}{{ $items = $items | append (dict "short" "Video" "url" .) }}{{ end -}}
+
+{{- if $full -}}
+  {{- if or $pdfs $items }}
+  <div class="actions">
+    {{- range $pdfs }}{{ partial "pdf-actions.html" (dict "file" .url "title" $p.Title "label" .label) }}{{ end }}
+    {{- range $items }}<a class="btn btn--quiet" href="{{ .url }}">{{ .short }}</a>{{ end }}
+  </div>
+  {{- end }}
+{{- else -}}
+  {{- if or $pdfs $items }}
+  <p class="pub__links">
+    {{- range $pdfs }}<a href="{{ partial "viewer-url.html" (dict "file" .url "title" $p.Title) }}">{{ .short }}</a>{{ end }}
+    {{- range $items }}<a href="{{ .url }}">{{ .short }}</a>{{ end }}
+  </p>
+  {{- end }}
+{{- end -}}

@@ -1,0 +1,9 @@
+{{- /* One entry in a publication list. Context: the paper page. */ -}}
+<li class="pub">
+  <span class="pub__year">{{ .Date.Format "2006" }}</span>
+  <div class="pub__body">
+    <a class="pub__title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <p class="pub__meta">{{ partial "authors.html" .Params.authors }}{{ with .Params.publication }}. <span class="pub__venue">{{ . | markdownify }}</span>{{ end }}</p>
+    {{- partial "pub-links.html" (dict "page" . "full" false) }}
+  </div>
+</li>

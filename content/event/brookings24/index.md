@@ -1,5 +1,5 @@
 ---
-title: Federal Assistance and Municipal Borrowing Unpacking the Effects of the CARES Act on Government Liquidity Management
+title: 'Federal Assistance and Municipal Borrowing: Unpacking the Effects of the CARES Act on Government Liquidity Management'
 
 event: Brookings 13th Annual Municipal Finance Conference
 date: "2024-07-18T00:00:00Z"
@@ -22,8 +22,7 @@ aid to local governments translates into improved borrowing conditions on the
 bond market."
 
 authors:
-  - admin
-
+  - Luis Navarro
 tags: []
 
 # Is this a featured talk? (true/false)

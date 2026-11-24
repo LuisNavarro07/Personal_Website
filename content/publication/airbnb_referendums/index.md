@@ -1,7 +1,7 @@
 ---
 title: "Preferences for Local Public Goods and the Gig Economy"
 authors:
-  - admin
+  - Luis Navarro
 date: '2024-04-10T00:00:00Z'
 weight: 6
 publication_types: ["article"]

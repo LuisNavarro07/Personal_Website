@@ -1,7 +1,7 @@
 ---
 title: "Cash Reserves and Short-Term Borrowing under Liquidity Constraints"
 authors:
-  - admin
+  - Luis Navarro
 date: '2024-11-18T00:00:00Z'
 weight: 3
 publication_types: ["article"]

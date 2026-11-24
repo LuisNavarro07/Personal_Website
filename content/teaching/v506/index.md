@@ -1,11 +1,12 @@
 ---
 title: 'SPEA V506: Statistical Analysis for Effective Decision Making'
 weight: 11
-description: R lab sessions for MPA statistics · O'Neill School, Indiana University · Spring 2024
+description: "Spring 2024, O'Neill School, Indiana University"
 date: '2024-01-08T00:00:00Z'
 tags:
   - Indiana University
-summary: "R lab sessions for MPA statistics: data manipulation, visualization, functions, reshaping and merging, and hypothesis testing. Spring 2024."
+summary: "R lab sessions for MPA statistics: data manipulation, visualization, functions, reshaping and merging, and hypothesis testing."
+term: "Spring 2024"
 featured: false
 ---
 

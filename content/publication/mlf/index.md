@@ -2,11 +2,14 @@
 title: "Liquidity and volatility in the municipal bond market: Evidence from the municipal liquidity facility and other early interventions"
 authors:
   - Felipe Lozano-Rojas
-  - admin
+  - Luis Navarro
 date: '2026-06-01T00:00:00Z'
 publication_types: ["article-journal"]
 publication: "*International Review of Economics & Finance*, 108, 105212"
 doi: '10.1016/j.iref.2026.105212'
+journal: International Review of Economics & Finance
+volume: 108
+pages: '105212'
 abstract: >-
   At the onset of the COVID-19 pandemic, the federal government stepped in with fiscal and monetary
   policy actions to assist distressed municipalities, including the Municipal Liquidity Facility

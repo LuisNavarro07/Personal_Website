@@ -1,0 +1,10 @@
+{{- /* Resolve a link from front matter.
+  Usage: partial "url.html" (dict "page" . "url" "file.pdf")
+  - http(s)://… and /absolute/paths are returned unchanged
+  - bare file names are resolved against the page's folder */ -}}
+{{- $u := .url -}}
+{{- $out := $u -}}
+{{- if not (or (hasPrefix $u "http") (hasPrefix $u "/") (hasPrefix $u "mailto:")) -}}
+  {{- $out = printf "%s%s" .page.RelPermalink $u -}}
+{{- end -}}
+{{- return $out -}}

@@ -1,0 +1,47 @@
+# Site configuration. The theme lives in layouts/ and assets/ — no external modules.
+baseURL: https://luisenavarro.com/
+languageCode: en-us
+title: Luis Navarro
+enableRobotsTXT: true
+summaryLength: 40
+
+# Only the sections we use; no tag/category pages.
+disableKinds: [taxonomy, term]
+
+params:
+  description: >-
+    Luis Navarro is an Assistant Professor of Public Finance and Financial Management at the
+    Evans School of Public Policy and Governance, University of Washington. Research on fiscal
+    federalism, municipal debt, state and local tax policy, and public financial management.
+  twitter: Luis_EN07
+  # The site owner's name as it appears in paper author lists; it is shown in bold.
+  me: Luis Navarro
+
+menus:
+  main:
+    - { name: Research, url: /publication/, weight: 1 }
+    - { name: Teaching, url: /teaching/, weight: 2 }
+    - { name: Talks, url: /event/, weight: 3 }
+    - { name: Data, url: /data/, weight: 4 }
+    - { name: Experience, url: /experience/, weight: 5 }
+    - { name: CV, url: /cv/, weight: 6 }
+    - { name: Contact, url: /#contact, weight: 7 }
+
+outputs:
+  home: [HTML, RSS]
+  section: [HTML]
+  page: [HTML]
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # allow raw HTML in content (download links, tables)
+  highlight:
+    noClasses: true
+
+imaging:
+  quality: 85
+  resampleFilter: lanczos
+
+sitemap:
+  changefreq: monthly

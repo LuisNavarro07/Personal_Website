@@ -1,16 +1,16 @@
 ---
 title: 'PUBPOL 528: Quantitative Analysis II'
 weight: 3
-description: MPA core course · Evans School, University of Washington · Spring 2026
+description: "Spring 2026, Evans School, University of Washington"
 date: '2026-03-30T00:00:00Z'
 tags:
   - University of Washington
-summary: "MPA core course in applied regression and causal inference: OLS, inference, model specification, RCTs, fixed effects, DiD, IV, and RD. Spring 2026."
+summary: "MPA core course in applied regression and causal inference: OLS, inference, model specification, RCTs, fixed effects, DiD, IV, and RD."
+term: "Spring 2026"
 featured: false
 ---
 
-**Evans School of Public Policy and Governance, University of Washington · Spring 2026**\
-Tuesdays and Thursdays, 2:30–3:50 p.m. · Parrington Hall 360 · Quiz sections on Fridays
+Tuesdays and Thursdays, 2:30–3:50 p.m., Parrington Hall 360. Quiz sections on Fridays.
 
 ## Course Description
 
@@ -31,7 +31,7 @@ By the end of this course, students will be able to:
 7. **Understand and apply methods for causal inference:** the potential outcomes framework, randomized controlled trials, panel data with fixed effects, difference-in-differences, instrumental variables, and regression discontinuity designs.
 8. **Critically evaluate published empirical research:** assess internal and external validity, identify threats to causal interpretation, and communicate statistical findings clearly for policy audiences.
 
-<a href="PUBPOL528_Syllabus_Spring2026.pdf" target="_blank">Preview Syllabus</a> · <a href="PUBPOL528_Syllabus_Spring2026.pdf" download>Download Syllabus</a>
+{{< pdf file="PUBPOL528_Syllabus_Spring2026.pdf" label="syllabus" >}}
 
 ## Course Schedule
 

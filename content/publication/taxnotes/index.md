@@ -2,7 +2,7 @@
 title: "Long-Term Trends in State Personal Income Tax"
 authors:
   - Craig Johnson
-  - admin
+  - Luis Navarro
   - Bahawal Sharyar
   - Andrey Yushkov
 date: '2024-04-11T00:00:00Z'

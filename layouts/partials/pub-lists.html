@@ -1,0 +1,16 @@
+{{- /* Publications and Working Papers. Papers with publication_types ["article"] are working papers. */ -}}
+{{- $all := where site.RegularPages "Section" "publication" -}}
+{{- $wp := where $all "Params.publication_types" "intersect" (slice "article") -}}
+{{- $pubs := $all | complement $wp -}}
+<section class="section" id="publications">
+  <h2>Publications</h2>
+  <ol class="pub-list">
+    {{- range $pubs.ByDate.Reverse }}{{ partial "pub-item.html" . }}{{ end }}
+  </ol>
+</section>
+<section class="section" id="working-papers">
+  <h2>Working papers</h2>
+  <ol class="pub-list">
+    {{- range $wp.ByWeight }}{{ partial "pub-item.html" . }}{{ end }}
+  </ol>
+</section>

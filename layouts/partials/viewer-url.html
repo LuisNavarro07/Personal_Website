@@ -1,0 +1,2 @@
+{{- /* Link to the on-site PDF viewer. Usage: partial "viewer-url.html" (dict "file" "/path.pdf" "title" "…") */ -}}
+{{- return (printf "/view/?%s" (querify "file" .file "title" .title)) -}}

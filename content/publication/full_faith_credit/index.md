@@ -2,7 +2,7 @@
 title: "Reassessing the Value of the Full-Faith and Credit Pledge in the Municipal Bond Market"
 authors:
   - Sharon Kioko
-  - admin
+  - Luis Navarro
 date: '2026-11-06T00:00:00Z'
 weight: 2
 publication_types: ["article"]

@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="wrap page-body">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{- with .Content }}<div class="prose lede">{{ . }}</div>{{ end }}
+  </header>
+  {{- $courses := .RegularPages }}
+  {{- range $g := slice "University of Washington" "Indiana University" }}
+  {{- $group := where $courses "Params.tags" "intersect" (slice $g) }}
+  {{- with $group }}
+  <section class="section">
+    <h2>{{ $g }}</h2>
+    <ul class="course-list">
+      {{- range .ByWeight }}
+      <li>
+        <a class="course-list__title" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <p class="course-list__term">{{ .Params.term }}</p>
+        {{- with .Params.summary }}<p class="course-list__summary">{{ . }}</p>{{ end }}
+      </li>
+      {{- end }}
+    </ul>
+  </section>
+  {{- end }}
+  {{- end }}
+</div>
+{{ end }}

@@ -1,16 +1,16 @@
 ---
 title: 'PUBPOL 522: Financial Management & Budgeting'
 weight: 2
-description: MPA core course · Evans School, University of Washington · Autumn 2026
+description: "Autumn 2026, Evans School, University of Washington"
 date: '2026-09-28T00:00:00Z'
 tags:
   - University of Washington
-summary: "MPA core course in financial management: financial statements, accrual accounting, cost analysis, and budget strategy for public and nonprofit organizations. Autumn 2026."
+summary: "MPA core course in financial management: financial statements, accrual accounting, cost analysis, and budget strategy for public and nonprofit organizations."
+term: "Autumn 2026"
 featured: false
 ---
 
-**Evans School of Public Policy and Governance, University of Washington · Autumn 2026**\
-Mondays, 8:30–11:20 a.m. · Parrington Hall 360 · Quiz sections on Tuesdays
+Mondays, 8:30–11:20 a.m., Parrington Hall 360. Quiz sections on Tuesdays.
 
 ## Course Description
 
@@ -26,7 +26,7 @@ By the end of this course, students will be able to:
 4. Prepare the essential financial management spreadsheets for a public organization (financial ratio analysis, basic financial statements, and program and cash flow budgets) and use them to inform decisions about program design, personnel management, resource allocation, policy development, and financial strategy.
 5. Understand the key institutions, processes, incentives, and politics that shape how public organizations allocate their scarce financial resources.
 
-<a href="PUBPOL522_Syllabus_Autumn2026.pdf" target="_blank">Preview Syllabus</a> · <a href="PUBPOL522_Syllabus_Autumn2026.pdf" download>Download Syllabus</a>
+{{< pdf file="PUBPOL522_Syllabus_Autumn2026.pdf" label="syllabus" >}}
 
 ## Course Schedule
 

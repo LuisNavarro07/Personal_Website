@@ -1,21 +1,29 @@
+# Netlify builds and serves luisenavarro.com. Do not delete this file.
 [build]
-  command = "hugo --gc --minify -b https://luisnavarro.netlify.app && npx pagefind --source 'public'"
+  command = "hugo --gc --minify"
   publish = "public"
 
 [build.environment]
   HUGO_VERSION = "0.126.3"
-  HUGO_ENABLEGITINFO = "true"
 
 [context.production.environment]
   HUGO_ENV = "production"
 
+# Pull-request previews use their own address so links work there.
 [context.deploy-preview]
-  command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL && npx pagefind --source 'public'"
+  command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy]
-  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL && npx pagefind --source 'public'"
+  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
-[[plugins]]
-  package = "netlify-plugin-hugo-cache-resources"
-  [plugins.inputs]
-    debug = true
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

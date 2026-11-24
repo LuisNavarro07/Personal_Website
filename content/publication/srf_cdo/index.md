@@ -1,7 +1,7 @@
 ---
 title: "State Revolving Fund Collateralized Debt Obligations (SRF CDOs): Repayment Security, Credit Ratings and Borrowing Costs"
 authors:
-  - admin
+  - Luis Navarro
 date: '2026-11-01T00:00:00Z'
 weight: 1
 publication_types: ["article"]

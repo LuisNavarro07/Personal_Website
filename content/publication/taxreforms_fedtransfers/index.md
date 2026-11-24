@@ -1,7 +1,7 @@
 ---
 title: "State Tax Reforms in a Federalist System"
 authors:
-  - admin
+  - Luis Navarro
   - Craig Johnson
   - Andrey Yushkov
   - Bahawal Sharyar

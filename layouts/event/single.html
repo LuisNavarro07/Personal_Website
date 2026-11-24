@@ -1,0 +1,16 @@
+{{ define "main" }}
+<article class="wrap page-body">
+  <p class="crumb"><a href="/event/">Talks</a></p>
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    <p class="page-header__sub">{{ with .Params.event }}{{ . }}, {{ end }}{{ .Date.Format "January 2, 2006" }}</p>
+    {{- with .Params.links }}
+    <div class="actions">{{ range . }}<a class="btn btn--quiet" href="{{ .url }}">{{ .name }}</a>{{ end }}</div>
+    {{- end }}
+  </header>
+  {{- with .Params.abstract }}
+  <section class="section section--tight"><h2>Abstract</h2><div class="prose">{{ . | markdownify }}</div></section>
+  {{- end }}
+  {{- with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+</article>
+{{ end }}

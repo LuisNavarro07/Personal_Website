@@ -1,7 +1,7 @@
 ---
 title: "Federal Assistance and Municipal Borrowing: Unpacking the Effects of the CARES Act on Government Liquidity Management"
 authors:
-  - admin
+  - Luis Navarro
 date: '2024-10-16T00:00:00Z'
 weight: 4
 publication_types: ["article"]

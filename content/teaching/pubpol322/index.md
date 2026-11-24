@@ -1,16 +1,16 @@
 ---
 title: 'PUBPOL 322: Principles of Public Budgeting'
 weight: 1
-description: Undergraduate course · Evans School, University of Washington · Autumn 2026
+description: "Autumn 2026, Evans School, University of Washington"
 date: '2026-09-29T00:00:00Z'
 tags:
   - University of Washington
-summary: "Undergraduate introduction to public budgeting: budget processes, fiscal federalism, budget modelling and forecasting, budget formats, and federal debt. Autumn 2026."
+summary: "Undergraduate introduction to public budgeting: budget processes, fiscal federalism, budget modelling and forecasting, budget formats, and federal debt."
+term: "Autumn 2026"
 featured: false
 ---
 
-**Evans School of Public Policy and Governance, University of Washington · Autumn 2026**\
-Tuesdays and Thursdays, 2:30–3:50 p.m. · Parrington Hall 360 · Quiz sections on Fridays
+Tuesdays and Thursdays, 2:30–3:50 p.m., Parrington Hall 360. Quiz sections on Fridays.
 
 ## Course Description
 
@@ -30,7 +30,7 @@ By the end of this course, students will be able to:
 6. **Apply practical methods of cost estimation and revenue forecasting:** growth rates, deterministic expenditure projections, and elementary forecasting techniques.
 7. **Assess federal debt and long-run fiscal sustainability:** deficits, debt, and the debt ceiling; the dynamics of debt accumulation; fiscal rules; and long-run pressures, including entitlements and generational equity.
 
-<a href="PUBPOL322_Syllabus_Autumn2026.pdf" target="_blank">Preview Syllabus</a> · <a href="PUBPOL322_Syllabus_Autumn2026.pdf" download>Download Syllabus</a>
+{{< pdf file="PUBPOL322_Syllabus_Autumn2026.pdf" label="syllabus" >}}
 
 ## Course Schedule
 

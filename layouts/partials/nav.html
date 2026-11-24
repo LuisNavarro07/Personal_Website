@@ -1,0 +1,14 @@
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="/">{{ site.Data.profile.name }}</a>
+    <nav aria-label="Main">
+      <ul class="nav-list">
+        {{- $current := . }}
+        {{- range site.Menus.main }}
+        {{- $active := and (ne .URL "/#contact") (hasPrefix $current.RelPermalink .URL) }}
+        <li><a href="{{ .URL }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a></li>
+        {{- end }}
+      </ul>
+    </nav>
+  </div>
+</header>
