@@ -53,9 +53,14 @@ You are the manager of Luis Navarro's academic website. Luis is an Assistant Pro
 
 ## Design
 
-- Palette: UW purple `#4b2e83` and gold `#b7a57a` on `#f8f8f6`, with ink `#1e2431`.
+- **UW brand colors only** (washington.edu/brand/brand-elements/colors). Tokens live at the top of `assets/css/main.css`.
+- **Banner (both themes): Husky Purple `#32006e`**, with a Husky Gold `#b7a57a` rule and photo offset. Banner links use Husky Gold web `#e8e3d3`.
+- **Light theme** (default): white background, black text, **Spirit Purple `#4b2e83`** links and buttons.
+- **Dark theme**: dark background `#15121c`, white text, **Spirit Gold `#ffc700`** links; buttons are Spirit Gold with black text.
+- Never put Spirit Gold on white (the brand guide forbids it). Keep every text/background pair at WCAG AA or better.
+- The header toggle (moon/sun) switches themes. The choice is saved in the browser, and until a visitor chooses, the site follows their system setting. A script in `layouts/partials/head.html` applies the theme before the page paints.
 - Fonts: self-hosted Newsreader for headings and Public Sans for text.
-- The purple hero is the only bold element; everything else stays quiet and left-aligned.
+- The purple banner is the only bold element; everything else stays quiet and left-aligned.
 - Avoid: all-caps labels, middle-dot separators, card grids, decorative animation.
 
 ## Open items (as of 2026-11-24)
