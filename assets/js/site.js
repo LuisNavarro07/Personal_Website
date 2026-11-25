@@ -89,6 +89,33 @@
     });
   }
 
+  // 4. Dark-mode toggle. The theme is set in <head> before paint; this flips and remembers it.
+  function setupThemeToggle() {
+    var btn = document.querySelector("[data-theme-toggle]");
+    if (!btn) return;
+    var root = document.documentElement;
+    function stored() { try { return localStorage.getItem("theme"); } catch (e) { return null; } }
+    function apply(theme) {
+      root.setAttribute("data-theme", theme);
+      btn.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
+      btn.title = theme === "dark" ? "Switch to light mode" : "Switch to dark mode";
+    }
+    apply(root.getAttribute("data-theme") === "dark" ? "dark" : "light");
+    btn.hidden = false;
+    btn.addEventListener("click", function () {
+      var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      apply(next);
+      try { localStorage.setItem("theme", next); } catch (e) { /* private mode: not remembered */ }
+    });
+    // Follow the system setting until the visitor picks a theme.
+    if (window.matchMedia) {
+      var mq = window.matchMedia("(prefers-color-scheme: dark)");
+      var onChange = function (e) { if (!stored()) apply(e.matches ? "dark" : "light"); };
+      if (mq.addEventListener) mq.addEventListener("change", onChange); else if (mq.addListener) mq.addListener(onChange);
+    }
+  }
+
+  setupThemeToggle();
   enhancePdfLinks();
   setupViewer();
   setupCopy();
